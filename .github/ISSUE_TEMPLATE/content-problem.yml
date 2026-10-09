@@ -1,0 +1,31 @@
+name: Report a problem with an item
+description: Something in the library is broken, unbalanced, mislabelled or shouldn't be here.
+title: "[Problem] "
+labels: ["problem"]
+body:
+  - type: input
+    id: item
+    attributes:
+      label: Item id or file
+      placeholder: e.g. monsters/soot-sprite.json
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - It doesn't import or display correctly in Hearth
+        - Rules or balance problem
+        - Typo or wrong information
+        - Copyright concern
+        - Not family-friendly
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+    validations:
+      required: true

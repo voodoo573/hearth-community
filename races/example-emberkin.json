@@ -1,0 +1,94 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "example-emberkin",
+  "name": "Emberkin (Example)",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. Emberkin are small, warm-blooded folk said to have been born from the first hearth fire. They carry a gentle inner glow and are welcome guests in any cold mountain village.",
+  "summary": "Example race: small hearth-born folk with a warm inner glow.",
+  "tags": [
+    "example",
+    "small",
+    "fire"
+  ],
+  "data": {
+    "name": "Emberkin (Example)",
+    "speed": 25,
+    "size": "Small",
+    "bonuses": {
+      "con": 2
+    },
+    "languages": [
+      "Common",
+      "Ignan"
+    ],
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "See in dim light within 60 feet as if it were bright light."
+      },
+      {
+        "name": "Hearth-Warmed",
+        "desc": "Resistance to cold damage. You are comfortable in cold weather down to -20 degrees Fahrenheit."
+      },
+      {
+        "name": "Kindle",
+        "desc": "You know the Light cantrip. Constitution is your spellcasting ability for it."
+      }
+    ],
+    "spellAbility": "con",
+    "racialSpells": [
+      {
+        "spell": "Light",
+        "level": 0
+      }
+    ],
+    "racialAbilities": [
+      {
+        "id": "warming_glow",
+        "name": "Warming Glow",
+        "action": "bonus",
+        "usesPerLongRest": "prof",
+        "recovery": "long",
+        "desc": "Bonus action: one creature you touch gains temporary hit points equal to your proficiency bonus."
+      }
+    ],
+    "subraces": {
+      "cinder": {
+        "name": "Cinder Emberkin",
+        "bonuses": {
+          "wis": 1
+        },
+        "traits": [
+          {
+            "name": "Ashwalker",
+            "desc": "Proficiency in Survival. Smoke and soot never obscure your vision."
+          }
+        ],
+        "proficiencies": {
+          "skills": [
+            "survival"
+          ]
+        }
+      },
+      "spark": {
+        "name": "Spark Emberkin",
+        "bonuses": {
+          "dex": 1
+        },
+        "speed": 30,
+        "traits": [
+          {
+            "name": "Quickfire",
+            "desc": "Your walking speed increases to 30 feet."
+          }
+        ]
+      }
+    }
+  }
+}

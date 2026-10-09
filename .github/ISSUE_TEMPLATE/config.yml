@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to contribute
+    url: https://github.com/voodoo573/hearth-community/blob/main/CONTRIBUTING.md
+    about: Read the guide for submitting content by pull request.
+  - name: Hearth app
+    url: https://hearthdnd.org
+    about: Problems with the Hearth app itself (not community content).

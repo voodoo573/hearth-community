@@ -1,0 +1,44 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "example-hearthfire-bolt",
+  "name": "Hearthfire Bolt (Example)",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. You hurl a ball of cosy, crackling hearthfire at a creature you can see. It burns enemies but leaves a pleasant smell of woodsmoke.",
+  "summary": "Example 1st-level evocation: a ranged fire attack that scales with slot level.",
+  "tags": [
+    "example",
+    "damage",
+    "fire"
+  ],
+  "data": {
+    "name": "Hearthfire Bolt (Example)",
+    "level": 1,
+    "school": "evocation",
+    "classes": [
+      "sorcerer",
+      "wizard",
+      "druid"
+    ],
+    "time": "action",
+    "range": "90 ft",
+    "components": "V, S",
+    "duration": "Instant",
+    "desc": "Ranged spell attack. On a hit, the target takes 2d8 fire damage and sheds dim light in a 5-ft radius until the end of your next turn. +1d8 per slot above 1st.",
+    "kind": "attack",
+    "damageType": "fire",
+    "dice": {
+      "count": 2,
+      "sides": 8
+    },
+    "scaleType": "slot",
+    "scaleAt": {
+      "dice": 1
+    }
+  }
+}

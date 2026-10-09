@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/background.schema.json",
+  "id": "example-lamplighter",
+  "name": "Lamplighter (Example)",
+  "type": "background",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. You spent your youth walking the streets at dusk, lighting the lamps and learning every alley, rooftop and shortcut in town.",
+  "summary": "Example background: a town lamplighter who knows every shortcut.",
+  "tags": [
+    "example",
+    "urban"
+  ],
+  "data": {
+    "name": "Lamplighter (Example)",
+    "skills": [
+      "athletics",
+      "perception"
+    ],
+    "gold": 10,
+    "equipment": [
+      "Lamplighter's pole",
+      "Hooded lantern",
+      "Flask of oil",
+      "Common clothes"
+    ],
+    "feature": {
+      "name": "Light in the Dark",
+      "desc": "You know the streets of any town you have lived in by heart, and town watchmen and lamplighters will usually point you the right way."
+    }
+  }
+}

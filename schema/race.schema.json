@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "race.schema.json",
+  "title": "Hearth community race",
+  "description": "`data` mirrors one entry of Hearth's RACES registry (app/index.html): { name, speed, size, bonuses, languages, proficiencies, traits, spellAbility, racialSpells, racialAbilities, subraces }.",
+  "allOf": [
+    { "$ref": "common.schema.json" },
+    {
+      "properties": {
+        "type": { "const": "race" },
+        "data": {
+          "type": "object",
+          "required": ["name", "speed", "size", "bonuses", "languages", "traits"],
+          "properties": {
+            "name": { "type": "string" },
+            "speed": { "type": "integer", "minimum": 0, "maximum": 120 },
+            "size": { "enum": ["Small", "Medium"] },
+            "bonuses": { "$ref": "#/$defs/bonuses" },
+            "languages": { "type": "array", "items": { "type": "string" } },
+            "proficiencies": { "$ref": "#/$defs/proficiencies" },
+            "traits": { "$ref": "common.schema.json#/$defs/features" },
+            "spellAbility": { "$ref": "common.schema.json#/$defs/ability" },
+            "racialSpells": { "$ref": "#/$defs/racialSpells" },
+            "racialAbilities": { "$ref": "#/$defs/racialAbilities" },
+            "subraces": {
+              "type": "object",
+              "description": "Keyed by snake_case subrace key, e.g. { \"ash\": { ... } }",
+              "patternProperties": { "^[a-z][a-z0-9_]*$": { "$ref": "#/$defs/subrace" } },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "bonuses": {
+      "type": "object",
+      "description": "Ability score increases. Use ability keys, `all` for +N to every score, or `choose` for a free pick.",
+      "properties": {
+        "str": { "type": "integer", "minimum": -2, "maximum": 3 },
+        "dex": { "type": "integer", "minimum": -2, "maximum": 3 },
+        "con": { "type": "integer", "minimum": -2, "maximum": 3 },
+        "int": { "type": "integer", "minimum": -2, "maximum": 3 },
+        "wis": { "type": "integer", "minimum": -2, "maximum": 3 },
+        "cha": { "type": "integer", "minimum": -2, "maximum": 3 },
+        "all": { "type": "integer", "minimum": 1, "maximum": 1 },
+        "choose": {
+          "type": "object", "required": ["count", "value"], "additionalProperties": false,
+          "properties": { "count": { "type": "integer", "minimum": 1, "maximum": 3 }, "value": { "type": "integer", "minimum": 1, "maximum": 2 } }
+        }
+      },
+      "additionalProperties": false
+    },
+    "proficiencies": {
+      "type": "object",
+      "properties": {
+        "skills": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/skill" } },
+        "weapons": { "type": "array", "items": { "type": "string" } },
+        "armor": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "racialSpells": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["spell", "level"], "additionalProperties": false,
+        "properties": {
+          "spell": { "type": "string", "description": "Spell name exactly as Hearth lists it (SRD) or another item in this repo" },
+          "level": { "type": "integer", "minimum": 0, "maximum": 9 },
+          "atLevel": { "type": "integer", "minimum": 1, "maximum": 20 },
+          "freePerLongRest": { "type": "integer", "minimum": 1, "maximum": 5 }
+        }
+      }
+    },
+    "racialAbilities": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "name", "action", "desc"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/key" },
+          "name": { "type": "string" },
+          "action": { "enum": ["action", "bonus", "reaction"] },
+          "usesPerLongRest": { "anyOf": [ { "type": "integer", "minimum": 1, "maximum": 10 }, { "const": "prof" } ] },
+          "recovery": { "enum": ["short", "long"] },
+          "damageType": { "type": "string" },
+          "desc": { "type": "string" }
+        }
+      }
+    },
+    "subrace": {
+      "type": "object", "required": ["name", "traits"],
+      "properties": {
+        "name": { "type": "string" },
+        "bonuses": { "$ref": "#/$defs/bonuses" },
+        "speed": { "type": "integer", "minimum": 0, "maximum": 120 },
+        "spellAbility": { "$ref": "common.schema.json#/$defs/ability" },
+        "racialSpells": { "$ref": "#/$defs/racialSpells" },
+        "racialAbilities": { "$ref": "#/$defs/racialAbilities" },
+        "proficiencies": { "$ref": "#/$defs/proficiencies" },
+        "traits": { "$ref": "common.schema.json#/$defs/features" }
+      }
+    }
+  }
+}

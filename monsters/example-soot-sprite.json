@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "example-soot-sprite",
+  "name": "Soot Sprite (Example)",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. Mischievous little spirits of chimney smoke that steal shiny things and leave sooty footprints everywhere. More nuisance than menace.",
+  "summary": "Example CR 1/4 elemental: a mischievous chimney spirit.",
+  "tags": [
+    "example",
+    "elemental",
+    "low-cr"
+  ],
+  "data": {
+    "name": "Soot Sprite (Example)",
+    "cr": 0.25,
+    "size": "Tiny",
+    "type": "elemental",
+    "ac": 13,
+    "hp": 10,
+    "hpFormula": "4d4",
+    "speed": {
+      "walk": 20,
+      "fly": 40
+    },
+    "abilities": {
+      "str": 4,
+      "dex": 16,
+      "con": 10,
+      "int": 8,
+      "wis": 12,
+      "cha": 10
+    },
+    "skills": {
+      "stealth": "+5"
+    },
+    "senses": "darkvision 60 ft.",
+    "damageImmunities": "fire",
+    "conditionImmunities": "poisoned",
+    "traits": [
+      {
+        "name": "Smoke Form",
+        "desc": "Can move through a space as narrow as 1 inch wide without squeezing."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Sooty Slap",
+        "desc": "Melee Attack: +5 to hit, 5 ft. Hit: 1d4+3 bludgeoning."
+      },
+      {
+        "name": "Puff of Soot (Recharge 5–6)",
+        "desc": "5-ft. cube within 15 ft., DC 10 Con save or blinded until the end of its next turn."
+      }
+    ]
+  }
+}

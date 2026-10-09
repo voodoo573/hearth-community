@@ -1,0 +1,24 @@
+{
+  "$schema": "../schema/feat.schema.json",
+  "id": "example-hearth-keeper",
+  "name": "Hearth Keeper (Example)",
+  "type": "feat",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. You know how to make any camp feel like home. Your companions rest better when you set up the fire and cook the meal.",
+  "summary": "Example feat: better short rests for the whole party.",
+  "tags": [
+    "example",
+    "rest",
+    "support"
+  ],
+  "data": {
+    "id": "example_hearth_keeper",
+    "name": "Hearth Keeper (Example)",
+    "desc": "When you and your allies finish a short rest at a camp you set up, each ally who spends one or more Hit Dice regains extra hit points equal to your proficiency bonus. You also gain proficiency with cook's utensils."
+  }
+}

@@ -1,0 +1,48 @@
+name: Content submission (no Git needed)
+description: Share a homebrew race, subclass, spell, feat, background, monster or map without making a pull request. A maintainer will turn it into a JSON file.
+title: "[Submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! If you're comfortable with GitHub, a pull request is fastest (see CONTRIBUTING.md). Otherwise fill this in and we'll do the rest.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [Race, Subclass, Spell, Feat, Background, Monster, Map]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. Mosskin
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: One or two sentences for the library card.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Full rules text
+      description: Stats, traits, level features, spell details, etc. For a map, attach the image (under 5 MB) and say how big a grid square is.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: This is my own original work (or I have the right to share it), and I agree to license it under CC BY 4.0.
+          required: true
+        - label: It contains no copyrighted text from non-SRD books.
+          required: true
+        - label: It is family-friendly.
+          required: true

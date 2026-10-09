@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "example-lanternbearer",
+  "name": "Lanternbearer (Example)",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. A fighter archetype for warriors who carry a blessed lantern into dark places, keeping their friends safe and pushing back the shadows.",
+  "summary": "Example fighter subclass: a lantern-carrying guardian of the party.",
+  "tags": [
+    "example",
+    "fighter",
+    "support"
+  ],
+  "data": {
+    "klass": "fighter",
+    "id": "example_lanternbearer",
+    "name": "Lanternbearer (Example)",
+    "desc": "A fighter who carries a blessed lantern into the dark and keeps companions safe.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Guiding Lantern",
+          "desc": "Your lantern sheds bright light in a 20-foot radius and dim light for a further 20 feet. Allies in the bright light can't be surprised while you are conscious."
+        },
+        {
+          "name": "Steady Light",
+          "desc": "As a bonus action, you can grant one ally in your lantern's bright light advantage on their next saving throw before the start of your next turn. You can use this a number of times equal to your proficiency bonus, regaining all uses on a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": "pb",
+              "reset": "long"
+            }
+          ]
+        }
+      ],
+      "7": [
+        {
+          "name": "Beacon",
+          "desc": "Your lantern's bright light radius increases to 30 feet, and you gain proficiency in Perception.",
+          "effects": [
+            {
+              "kind": "skill",
+              "skill": "perception",
+              "level": "prof"
+            }
+          ]
+        }
+      ],
+      "10": [
+        {
+          "name": "Warding Glow",
+          "desc": "You and allies in your lantern's bright light have resistance to necrotic damage.",
+          "effects": [
+            {
+              "kind": "resist",
+              "dtype": "necrotic"
+            }
+          ]
+        }
+      ],
+      "15": [
+        {
+          "name": "Shadowbane",
+          "desc": "Once on each of your turns when you hit a creature with a weapon attack, you can deal an extra 1d8 radiant damage."
+        }
+      ],
+      "18": [
+        {
+          "name": "Undying Flame",
+          "desc": "When you drop to 0 hit points but aren't killed outright, you can drop to 1 hit point instead and your lantern flares: each ally in its bright light regains 2d8 hit points. Once used, you can't use this feature again until you finish a long rest."
+        }
+      ]
+    }
+  }
+}

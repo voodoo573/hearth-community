@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "map.schema.json",
+  "title": "Hearth community map",
+  "description": "Metadata for one battle map image stored next to it in maps/. Hearth's personal map library (addMapToLibrary) stores { id, name, thumb, createdAt, origName } in localStorage and the image in IndexedDB; the importer fetches `image`, then runs it through the same path. The image file itself must be under 5 MB.",
+  "allOf": [
+    { "$ref": "common.schema.json" },
+    {
+      "properties": {
+        "type": { "const": "map" },
+        "data": {
+          "type": "object",
+          "required": ["image", "widthPx", "heightPx"],
+          "properties": {
+            "image": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.(png|jpg|jpeg|webp)$", "description": "File name of the image in maps/, e.g. my-map.png" },
+            "thumbnail": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.(png|jpg|jpeg|webp)$", "description": "Optional small preview (about 220 px wide, under 200 KB) in maps/. If missing, the importer uses the full image." },
+            "widthPx": { "type": "integer", "minimum": 64, "maximum": 8192 },
+            "heightPx": { "type": "integer", "minimum": 64, "maximum": 8192 },
+            "gridSizePx": { "type": "integer", "minimum": 8, "maximum": 512, "description": "Pixel size of one 5-ft grid square, if the map has a grid" },
+            "gridCols": { "type": "integer", "minimum": 1 },
+            "gridRows": { "type": "integer", "minimum": 1 },
+            "setting": { "type": "string", "maxLength": 60, "description": "e.g. dungeon, forest, tavern, ship" }
+          }
+        }
+      }
+    }
+  ]
+}

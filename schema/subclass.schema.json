@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subclass.schema.json",
+  "title": "Hearth community subclass",
+  "description": "`data` mirrors the shape Hearth's Subclass Forge stores for homebrew subclasses (loadAiHomebrew entries with type 'subclass', injected into SUBCLASSES[klass][id] by injectHomebrewSubclassesIntoRegistry): { klass, id, name, desc, levelFeatures }.",
+  "allOf": [
+    { "$ref": "common.schema.json" },
+    {
+      "properties": {
+        "type": { "const": "subclass" },
+        "data": {
+          "type": "object",
+          "required": ["klass", "id", "name", "desc", "levelFeatures"],
+          "properties": {
+            "klass": { "$ref": "common.schema.json#/$defs/klass", "description": "Parent class key" },
+            "id": { "$ref": "common.schema.json#/$defs/key", "description": "snake_case registry key, conventionally the item id with - replaced by _" },
+            "name": { "type": "string" },
+            "desc": { "type": "string", "maxLength": 600 },
+            "levelFeatures": {
+              "type": "object",
+              "description": "Keyed by class level (\"1\" to \"20\"), each an array of { name, desc, effects? } features.",
+              "patternProperties": {
+                "^([1-9]|1[0-9]|20)$": {
+                  "type": "array", "minItems": 1,
+                  "items": {
+                    "type": "object", "required": ["name", "desc"],
+                    "properties": {
+                      "name": { "type": "string" },
+                      "desc": { "type": "string" },
+                      "effects": { "type": "array", "description": "Optional structured Forge effects (kind: 'active', 'resist', 'skill', 'speed', 'ac', 'rider', 'grant_spells', ...). Unknown kinds are ignored by Hearth.", "items": { "type": "object", "required": ["kind"], "properties": { "kind": { "type": "string" } } } }
+                    }
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  ]
+}

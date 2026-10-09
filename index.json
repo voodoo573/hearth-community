@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-09T21:29:48Z",
+  "items": [
+    {
+      "id": "example-emberkin",
+      "type": "race",
+      "name": "Emberkin (Example)",
+      "author": "voodoo573",
+      "summary": "Example race: small hearth-born folk with a warm inner glow.",
+      "path": "races/example-emberkin.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "small",
+        "fire"
+      ],
+      "example": true
+    },
+    {
+      "id": "example-lanternbearer",
+      "type": "subclass",
+      "name": "Lanternbearer (Example)",
+      "author": "voodoo573",
+      "summary": "Example fighter subclass: a lantern-carrying guardian of the party.",
+      "path": "subclasses/example-lanternbearer.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "fighter",
+        "support"
+      ],
+      "example": true
+    },
+    {
+      "id": "example-hearthfire-bolt",
+      "type": "spell",
+      "name": "Hearthfire Bolt (Example)",
+      "author": "voodoo573",
+      "summary": "Example 1st-level evocation: a ranged fire attack that scales with slot level.",
+      "path": "spells/example-hearthfire-bolt.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "damage",
+        "fire"
+      ],
+      "example": true
+    },
+    {
+      "id": "example-hearth-keeper",
+      "type": "feat",
+      "name": "Hearth Keeper (Example)",
+      "author": "voodoo573",
+      "summary": "Example feat: better short rests for the whole party.",
+      "path": "feats/example-hearth-keeper.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "rest",
+        "support"
+      ],
+      "example": true
+    },
+    {
+      "id": "example-lamplighter",
+      "type": "background",
+      "name": "Lamplighter (Example)",
+      "author": "voodoo573",
+      "summary": "Example background: a town lamplighter who knows every shortcut.",
+      "path": "backgrounds/example-lamplighter.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "urban"
+      ],
+      "example": true
+    },
+    {
+      "id": "example-soot-sprite",
+      "type": "monster",
+      "name": "Soot Sprite (Example)",
+      "author": "voodoo573",
+      "summary": "Example CR 1/4 elemental: a mischievous chimney spirit.",
+      "path": "monsters/example-soot-sprite.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "elemental",
+        "low-cr"
+      ],
+      "example": true
+    },
+    {
+      "id": "example-grid-dungeon-room",
+      "type": "map",
+      "name": "Grid Dungeon Room (Example)",
+      "author": "voodoo573",
+      "summary": "Example 20 x 15 grid dungeon room with pillars and doors.",
+      "path": "maps/example-grid-dungeon-room.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "dungeon",
+        "grid"
+      ],
+      "example": true,
+      "thumbnail": "maps/example-grid-dungeon-room-thumb.png"
+    }
+  ]
+}

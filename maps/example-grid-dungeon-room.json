@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "example-grid-dungeon-room",
+  "name": "Grid Dungeon Room (Example)",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. A plain stone dungeon room on a 20 x 15 grid, with a door on each side, a few pillars and a central brazier. Useful for testing map imports.",
+  "summary": "Example 20 x 15 grid dungeon room with pillars and doors.",
+  "tags": [
+    "example",
+    "dungeon",
+    "grid"
+  ],
+  "data": {
+    "image": "example-grid-dungeon-room.png",
+    "thumbnail": "example-grid-dungeon-room-thumb.png",
+    "widthPx": 1000,
+    "heightPx": 750,
+    "gridSizePx": 50,
+    "gridCols": 20,
+    "gridRows": 15,
+    "setting": "dungeon"
+  }
+}
