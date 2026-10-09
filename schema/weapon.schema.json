@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weapon.schema.json",
+  "title": "Hearth community weapon",
+  "description": "`data` mirrors exactly the object Hearth's Custom Weapon builder saves into ch.inventory.weapons (app/index.html, the #cwSaveBtn click handler; dialog in renderCustomWeaponDialog): { name, damage:{count,sides}, type, kind, props, cat, extraDamage?, magicBonus? }. The importer adds the per-character fields id, equipped and custom:true itself, so they must not appear here.",
+  "allOf": [
+    {
+      "$ref": "common.schema.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "weapon"
+        },
+        "data": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "damage",
+            "type",
+            "kind",
+            "props",
+            "cat"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 60
+            },
+            "damage": {
+              "$ref": "#/$defs/dice",
+              "description": "Main damage dice, e.g. { count: 1, sides: 8 } = 1d8. Builder limits: count 1-20, sides 2-20."
+            },
+            "type": {
+              "$ref": "#/$defs/damageType",
+              "description": "Damage type of the main dice."
+            },
+            "kind": {
+              "enum": [
+                "melee",
+                "ranged"
+              ]
+            },
+            "props": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "finesse",
+                  "light",
+                  "heavy",
+                  "two-handed",
+                  "versatile",
+                  "thrown",
+                  "reach",
+                  "ammunition",
+                  "loading"
+                ]
+              },
+              "description": "Weapon properties the builder offers. Use [] for none."
+            },
+            "cat": {
+              "enum": [
+                "simple",
+                "martial"
+              ],
+              "description": "Simple melee weapons count as monk weapons in Hearth."
+            },
+            "extraDamage": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 6,
+              "items": {
+                "$ref": "#/$defs/extraDie"
+              },
+              "description": "Optional extra on-hit damage components, e.g. [{ count: 1, sides: 6, type: 'fire' }]. Roll on every hit, add no ability modifier, double on a crit."
+            },
+            "magicBonus": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 3,
+              "description": "Optional +1 to +3 added to attack and damage rolls. Omit for a mundane weapon (the builder omits 0)."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "dice": {
+      "type": "object",
+      "required": [
+        "count",
+        "sides"
+      ],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "sides": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 20
+        }
+      },
+      "additionalProperties": false
+    },
+    "damageType": {
+      "enum": [
+        "slashing",
+        "piercing",
+        "bludgeoning",
+        "fire",
+        "cold",
+        "lightning",
+        "thunder",
+        "acid",
+        "poison",
+        "necrotic",
+        "radiant",
+        "psychic",
+        "force"
+      ]
+    },
+    "extraDie": {
+      "type": "object",
+      "required": [
+        "count",
+        "sides",
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "sides": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 20
+        },
+        "type": {
+          "$ref": "#/$defs/damageType"
+        }
+      }
+    }
+  }
+}

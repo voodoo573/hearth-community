@@ -3,7 +3,7 @@
 **What are you adding or changing?**
 <!-- e.g. "New race: Mosskin", "Fix typo in Soot Sprite", "Version bump to 1.1.0" -->
 
-**Type:** <!-- race / subclass / spell / feat / background / monster / map -->
+**Type:** <!-- race / subclass / spell / feat / background / monster / map / weapon / magic-item -->
 
 **File(s):**
 <!-- e.g. races/mosskin.json -->

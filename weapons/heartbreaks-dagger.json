@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/weapon.schema.json",
+  "id": "heartbreaks-dagger",
+  "name": "Heartbreak's Dagger",
+  "type": "weapon",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Uncommon magic dagger (Level Up: Advanced 5e). This delicate dagger, not much larger than a hatpin, features a curling silver cross-piece and a hilt wrapped in soft red leather. You gain a +1 to attack and damage rolls with this weapon. On a critical hit, the target must make a Constitution saving throw versus your maneuver DC. On a failure, it begins to bleed heavily, taking an additional 2d4 damage at the start of each of its turns. It can make another Constitution saving throw at the end of each of its turns, ending the effect on a success. This effect does not stack. (Hearth applies the +1 automatically; track the critical-hit bleed by hand. Outside Level Up, use 8 + proficiency bonus + Strength or Dexterity modifier as the DC.)",
+  "summary": "Uncommon +1 dagger; a critical hit can make the target bleed for 2d4 each turn.",
+  "tags": [
+    "dagger",
+    "uncommon",
+    "bleed",
+    "a5e"
+  ],
+  "credits": "Heartbreak's Dagger is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/heartbreaks-dagger-a5e/ (Open5e). Changes: converted to Hearth's weapon format.",
+  "data": {
+    "name": "Heartbreak's Dagger",
+    "damage": {
+      "count": 1,
+      "sides": 4
+    },
+    "type": "piercing",
+    "kind": "melee",
+    "props": [
+      "finesse",
+      "light",
+      "thrown"
+    ],
+    "cat": "simple",
+    "magicBonus": 1
+  }
+}

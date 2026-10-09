@@ -1,6 +1,6 @@
 # Hearth Community Content
 
-Homebrew races, subclasses, spells, feats, backgrounds, monsters and battle maps for
+Homebrew races, subclasses, spells, feats, backgrounds, monsters, weapons, magic items and battle maps for
 **[Hearth](https://hearthdnd.org)**, the D&D 5e companion app.
 
 Everything here is made and shared by the community. Approved items appear in the
@@ -41,6 +41,8 @@ and each entry's `path` (for example `races/example-emberkin.json`) is appended 
 | `backgrounds/` | Backgrounds     | background                                      |
 | `monsters/`    | Monsters        | creature for the DM bestiary                    |
 | `maps/`        | Maps            | battle map: an image plus a small JSON metadata file |
+| `weapons/`     | Weapons         | weapon (same fields as Hearth's Custom Weapon builder) |
+| `magic-items/` | Magic Items     | magic item (same fields as Hearth's Magic Item Forge) |
 | `schema/`      | (none)          | JSON Schema for each type, plus `index.schema.json` |
 | `scripts/`     | (none)          | `build-index.mjs`, the validator and index generator |
 
@@ -48,7 +50,8 @@ Each folder has one example item, marked **(Example)** in its name, `"example": 
 `example` tag. They show the format and can be removed once real content arrives.
 
 Item files use the same shapes Hearth uses internally (its `RACES`, `SUBCLASSES`, `SPELLS`,
-`FEATS`, `BACKGROUNDS` and `MONSTERS` data), so imported items work just like built-in ones.
+`FEATS`, `BACKGROUNDS` and `MONSTERS` data, the object its Custom Weapon builder saves, and
+the items its Magic Item Forge stores), so imported items work just like built-in ones.
 
 ## `index.json`
 

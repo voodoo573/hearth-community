@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "magic-item.schema.json",
+  "title": "Hearth community magic item",
+  "description": "`data` mirrors the item Hearth's Magic Item Forge stores in its homebrew list (app/index.html: saveForgeMagicItem() stores { type:'magic_item', title, data }, and injectHomebrewMagicItemsIntoRegistry() copies data into MAGIC_ITEMS). Shape: { id, name, type, rarity, attune, desc, mech, theme?, templateId? }, the same as emptyMagicItemDraft().",
+  "allOf": [
+    {
+      "$ref": "common.schema.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "magic-item"
+        },
+        "data": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "name",
+            "type",
+            "rarity",
+            "attune",
+            "desc",
+            "mech"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "common.schema.json#/$defs/key",
+              "description": "snake_case MAGIC_ITEMS key, usually the item id with '-' replaced by '_'."
+            },
+            "name": {
+              "type": "string",
+              "minLength": 3,
+              "maxLength": 60
+            },
+            "type": {
+              "enum": [
+                "weapon",
+                "armor",
+                "shield",
+                "ring",
+                "wondrous",
+                "potion",
+                "scroll",
+                "wand",
+                "staff",
+                "rod"
+              ],
+              "description": "A MAGIC_ITEM_TYPES key."
+            },
+            "rarity": {
+              "enum": [
+                "common",
+                "uncommon",
+                "rare",
+                "very_rare",
+                "legendary",
+                "artifact"
+              ],
+              "description": "A MAGIC_ITEM_RARITIES key."
+            },
+            "attune": {
+              "type": "boolean"
+            },
+            "desc": {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 3000
+            },
+            "mech": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "attackBonus": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 3
+                    },
+                    "damageBonus": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 3
+                    },
+                    "acBonus": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 3
+                    },
+                    "saveBonus": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 3
+                    },
+                    "spellAttackBonus": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 3
+                    },
+                    "hpBonus": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 50
+                    },
+                    "resistType": {
+                      "enum": [
+                        "slashing",
+                        "piercing",
+                        "bludgeoning",
+                        "fire",
+                        "cold",
+                        "lightning",
+                        "thunder",
+                        "acid",
+                        "poison",
+                        "necrotic",
+                        "radiant",
+                        "psychic",
+                        "force"
+                      ]
+                    }
+                  }
+                }
+              ],
+              "description": "Mechanical bonuses Hearth applies automatically, or null for text-only items."
+            },
+            "theme": {
+              "enum": [
+                "shadow",
+                "fire",
+                "frost",
+                "storm",
+                "nature",
+                "holy",
+                "arcane",
+                "blood",
+                "trickster",
+                "void"
+              ],
+              "description": "Optional FORGE_THEMES key."
+            },
+            "templateId": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -24,6 +24,8 @@ const FOLDERS = {
   backgrounds: 'background',
   monsters: 'monster',
   maps: 'map',
+  weapons: 'weapon',
+  'magic-items': 'magic-item',
 };
 const TOP_LEVEL_KEYS = new Set(['$schema', 'id', 'name', 'type', 'version', 'author', 'source', 'edition',
   'description', 'summary', 'tags', 'license', 'example', 'credits', 'data']);
@@ -157,6 +159,12 @@ for (const [folder, type] of Object.entries(FOLDERS)) {
     if (type === 'spell' && d.kind === 'save' && !d.save) err(rel, 'data.save is required when data.kind is "save"');
     if (type === 'spell' && (d.kind === 'attack' || d.kind === 'heal' || d.kind === 'auto') && !d.dice) err(rel, `data.dice is required when data.kind is "${d.kind}"`);
     if (type === 'spell' && d.scaleAt && !d.scaleType) err(rel, 'data.scaleType is required when data.scaleAt is set');
+    if (type === 'magic-item' && typeof item.id === 'string' && d.id && d.id !== item.id.replace(/-/g, '_'))
+      warn(rel, `data.id is usually the id with "-" replaced by "_" ("${item.id.replace(/-/g, '_')}")`);
+    if (type === 'weapon' && Array.isArray(d.props)) {
+      if (d.props.includes('light') && d.props.includes('heavy')) err(rel, 'a weapon cannot be both light and heavy');
+      if ((d.props.includes('ammunition') || d.props.includes('loading')) && d.kind !== 'ranged') warn(rel, 'ammunition/loading weapons are usually kind "ranged"');
+    }
     if (type === 'spell' && d.level === 0 && d.scaleType === 'slot') err(rel, 'cantrips (level 0) scale with scaleType "cantrip", not "slot"');
 
     let thumbnail;

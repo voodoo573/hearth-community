@@ -9,6 +9,8 @@ Thanks for sharing your homebrew! Everything merged here shows up in the Content
    permission to share under CC BY 4.0, and credit others in the `credits` field.
 2. **No copyrighted non-SRD text.** Don't copy from the Player's Handbook, Xanathar's, Tasha's,
    Monster Manual or any other book beyond the free 5e System Reference Document (SRD 5.1).
+   Material from other CC BY 4.0 sources (for example the A5E SRD by EN Publishing) is welcome
+   if you put the publisher's full attribution statement and a source link in `credits`.
    Don't reuse non-SRD names, such as specific setting characters, places or monsters.
 3. **Family-friendly.** Hearth is played by all ages, so no sexual content, gore, slurs or hateful
    themes.
@@ -48,7 +50,7 @@ Every item is one JSON object with these **common fields**:
 |---------------|----------|-------|
 | `id`          | yes | kebab-case (`a-z`, `0-9`, `-`), unique across the whole repo, same as the file name |
 | `name`        | yes | Display name, 2–60 characters |
-| `type`        | yes | `race`, `subclass`, `spell`, `feat`, `background`, `monster` or `map`. It must match the folder. |
+| `type`        | yes | `race`, `subclass`, `spell`, `feat`, `background`, `monster`, `map`, `weapon` or `magic-item`. It must match the folder. |
 | `version`     | yes | `1.0.0` for a new item. Bump it when you change it, e.g. `1.0.1` for fixes or `1.1.0` for rules changes. |
 | `author`      | yes | Your GitHub handle, without `@` |
 | `source`      | yes | Always `"homebrew"` |
@@ -56,7 +58,7 @@ Every item is one JSON object with these **common fields**:
 | `description` | yes | Plain text for the card and preview, 10–2000 characters |
 | `tags`        | yes | Up to 12 kebab-case tags, e.g. `["fire", "low-cr"]`. Use `[]` for none. |
 | `summary`     | no  | A one-liner of up to 140 characters for the library list. Defaults to the start of `description`. |
-| `credits`     | no  | Co-authors, art credit, inspiration |
+| `credits`     | no  | Co-authors, art credit, inspiration, or the attribution and source URL for CC BY material (up to 600 characters) |
 | `license`     | no  | If present, must be `"CC-BY-4.0"` |
 | `$schema`     | no  | e.g. `"../schema/spell.schema.json"`, which gives you autocomplete in VS Code |
 | `data`        | yes | Type-specific fields, described below |
@@ -124,6 +126,31 @@ thumbnail of about 220 px wide, under 200 KB, e.g. `maps/<id>-thumb.png`.
 
 `data`: `image` (file name), `widthPx` and `heightPx` (must match the image) are required.
 Optional: `thumbnail`, `gridSizePx` (pixels per 5-ft square), `gridCols`, `gridRows`, `setting`.
+
+### Weapon (`weapons/`): see `schema/weapon.schema.json`
+
+`data` is exactly what Hearth's **Custom Weapon** builder saves (Gear → Custom weapon):
+`name`, `damage` (`{ "count": 1, "sides": 8 }`), `type` (damage type: `slashing`, `piercing`,
+`bludgeoning`, `fire`, `cold`, `lightning`, `thunder`, `acid`, `poison`, `necrotic`, `radiant`,
+`psychic` or `force`), `kind` (`melee` or `ranged`), `cat` (`simple` or `martial`) and `props`
+(any of `finesse`, `light`, `heavy`, `two-handed`, `versatile`, `thrown`, `reach`, `ammunition`,
+`loading`; `[]` for none).
+- Optional: `magicBonus` (1 to 3, added to attack and damage) and `extraDamage`, a list of extra
+  on-hit dice such as `[{ "count": 1, "sides": 6, "type": "fire" }]`.
+- Don't add `id`, `equipped` or `custom`; Hearth sets those when the weapon is added to a character.
+- Special effects that Hearth can't automate (a bleed on a crit, say) go in `description`.
+
+### Magic item (`magic-items/`): see `schema/magic-item.schema.json`
+
+`data` is the item shape Hearth's **Magic Item Forge** stores: `id` (snake_case, usually your id
+with `-` replaced by `_`), `name`, `type` (`weapon`, `armor`, `shield`, `ring`, `wondrous`,
+`potion`, `scroll`, `wand`, `staff` or `rod`), `rarity` (`common`, `uncommon`, `rare`,
+`very_rare`, `legendary` or `artifact`), `attune` (true/false), `desc`, and `mech`.
+- `mech` is `null` for a text-only item, or an object with any of `attackBonus`, `damageBonus`,
+  `acBonus`, `saveBonus`, `spellAttackBonus` (each 1 to 3), `hpBonus` and `resistType`
+  (a damage type).
+- Optional: `theme` (`shadow`, `fire`, `frost`, `storm`, `nature`, `holy`, `arcane`, `blood`,
+  `trickster` or `void`) and `templateId`.
 
 ## What the automatic check enforces
 

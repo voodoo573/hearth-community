@@ -4,42 +4,203 @@
   "title": "Hearth community item: common fields and shared definitions",
   "description": "Every content item (one JSON file) has these top-level fields. Type-specific fields live in `data`, shaped exactly like Hearth's own internal objects so the importer can drop them straight in.",
   "type": "object",
-  "required": ["id", "name", "type", "version", "author", "source", "edition", "description", "tags", "data"],
+  "required": [
+    "id",
+    "name",
+    "type",
+    "version",
+    "author",
+    "source",
+    "edition",
+    "description",
+    "tags",
+    "data"
+  ],
   "properties": {
-    "$schema": { "type": "string", "description": "Optional relative path to the schema, e.g. ../schema/race.schema.json, for editor autocompletion." },
-    "id": { "$ref": "#/$defs/id" },
-    "name": { "type": "string", "minLength": 2, "maxLength": 60 },
-    "type": { "enum": ["race", "subclass", "spell", "feat", "background", "monster", "map"] },
-    "version": { "$ref": "#/$defs/version" },
-    "author": { "$ref": "#/$defs/author" },
-    "source": { "const": "homebrew" },
-    "edition": { "const": "5e" },
-    "description": { "type": "string", "minLength": 10, "maxLength": 2000, "description": "Plain text shown on the library card and preview." },
-    "summary": { "type": "string", "maxLength": 140, "description": "Optional one-liner for index.json. If omitted, the first 140 characters of description are used." },
-    "tags": { "$ref": "#/$defs/tags" },
-    "license": { "const": "CC-BY-4.0", "description": "Optional. All content in this repo is CC BY 4.0." },
-    "example": { "type": "boolean", "description": "true only for the repo's example items. The importer can hide these." },
-    "credits": { "type": "string", "maxLength": 300, "description": "Optional attribution, e.g. co-authors or art credit." },
-    "data": { "type": "object" }
+    "$schema": {
+      "type": "string",
+      "description": "Optional relative path to the schema, e.g. ../schema/race.schema.json, for editor autocompletion."
+    },
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 60
+    },
+    "type": {
+      "enum": [
+        "race",
+        "subclass",
+        "spell",
+        "feat",
+        "background",
+        "monster",
+        "map",
+        "weapon",
+        "magic-item"
+      ]
+    },
+    "version": {
+      "$ref": "#/$defs/version"
+    },
+    "author": {
+      "$ref": "#/$defs/author"
+    },
+    "source": {
+      "const": "homebrew"
+    },
+    "edition": {
+      "const": "5e"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 2000,
+      "description": "Plain text shown on the library card and preview."
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 140,
+      "description": "Optional one-liner for index.json. If omitted, the first 140 characters of description are used."
+    },
+    "tags": {
+      "$ref": "#/$defs/tags"
+    },
+    "license": {
+      "const": "CC-BY-4.0",
+      "description": "Optional. All content in this repo is CC BY 4.0."
+    },
+    "example": {
+      "type": "boolean",
+      "description": "true only for the repo's example items. The importer can hide these."
+    },
+    "credits": {
+      "type": "string",
+      "maxLength": 600,
+      "description": "Optional attribution, e.g. co-authors or art credit."
+    },
+    "data": {
+      "type": "object"
+    }
   },
   "$defs": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "minLength": 3, "maxLength": 64, "description": "kebab-case, unique across the whole repo, equal to the file name without .json" },
-    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Semantic version of this item, e.g. 1.0.0. Bump it when you change the item." },
-    "author": { "type": "string", "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$", "description": "GitHub handle without the @" },
-    "tags": { "type": "array", "maxItems": 12, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 30 } },
-    "key": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "snake_case key, the form Hearth uses for its internal registry keys" },
-    "ability": { "enum": ["str", "dex", "con", "int", "wis", "cha"] },
-    "skill": { "enum": ["acrobatics", "animal_handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "performance", "persuasion", "religion", "sleight_of_hand", "stealth", "survival"] },
-    "klass": { "enum": ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard", "artificer"] },
-    "size": { "enum": ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"] },
-    "feature": {
-      "type": "object",
-      "required": ["name", "desc"],
-      "properties": {
-        "name": { "type": "string", "minLength": 1, "maxLength": 80 },
-        "desc": { "type": "string", "minLength": 1, "maxLength": 3000 }
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 64,
+      "description": "kebab-case, unique across the whole repo, equal to the file name without .json"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of this item, e.g. 1.0.0. Bump it when you change the item."
+    },
+    "author": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$",
+      "description": "GitHub handle without the @"
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "maxLength": 30
       }
     },
-    "features": { "type": "array", "items": { "$ref": "#/$defs/feature" } }
+    "key": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "snake_case key, the form Hearth uses for its internal registry keys"
+    },
+    "ability": {
+      "enum": [
+        "str",
+        "dex",
+        "con",
+        "int",
+        "wis",
+        "cha"
+      ]
+    },
+    "skill": {
+      "enum": [
+        "acrobatics",
+        "animal_handling",
+        "arcana",
+        "athletics",
+        "deception",
+        "history",
+        "insight",
+        "intimidation",
+        "investigation",
+        "medicine",
+        "nature",
+        "perception",
+        "performance",
+        "persuasion",
+        "religion",
+        "sleight_of_hand",
+        "stealth",
+        "survival"
+      ]
+    },
+    "klass": {
+      "enum": [
+        "barbarian",
+        "bard",
+        "cleric",
+        "druid",
+        "fighter",
+        "monk",
+        "paladin",
+        "ranger",
+        "rogue",
+        "sorcerer",
+        "warlock",
+        "wizard",
+        "artificer"
+      ]
+    },
+    "size": {
+      "enum": [
+        "Tiny",
+        "Small",
+        "Medium",
+        "Large",
+        "Huge",
+        "Gargantuan"
+      ]
+    },
+    "feature": {
+      "type": "object",
+      "required": [
+        "name",
+        "desc"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "desc": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3000
+        }
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/feature"
+      }
+    }
   }
 }

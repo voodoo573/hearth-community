@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "example-lantern-of-warding",
+  "name": "Lantern of Warding (Example)",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. A brass lantern whose steady glow makes its bearer harder to hit. It shows the Magic Item Forge format with a simple mechanical bonus.",
+  "summary": "Example magic item: uncommon wondrous lantern, +1 AC while held.",
+  "tags": [
+    "example",
+    "wondrous",
+    "defence"
+  ],
+  "data": {
+    "id": "example_lantern_of_warding",
+    "name": "Lantern of Warding (Example)",
+    "type": "wondrous",
+    "rarity": "uncommon",
+    "attune": true,
+    "desc": "While you hold this lit lantern, you gain a +1 bonus to AC. It sheds bright light in a 20-foot radius and dim light for a further 20 feet, and burns without oil.",
+    "mech": {
+      "acBonus": 1
+    },
+    "theme": "holy",
+    "templateId": null
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-09T21:29:48Z",
+  "updated": "2026-10-09T21:55:31Z",
   "items": [
     {
       "id": "example-emberkin",
@@ -106,6 +106,51 @@
       ],
       "example": true,
       "thumbnail": "maps/example-grid-dungeon-room-thumb.png"
+    },
+    {
+      "id": "example-ember-hatchet",
+      "type": "weapon",
+      "name": "Ember Hatchet (Example)",
+      "author": "voodoo573",
+      "summary": "Example weapon: +1 hatchet, 1d6 slashing + 1d4 fire.",
+      "path": "weapons/example-ember-hatchet.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "fire",
+        "axe"
+      ],
+      "example": true
+    },
+    {
+      "id": "heartbreaks-dagger",
+      "type": "weapon",
+      "name": "Heartbreak's Dagger",
+      "author": "voodoo573",
+      "summary": "Uncommon +1 dagger; a critical hit can make the target bleed for 2d4 each turn.",
+      "path": "weapons/heartbreaks-dagger.json",
+      "version": "1.0.0",
+      "tags": [
+        "dagger",
+        "uncommon",
+        "bleed",
+        "a5e"
+      ]
+    },
+    {
+      "id": "example-lantern-of-warding",
+      "type": "magic-item",
+      "name": "Lantern of Warding (Example)",
+      "author": "voodoo573",
+      "summary": "Example magic item: uncommon wondrous lantern, +1 AC while held.",
+      "path": "magic-items/example-lantern-of-warding.json",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "wondrous",
+        "defence"
+      ],
+      "example": true
     }
   ]
 }

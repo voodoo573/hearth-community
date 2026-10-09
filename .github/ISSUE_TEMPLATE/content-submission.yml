@@ -1,5 +1,5 @@
 name: Content submission (no Git needed)
-description: Share a homebrew race, subclass, spell, feat, background, monster or map without making a pull request. A maintainer will turn it into a JSON file.
+description: Share a homebrew race, subclass, spell, feat, background, monster, weapon, magic item or map without making a pull request. A maintainer will turn it into a JSON file.
 title: "[Submission] "
 labels: ["submission"]
 body:
@@ -11,7 +11,7 @@ body:
     id: type
     attributes:
       label: Type
-      options: [Race, Subclass, Spell, Feat, Background, Monster, Map]
+      options: [Race, Subclass, Spell, Feat, Background, Monster, Weapon, Magic item, Map]
     validations:
       required: true
   - type: input

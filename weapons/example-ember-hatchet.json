@@ -1,0 +1,41 @@
+{
+  "$schema": "../schema/weapon.schema.json",
+  "id": "example-ember-hatchet",
+  "name": "Ember Hatchet (Example)",
+  "type": "weapon",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "example": true,
+  "description": "EXAMPLE ITEM. A camp hatchet whose blade never quite cools. It shows a weapon with an extra damage type and a magic bonus: +1 to attack and damage, 1d6 slashing plus 1d4 fire on a hit.",
+  "summary": "Example weapon: +1 hatchet, 1d6 slashing + 1d4 fire.",
+  "tags": [
+    "example",
+    "fire",
+    "axe"
+  ],
+  "data": {
+    "name": "Ember Hatchet (Example)",
+    "damage": {
+      "count": 1,
+      "sides": 6
+    },
+    "type": "slashing",
+    "kind": "melee",
+    "props": [
+      "light",
+      "thrown"
+    ],
+    "cat": "simple",
+    "extraDamage": [
+      {
+        "count": 1,
+        "sides": 4,
+        "type": "fire"
+      }
+    ],
+    "magicBonus": 1
+  }
+}
