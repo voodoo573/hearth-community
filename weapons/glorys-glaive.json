@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/weapon.schema.json",
+  "id": "glorys-glaive",
+  "name": "Glory's Glaive",
+  "type": "weapon",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Uncommon magic weapon from Level Up: Advanced 5th Edition. A red sash with gold trim adorns the haft of this glaive, the steel head of which is always polished to a mirror shine. The counterweight is made of brass and resembles a snarling lion, giving the weapon a regal appearance that belies its prideful, capricious nature.\n\nThis glaive’s blade is dull, and cannot be sharpened by any whetstone, causing it to deal only 1d6 bludgeoning damage on a hit. As a bonus action, you can attempt to flatter the weapon with a DC 13 Persuasion check. On a failure, you take 1d4 psychic damage that cannot be reduced or negated. On a success, the blade becomes sharp for 10 minutes. While sharp, it deals 1d12 slashing damage, grants +1 to attack and damage rolls made with it, and gains the flamboyant property. If it’s used in inglorious ways, such as for the execution of an unarmed foe or being used to cut down brush, it will immediately turn dull and refuse to become sharp until properly placated, as determined by the Narrator.\n\nYou can forgo your journey activity to spend time polishing, admiring, or training with glory’s glaive to gain a bonus equal to your Proficiency bonus on Persuasion checks to flatter it for the next 24 hours.\n\nEscalation. If you strike the killing blow in battle with a mighty or storied foe (as determined by the Narrator) with glory’s glaive, its ego can grow a maximum of twice. When its ego grows, its bonus to attack and damage rolls increases by +1, the DC to flatter it increases by 3, and the psychic damage taken on a failure increases by 1d4.\n\nHearth stores the glaive in its dull state (1d6 bludgeoning, no bonus). When flattered it becomes sharp for 10 minutes: 1d12 slashing and +1 to attack and damage; edit the weapon on your sheet while it is sharp.",
+  "summary": "Uncommon proud glaive: dull until you flatter it, then 1d12 slashing and +1 for 10 minutes.",
+  "tags": [
+    "glaive",
+    "uncommon",
+    "sentient",
+    "a5e"
+  ],
+  "credits": "Glory's Glaive is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/glorys-glaive-a5e/ (Open5e). Changes: converted to Hearth's weapon format.",
+  "data": {
+    "name": "Glory's Glaive",
+    "damage": {
+      "count": 1,
+      "sides": 6
+    },
+    "type": "bludgeoning",
+    "kind": "melee",
+    "props": [
+      "heavy",
+      "reach",
+      "two-handed"
+    ],
+    "cat": "martial"
+  }
+}

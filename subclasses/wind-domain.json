@@ -8,7 +8,7 @@
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "Wind Domain: a cleric subclass from Tome of Heroes (Kobold Press). You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells                                                        |\n|--------------|---------------------------------------------------------------|\n| 1st          | feather fall, thunderwave                                 |\n| 3rd          | gust of wind, misty step                                  |\n| 5th          | fly, wind wall                                            |\n| 7th          | conjure minor elementals (air only), freedom of movement  |\n| 9th          | cloudkill, conjure elemental (air only)                   |",
+  "description": "Wind Domain: a cleric subclass from Tome of Heroes (Kobold Press). You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells |\n|--------------|---------------------------------------------------------------|\n| 1st | feather fall, thunderwave |\n| 3rd | gust of wind, misty step |\n| 5th | fly, wind wall |\n| 7th | conjure minor elementals (air only), freedom of movement |\n| 9th | cloudkill, conjure elemental (air only) |",
   "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
   "tags": [
     "cleric",
@@ -21,7 +21,7 @@
     "klass": "cleric",
     "id": "wind_domain",
     "name": "Wind Domain",
-    "desc": "You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells                                                        |\n|--------------|---------------------------------------------------------------|\n| 1st          | feather fall, thunderwave                                 |\n| 3rd          | gust of wind, misty step                                  |\n| 5th          | fly, wind wall                              …",
+    "desc": "You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells |\n|--------------|---------------------------------------------------------------|\n| 1st | feather fall, thunderwave |\n| 3rd | gust of wind, misty step |\n| 5th | fly, wind wall |\n| 7th | conjure minor elementals (air only), freedom of movement |\n| 9th | cloudkill, conjure elemental (air only) |",
     "levelFeatures": {
       "1": [
         {

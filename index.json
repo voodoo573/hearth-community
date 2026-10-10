@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:38:27Z",
+  "updated": "2026-10-10T00:38:51Z",
   "items": [
     {
       "id": "alseid",
@@ -831,6 +831,51 @@
       "thumbnail": "maps/example-grid-dungeon-room-thumb.png"
     },
     {
+      "id": "bow-of-the-viper",
+      "type": "weapon",
+      "name": "Bow of the Viper",
+      "author": "voodoo573",
+      "summary": "Rare +1 longbow with snake-head limbs that poisons arrows and casts nature spells.",
+      "path": "weapons/bow-of-the-viper.json",
+      "version": "1.0.0",
+      "tags": [
+        "longbow",
+        "rare",
+        "poison",
+        "a5e"
+      ]
+    },
+    {
+      "id": "doorbreaker",
+      "type": "weapon",
+      "name": "Doorbreaker",
+      "author": "voodoo573",
+      "summary": "Rare +2 maul with an adamantine fist head; hits on objects and constructs are critical hits.",
+      "path": "weapons/doorbreaker.json",
+      "version": "1.0.0",
+      "tags": [
+        "maul",
+        "rare",
+        "construct",
+        "a5e"
+      ]
+    },
+    {
+      "id": "echo-force",
+      "type": "weapon",
+      "name": "Echo Force",
+      "author": "voodoo573",
+      "summary": "Rare shortsword that throws blades of force while you are unhurt.",
+      "path": "weapons/echo-force.json",
+      "version": "1.0.0",
+      "tags": [
+        "shortsword",
+        "rare",
+        "force",
+        "a5e"
+      ]
+    },
+    {
       "id": "example-ember-hatchet",
       "type": "weapon",
       "name": "Ember Hatchet (Example)",
@@ -846,6 +891,36 @@
       "example": true
     },
     {
+      "id": "flicker-dagger",
+      "type": "weapon",
+      "name": "Flicker Dagger",
+      "author": "voodoo573",
+      "summary": "Rare dagger that summons an illusory ally to set up your Sneak Attack.",
+      "path": "weapons/flicker-dagger.json",
+      "version": "1.0.0",
+      "tags": [
+        "dagger",
+        "rare",
+        "rogue",
+        "a5e"
+      ]
+    },
+    {
+      "id": "glorys-glaive",
+      "type": "weapon",
+      "name": "Glory's Glaive",
+      "author": "voodoo573",
+      "summary": "Uncommon proud glaive: dull until you flatter it, then 1d12 slashing and +1 for 10 minutes.",
+      "path": "weapons/glorys-glaive.json",
+      "version": "1.0.0",
+      "tags": [
+        "glaive",
+        "uncommon",
+        "sentient",
+        "a5e"
+      ]
+    },
+    {
       "id": "heartbreaks-dagger",
       "type": "weapon",
       "name": "Heartbreak's Dagger",
@@ -857,6 +932,66 @@
         "dagger",
         "uncommon",
         "bleed",
+        "a5e"
+      ]
+    },
+    {
+      "id": "iron-foe-mace",
+      "type": "weapon",
+      "name": "Iron Foe Mace",
+      "author": "voodoo573",
+      "summary": "Very rare +2 mace made with rust monster ichor that eats metal armour and weapons.",
+      "path": "weapons/iron-foe-mace.json",
+      "version": "1.0.0",
+      "tags": [
+        "mace",
+        "very-rare",
+        "rust",
+        "a5e"
+      ]
+    },
+    {
+      "id": "long-fang-of-the-moon",
+      "type": "weapon",
+      "name": "Long Fang of the Moon",
+      "author": "voodoo573",
+      "summary": "Legendary +3 silvered longsword dealing 2d6 extra radiant; forces shapeshifters back to true form.",
+      "path": "weapons/long-fang-of-the-moon.json",
+      "version": "1.0.0",
+      "tags": [
+        "longsword",
+        "legendary",
+        "radiant",
+        "a5e"
+      ]
+    },
+    {
+      "id": "parasol-of-the-blade",
+      "type": "weapon",
+      "name": "Parasol of the Blade",
+      "author": "voodoo573",
+      "summary": "Rare lace parasol hiding a +1 rapier blade of light that deals radiant damage.",
+      "path": "weapons/parasol-of-the-blade.json",
+      "version": "1.0.0",
+      "tags": [
+        "rapier",
+        "rare",
+        "radiant",
+        "a5e"
+      ]
+    },
+    {
+      "id": "prospectors-pick",
+      "type": "weapon",
+      "name": "Prospector's Pick",
+      "author": "voodoo573",
+      "summary": "Very rare +1 war pick that tunnels through stone and smashes earth creatures.",
+      "path": "weapons/prospectors-pick.json",
+      "version": "1.0.0",
+      "tags": [
+        "war-pick",
+        "very-rare",
+        "earth",
         "a5e"
       ]
     },

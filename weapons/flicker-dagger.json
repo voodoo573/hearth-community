@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/weapon.schema.json",
+  "id": "flicker-dagger",
+  "name": "Flicker Dagger",
+  "type": "weapon",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Rare magic weapon (requires attunement) from Level Up: Advanced 5th Edition. While you are attuned to and wielding this dagger, you can use a bonus action to summon a flickering illusion for 1 minute. Your flickering illusion shares your space, moves with you, and is treated as another enemy of the target for the purposes of the Sneak Attack feature, but it cannot be targeted with attacks and provides no penalties to creatures attacking you. Once you have used this property, you cannot do so again until you finish a long rest .\n\nThe flickering illusion (Sneak Attack helper, once per long rest) is tracked by hand.",
+  "summary": "Rare dagger that summons an illusory ally to set up your Sneak Attack.",
+  "tags": [
+    "dagger",
+    "rare",
+    "rogue",
+    "a5e"
+  ],
+  "credits": "Flicker Dagger is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/flicker-dagger-a5e/ (Open5e). Changes: converted to Hearth's weapon format.",
+  "data": {
+    "name": "Flicker Dagger",
+    "damage": {
+      "count": 1,
+      "sides": 4
+    },
+    "type": "piercing",
+    "kind": "melee",
+    "props": [
+      "finesse",
+      "light",
+      "thrown"
+    ],
+    "cat": "simple"
+  }
+}

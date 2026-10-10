@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/weapon.schema.json",
+  "id": "doorbreaker",
+  "name": "Doorbreaker",
+  "type": "weapon",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Rare magic weapon (requires attunement) from Level Up: Advanced 5th Edition. The head of this magic maul is shaped like an adamantine fist. You gain a +2 bonus to attack and damage rolls made with this weapon. When you hit an object or construct while wielding Doorbreaker, the hit is treated as a critical hit.\n\nDoorbreaker has 3 charges. When you attack or touch a portal sealed with an arcane lock , you can expend 1 charge to cast knock on the portal. Doorbreaker regains 1d3 charges each dawn.\n\nHearth applies the +2. Automatic critical hits against objects and constructs and the knock charges are tracked by hand.",
+  "summary": "Rare +2 maul with an adamantine fist head; hits on objects and constructs are critical hits.",
+  "tags": [
+    "maul",
+    "rare",
+    "construct",
+    "a5e"
+  ],
+  "credits": "Doorbreaker is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/doorbreaker-a5e/ (Open5e). Changes: converted to Hearth's weapon format.",
+  "data": {
+    "name": "Doorbreaker",
+    "damage": {
+      "count": 2,
+      "sides": 6
+    },
+    "type": "bludgeoning",
+    "kind": "melee",
+    "props": [
+      "heavy",
+      "two-handed"
+    ],
+    "cat": "martial",
+    "magicBonus": 2
+  }
+}
