@@ -3,7 +3,7 @@
   "id": "minotaur",
   "name": "Minotaur",
   "type": "race",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -62,6 +62,9 @@
         "bonuses": {
           "con": 2,
           "str": 1
+        },
+        "speeds": {
+          "swim": 25
         }
       },
       "boghaid": {

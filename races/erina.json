@@ -3,7 +3,7 @@
   "id": "erina",
   "name": "Erina",
   "type": "race",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -53,6 +53,9 @@
         "name": "Digger",
         "desc": "You have a burrowing speed of 20 feet, but you can use it to move through only earth and sand, not mud, ice, or rock."
       }
-    ]
+    ],
+    "speeds": {
+      "burrow": 20
+    }
   }
 }

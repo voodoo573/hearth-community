@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T01:26:31Z",
+  "updated": "2026-10-10T02:44:39Z",
   "items": [
     {
       "id": "alseid",
@@ -86,7 +86,7 @@
       "author": "voodoo573",
       "summary": "Spiny hedgehog folk: +2 Dex, poison resistance, spines and a 20 ft burrow speed.",
       "path": "races/erina.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "tome-of-heroes",
         "hedgehog",
@@ -116,7 +116,7 @@
       "author": "voodoo573",
       "summary": "Horned folk: +2 Str, +1 Con, horn attacks, a charging shove and an unerring sense of direction.",
       "path": "races/minotaur.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "tome-of-heroes",
         "horns",
@@ -176,7 +176,7 @@
       "author": "voodoo573",
       "summary": "Rogue archetype: a climbing, dodging thief who slips over walls and through locked doors.",
       "path": "subclasses/cat-burglar.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "rogue",
         "tome-of-heroes",
@@ -192,7 +192,7 @@
       "author": "voodoo573",
       "summary": "Druid circle of bees: a Wild Shape stinger, bee bond, a hive-mind link and a mantle of bees.",
       "path": "subclasses/circle-of-bees.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "druid",
         "tome-of-heroes",
@@ -208,7 +208,7 @@
       "author": "voodoo573",
       "summary": "Bard college: nimble cat-like performers who pounce with Bardic Inspiration and land on their feet.",
       "path": "subclasses/college-of-the-cat.json",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "tags": [
         "bard",
         "tome-of-heroes",
@@ -240,7 +240,7 @@
       "author": "voodoo573",
       "summary": "Ranger archetype: guardians of sacred groves who wield the forest's will against intruders.",
       "path": "subclasses/grove-warden.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "ranger",
         "tome-of-heroes",
@@ -272,7 +272,7 @@
       "author": "voodoo573",
       "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
       "path": "subclasses/oath-of-the-hearth.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "paladin",
         "tome-of-heroes",
@@ -288,7 +288,7 @@
       "author": "voodoo573",
       "summary": "Barbarian path: grow thorns while raging for piercing unarmed strikes, thorny grapples and toxic barrages.",
       "path": "subclasses/path-of-thorns.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "barbarian",
         "tome-of-heroes",
@@ -304,7 +304,7 @@
       "author": "voodoo573",
       "summary": "Fighter archetype: a bare-knuckle brawler with tough unarmed strikes, grit and debilitating blows.",
       "path": "subclasses/pugilist.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "fighter",
         "tome-of-heroes",
@@ -320,7 +320,7 @@
       "author": "voodoo573",
       "summary": "Monk tradition: patient, sturdy monks who punish attackers, shrug off terrain and harden their hide.",
       "path": "subclasses/way-of-the-humble-elephant.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "monk",
         "tome-of-heroes",
@@ -336,7 +336,7 @@
       "author": "voodoo573",
       "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
       "path": "subclasses/wind-domain.json",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "tags": [
         "cleric",
         "tome-of-heroes",
@@ -1553,7 +1553,7 @@
       "author": "voodoo573",
       "summary": "Rare +2 quarterstaff that adds +2 to spell attacks and casts gravity-bending spells.",
       "path": "magic-items/staff-of-gravity-bending.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "staff",
         "rare",

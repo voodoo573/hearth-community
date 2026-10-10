@@ -3,7 +3,7 @@
   "id": "cat-burglar",
   "name": "Cat Burglar",
   "type": "subclass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,7 +26,20 @@
       "3": [
         {
           "name": "Up, Over, and In",
-          "desc": "Beginning when you choose this archetype at 3rd level, you have a climbing speed equal to your walking speed. If you already have a climbing speed equal to or greater than your walking speed, it increases by 5 feet. In addition, when you are falling, you can use your reaction to soften the fall. You reduce the falling damage you take by an amount equal to your proficiency bonus + your rogue level. You don't land prone, unless the damage you take from the fall would reduce you to less than half your hit point maximum."
+          "desc": "Beginning when you choose this archetype at 3rd level, you have a climbing speed equal to your walking speed. If you already have a climbing speed equal to or greater than your walking speed, it increases by 5 feet. In addition, when you are falling, you can use your reaction to soften the fall. You reduce the falling damage you take by an amount equal to your proficiency bonus + your rogue level. You don't land prone, unless the damage you take from the fall would reduce you to less than half your hit point maximum.",
+          "effects": [
+            {
+              "kind": "speed",
+              "type": "climb",
+              "amount": "walk"
+            },
+            {
+              "kind": "active",
+              "cost": "reaction",
+              "uses": "unlimited",
+              "desc": "When falling, reduce the falling damage by your proficiency bonus + your rogue level."
+            }
+          ]
         },
         {
           "name": "Artful Dodger",

@@ -3,7 +3,7 @@
   "id": "oath-of-the-hearth",
   "name": "Oath of the Hearth",
   "type": "subclass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -34,7 +34,17 @@
         },
         {
           "name": "Fiery Smite",
-          "desc": "When you use your Divine Smite feature, you can choose for the extra damage you deal to be fire or radiant, and the extra damage increases to 1d8 only if the target is an undead or a cold creature."
+          "desc": "When you use your Divine Smite feature, you can choose for the extra damage you deal to be fire or radiant, and the extra damage increases to 1d8 only if the target is an undead or a cold creature.",
+          "effects": [
+            {
+              "kind": "smite",
+              "dtypes": [
+                "fire",
+                "radiant"
+              ],
+              "vs": "undead or cold creature"
+            }
+          ]
         },
         {
           "name": "Oath Spells",
@@ -52,7 +62,25 @@
         },
         {
           "name": "Channel Divinity",
-          "desc": "When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\nCease Hostility. As an action, you can use your Channel Divinity and speak soothing words. For 1 minute, each creature within 60 feet of you that can see or hear you must succeed on a Charisma saving throw to attack another creature. A creature hostile to you has disadvantage on the saving throw. This effect ends on a creature if it is attacked or harmed by a spell.\n\nTurn Boreal Creatures. As an action, you can use your Channel Divinity and speak a prayer against unnatural cold. Each cold creature within 30 feet of you and that can see or hear you must succeed on a Wisdom saving throw or be turned for 1 minute or until it takes damage.\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+          "desc": "When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\nCease Hostility. As an action, you can use your Channel Divinity and speak soothing words. For 1 minute, each creature within 60 feet of you that can see or hear you must succeed on a Charisma saving throw to attack another creature. A creature hostile to you has disadvantage on the saving throw. This effect ends on a creature if it is attacked or harmed by a spell.\n\nTurn Boreal Creatures. As an action, you can use your Channel Divinity and speak a prayer against unnatural cold. Each cold creature within 30 feet of you and that can see or hear you must succeed on a Wisdom saving throw or be turned for 1 minute or until it takes damage.\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "channel_divinity",
+              "option": "Cease Hostility",
+              "saveAbility": "cha",
+              "dc": "spell",
+              "desc": "Action: for 1 minute, each creature within 60 feet that can see or hear you must succeed on a Charisma save to attack another creature (hostile creatures have disadvantage). Ends on a creature that is attacked or harmed by a spell."
+            },
+            {
+              "kind": "active",
+              "cost": "channel_divinity",
+              "option": "Turn Boreal Creatures",
+              "saveAbility": "wis",
+              "dc": "spell",
+              "desc": "Action: each cold creature within 30 feet that can see or hear you must succeed on a Wisdom save or be turned for 1 minute or until it takes damage."
+            }
+          ]
         }
       ],
       "5": [
@@ -140,7 +168,18 @@
       "20": [
         {
           "name": "Roaring Fire",
-          "desc": "At 20th level, you can take on the aspects of a healthy, tended fire, radiating heat and light. For 1 minute, you gain the following benefits:\n* You shed bright light in a 20-foot radius and dim light for an additional 20 feet.\n* Whenever a cold creature starts its turn within 20 feet of you, the creature takes 2d8 fire damage, which ignores resistance and immunity to fire damage.\n* Whenever you cast a paladin spell that deals fire damage and has a casting time of 1 action, you can cast it as a bonus action instead.\n* Your weapon attacks deal an extra 1d6 fire damage on a hit. If you deal fire damage to a cold creature, it must succeed on a Wisdom saving throw or become frightened of you for 1 minute, or until it takes any damage.\nOnce you use this feature, you can't use it again until you finish a long rest."
+          "desc": "At 20th level, you can take on the aspects of a healthy, tended fire, radiating heat and light. For 1 minute, you gain the following benefits:\n* You shed bright light in a 20-foot radius and dim light for an additional 20 feet.\n* Whenever a cold creature starts its turn within 20 feet of you, the creature takes 2d8 fire damage, which ignores resistance and immunity to fire damage.\n* Whenever you cast a paladin spell that deals fire damage and has a casting time of 1 action, you can cast it as a bonus action instead.\n* Your weapon attacks deal an extra 1d6 fire damage on a hit. If you deal fire damage to a cold creature, it must succeed on a Wisdom saving throw or become frightened of you for 1 minute, or until it takes any damage.\nOnce you use this feature, you can't use it again until you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "none",
+              "uses": 1,
+              "reset": "long",
+              "desc": "For 1 minute: light, 2d8 fire to cold creatures starting their turn within 20 feet, fire paladin spells as a bonus action, +1d6 fire on weapon hits.",
+              "saveAbility": "wis",
+              "dc": "spell"
+            }
+          ]
         }
       ]
     }

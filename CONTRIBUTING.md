@@ -83,8 +83,10 @@ are required.
 - Optional: `proficiencies` (`{ "skills": [...] }`), `spellAbility`,
   `racialSpells` (`[{ "spell": "Light", "level": 0, "atLevel": 3, "freePerLongRest": 1 }]`),
   `racialAbilities` (`[{ "id", "name", "action": "action|bonus|reaction", "usesPerLongRest": 2 | "prof", "recovery": "short|long", "desc" }]`)
+- Optional `speeds`: other movement speeds in feet, e.g. `{ "swim": 25 }` or `{ "burrow": 20 }`
+  (`climb`, `swim`, `fly`, `burrow`).
 - `subraces`: an object keyed by a snake_case key. Each subrace has `name` and `traits`, and
-  optionally `bonuses`, `speed`, `spellAbility`, `racialSpells`, `racialAbilities` and `proficiencies`.
+  optionally `bonuses`, `speed`, `speeds`, `spellAbility`, `racialSpells`, `racialAbilities` and `proficiencies`.
 
 ### Subclass (`subclasses/`): see `schema/subclass.schema.json`
 
@@ -93,11 +95,25 @@ are required.
 - `levelFeatures` is keyed by class level: `{ "3": [ {feature}, ... ], "7": [...] }`
 - Features may carry optional structured `effects` that Hearth's Subclass Forge understands,
   such as `{ "kind": "skill", "skill": "perception", "level": "prof" }` or
-  `{ "kind": "resist", "dtype": "necrotic" }`. Tool, weapon or armour proficiencies use
-  `{ "kind": "proficiency", "tools": ["Thieves' tools"] }` (also `weapons` and `armor` lists).
-  An `active` feature's `uses` can be a number, `"pb"` or an ability name such as `"wis"`
-  (that modifier, minimum 1). If you're unsure, leave `effects` out, because the
-  text alone works.
+  `{ "kind": "resist", "dtype": "necrotic" }`. Explicit effects always win; Hearth also reads some
+  effects from the rules text when a feature has none of that kind, so the text alone often works.
+  The full list is in `schema/subclass.schema.json`. The most useful ones:
+  - `proficiency`: `{ "kind": "proficiency", "tools": ["Thieves’ tools"] }` (also `weapons`, `armor`).
+  - `skill_choice`: `{ "kind": "skill_choice", "options": ["acrobatics", "stealth"], "count": 1 }`.
+  - `active`: `{ "kind": "active", "cost": "bonus", "uses": "pb", "reset": "long" }`. `cost` is
+    `action`, `bonus`, `reaction`, `none`, `triggered` or `channel_divinity` (then add
+    `"option": "Name"` so it appears in the Channel Divinity chooser). `uses` is a number, `"pb"`,
+    an ability name such as `"wis"` (that modifier, minimum 1) or `"unlimited"`. Add `"ki": 2` for
+    a ki cost instead of a use counter. For a save, `saveAbility` is the target's save and `dc` is
+    `"spell"` or the ability behind 8 + proficiency bonus + modifier. `desc` is a short card text.
+  - `rider`: extra weapon damage, `{ "count": 1, "sides": 8, "dtype": "thunder", "freq": "once_per_turn", "scale": { "14": 2 } }`.
+  - `smite`: Divine Smite changes, `{ "kind": "smite", "dtypes": ["fire", "radiant"], "vs": "undead or cold creature" }`.
+  - `second_wind`: `{ "kind": "second_wind", "uses": "pb" }` and/or `"addCon": true`.
+  - `unarmed`: `{ "kind": "unarmed", "count": 1, "sides": 6, "dtype": "bludgeoning", "ability": "str",
+    "when": "always" | "rage" | "feature", "scale": { "10": { "sides": 8 } } }`.
+  - `speed`: `{ "amount": 5 }` adds walking speed; `{ "type": "climb", "amount": "walk" }` (or a
+    number of feet) gives another movement type. Any effect can carry `"minLevel": 6`.
+  If you're unsure, leave `effects` out.
 
 ### Spell (`spells/`): see `schema/spell.schema.json`
 
@@ -158,7 +174,9 @@ with `-` replaced by `_`), `name`, `type` (`weapon`, `armor`, `shield`, `ring`, 
 `very_rare`, `legendary` or `artifact`), `attune` (true/false), `desc`, and `mech`.
 - `mech` is `null` for a text-only item, or an object with any of `attackBonus`, `damageBonus`,
   `acBonus`, `saveBonus`, `spellAttackBonus` (spell attack rolls only), `spellDcBonus` (spell
-  save DC only; each 1 to 3) and `hpBonus`.
+  save DC only; each 1 to 3), `hpBonus`, and `weapon` (e.g. `"quarterstaff"`: the weapon the
+  attack and damage bonus belongs to; Hearth applies it only to that weapon, and staffs default
+  to quarterstaff).
 - Optional `resist`: a damage type (or `"choice"`) the item grants resistance to while active.
   The older `mech.resistType` still works, but prefer `resist`.
 - Optional `charges`: `{ "max": 10, "recharge": "1d6+4 at dawn" }` (Hearth tracks them; dice at

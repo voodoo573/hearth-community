@@ -3,7 +3,7 @@
   "id": "college-of-the-cat",
   "name": "College of the Cat",
   "type": "subclass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -48,7 +48,20 @@
         },
         {
           "name": "Inspired Pounce",
-          "desc": "Also at 3rd level, you learn to stalk unsuspecting foes engaged in combat with your allies. When an ally you can see uses one of your Bardic Inspiration dice on a weapon attack roll against a creature, you can use your reaction to move up to half your speed and make one melee weapon attack against that creature. You gain a bonus on your attack roll equal to the result of the spent Bardic Inspiration die.\nWhen you reach 6th level in this class, you gain a climbing speed equal to your walking speed, and when you use Inspired Pounce, you can move up to your speed as part of the reaction."
+          "desc": "Also at 3rd level, you learn to stalk unsuspecting foes engaged in combat with your allies. When an ally you can see uses one of your Bardic Inspiration dice on a weapon attack roll against a creature, you can use your reaction to move up to half your speed and make one melee weapon attack against that creature. You gain a bonus on your attack roll equal to the result of the spent Bardic Inspiration die.\nWhen you reach 6th level in this class, you gain a climbing speed equal to your walking speed, and when you use Inspired Pounce, you can move up to your speed as part of the reaction.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "reaction",
+              "uses": "unlimited"
+            },
+            {
+              "kind": "speed",
+              "type": "climb",
+              "amount": "walk",
+              "minLevel": 6
+            }
+          ]
         }
       ],
       "6": [

@@ -260,6 +260,33 @@
           "maximum": 2
         }
       }
+    },
+    "speeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Other movement speeds in feet, e.g. { \"swim\": 25 } (Hearth 1.1.1+). Walking speed stays in speed.",
+      "properties": {
+        "climb": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        },
+        "swim": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        },
+        "fly": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        },
+        "burrow": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        }
+      }
     }
   }
 }

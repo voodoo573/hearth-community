@@ -3,7 +3,7 @@
   "id": "circle-of-bees",
   "name": "Circle of Bees",
   "type": "subclass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -39,11 +39,55 @@
         },
         {
           "name": "Bee Bond",
-          "desc": "When you choose this circle at 2nd level, you gain proficiency in the Acrobatics or Stealth skill (your choice), and you can speak and understand Bee Dance, a language shared by bees that involves flying in dance-like patterns. Bees refuse to attack you, even with magical coercion.\nWhen a beast other than a bee attacks you with a weapon that deals poison damage, such as a giant spider's bite or a scorpion's sting, it must succeed on a Charisma saving throw against your spell save DC or have disadvantage on its attack rolls against you until the start of its next turn."
+          "desc": "When you choose this circle at 2nd level, you gain proficiency in the Acrobatics or Stealth skill (your choice), and you can speak and understand Bee Dance, a language shared by bees that involves flying in dance-like patterns. Bees refuse to attack you, even with magical coercion.\nWhen a beast other than a bee attacks you with a weapon that deals poison damage, such as a giant spider's bite or a scorpion's sting, it must succeed on a Charisma saving throw against your spell save DC or have disadvantage on its attack rolls against you until the start of its next turn.",
+          "effects": [
+            {
+              "kind": "skill_choice",
+              "options": [
+                "acrobatics",
+                "stealth"
+              ],
+              "count": 1
+            },
+            {
+              "kind": "active",
+              "cost": "triggered",
+              "uses": "unlimited",
+              "saveAbility": "cha",
+              "dc": "spell",
+              "desc": "A non-bee beast attacking you with a poison-damage weapon must save or have disadvantage on attacks against you until the start of its next turn."
+            }
+          ]
         },
         {
           "name": "Bee Stinger",
-          "desc": "Also at 2nd level, you can use an action and expend one use of your Wild Shape to grow a bee's stinger, typically growing from your wrist, which you can use to make unarmed strikes. When you hit with an unarmed strike while this stinger is active, you use Wisdom instead of Strength for the attack, and your unarmed strike deals piercing damage equal to 1d4 + your Wisdom modifier + poison damage equal to half your proficiency bonus, instead of the bludgeoning damage normal for an unarmed strike.\nThe stinger lasts for a number of hours equal to half your druid level (rounded down) or until you use your Wild Shape again.\nWhen you reach 6th level in this class, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and the poison damage dealt by your stinger equals your proficiency bonus. In addition, the unarmed strike damage you deal while the stinger is active increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level."
+          "desc": "Also at 2nd level, you can use an action and expend one use of your Wild Shape to grow a bee's stinger, typically growing from your wrist, which you can use to make unarmed strikes. When you hit with an unarmed strike while this stinger is active, you use Wisdom instead of Strength for the attack, and your unarmed strike deals piercing damage equal to 1d4 + your Wisdom modifier + poison damage equal to half your proficiency bonus, instead of the bludgeoning damage normal for an unarmed strike.\nThe stinger lasts for a number of hours equal to half your druid level (rounded down) or until you use your Wild Shape again.\nWhen you reach 6th level in this class, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and the poison damage dealt by your stinger equals your proficiency bonus. In addition, the unarmed strike damage you deal while the stinger is active increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.",
+          "effects": [
+            {
+              "kind": "unarmed",
+              "count": 1,
+              "sides": 4,
+              "dtype": "piercing",
+              "ability": "wis",
+              "when": "feature",
+              "scale": {
+                "6": {
+                  "sides": 6
+                },
+                "10": {
+                  "sides": 8
+                },
+                "14": {
+                  "sides": 10
+                }
+              },
+              "extra": {
+                "dtype": "poison",
+                "half": true,
+                "fullAt": 6
+              }
+            }
+          ]
         }
       ],
       "3": [

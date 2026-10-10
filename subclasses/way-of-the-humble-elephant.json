@@ -3,7 +3,7 @@
   "id": "way-of-the-humble-elephant",
   "name": "Way of the Humble Elephant",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,13 +26,36 @@
       "3": [
         {
           "name": "Slow to Anger",
-          "desc": "Starting when you choose this tradition at 3rd level, when you use Patient Defense and an attack hits you, you can use your reaction to halve the damage that you take. When you use Patient Defense and a melee attack made by a creature within your reach misses you, you can use your reaction to force the target to make a Strength saving throw. On a failure, the target is knocked prone.\nWhen you use either of these reactions, you can spend 1 ki point. If you do, your first melee weapon attack that hits before the end of your next turn deals extra damage equal to one roll of your Martial Arts die + your Wisdom modifier."
+          "desc": "Starting when you choose this tradition at 3rd level, when you use Patient Defense and an attack hits you, you can use your reaction to halve the damage that you take. When you use Patient Defense and a melee attack made by a creature within your reach misses you, you can use your reaction to force the target to make a Strength saving throw. On a failure, the target is knocked prone.\nWhen you use either of these reactions, you can spend 1 ki point. If you do, your first melee weapon attack that hits before the end of your next turn deals extra damage equal to one roll of your Martial Arts die + your Wisdom modifier.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "reaction",
+              "uses": "unlimited",
+              "saveAbility": "str",
+              "dc": "wis",
+              "desc": "After Patient Defense: halve the damage of a hit, or knock prone a creature in reach whose melee attack missed you (Strength save)."
+            },
+            {
+              "kind": "active",
+              "cost": "none",
+              "ki": 1,
+              "desc": "With a Slow to Anger reaction: your first melee weapon hit before the end of your next turn deals an extra Martial Arts die + your Wisdom modifier."
+            }
+          ]
         }
       ],
       "6": [
         {
           "name": "Unyielding Step",
-          "desc": "Starting at 6th level, you can spend 1 ki point on your turn to ignore difficult terrain for 1 minute or until you are incapacitated. For the duration, your speed can't be reduced below 15 feet. If you use this feature while grappled, the creature can use its reaction to move with you whenever you move; otherwise, the grapple ends. If you use this feature while restrained but not grappled, such as by a spider's web, you break free from the restraining material unless it is capable of moving with you."
+          "desc": "Starting at 6th level, you can spend 1 ki point on your turn to ignore difficult terrain for 1 minute or until you are incapacitated. For the duration, your speed can't be reduced below 15 feet. If you use this feature while grappled, the creature can use its reaction to move with you whenever you move; otherwise, the grapple ends. If you use this feature while restrained but not grappled, such as by a spider's web, you break free from the restraining material unless it is capable of moving with you.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "none",
+              "ki": 1
+            }
+          ]
         }
       ],
       "11": [
@@ -44,7 +67,15 @@
       "17": [
         {
           "name": "Thick Hide",
-          "desc": "At 17th level, you can spend 5 ki points as a bonus action to gain resistance to bludgeoning, piercing, and slashing damage for 10 minutes."
+          "desc": "At 17th level, you can spend 5 ki points as a bonus action to gain resistance to bludgeoning, piercing, and slashing damage for 10 minutes.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "ki": 5,
+              "desc": "Resistance to bludgeoning, piercing and slashing damage for 10 minutes."
+            }
+          ]
         }
       ]
     }

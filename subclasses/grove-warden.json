@@ -3,7 +3,7 @@
   "id": "grove-warden",
   "name": "Grove Warden",
   "type": "subclass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -43,7 +43,14 @@
         },
         {
           "name": "Forest's Will",
-          "desc": "At 3rd level, you can magically draw on the living essence of the land to hamper your foes. As a bonus action, choose one creature you can see within 60 feet of you. Your next weapon attack against that creature has advantage. If that attack hits, the creature's speed is reduced by 10 feet until the start of your next turn. When you reach 11th level in this class, if that attack hits, the creature's speed is instead halved until the start of your next turn."
+          "desc": "At 3rd level, you can magically draw on the living essence of the land to hamper your foes. As a bonus action, choose one creature you can see within 60 feet of you. Your next weapon attack against that creature has advantage. If that attack hits, the creature's speed is reduced by 10 feet until the start of your next turn. When you reach 11th level in this class, if that attack hits, the creature's speed is instead halved until the start of your next turn.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": "unlimited"
+            }
+          ]
         }
       ],
       "5": [
@@ -93,7 +100,15 @@
       "11": [
         {
           "name": "Wrath of the Forest",
-          "desc": "At 11th level, you can call on the land in your vicinity to strike at your enemies. When you take the Attack action, you can use a bonus action to make a rock, branch, root, or other small natural object attack a creature within 30 feet of you. You are proficient with the attack, it counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you add your Dexterity modifier to the attack and damage rolls. The damage is of a type appropriate to the object, such as piercing for a thorny branch or bludgeoning for a rock, and the damage die is a d8."
+          "desc": "At 11th level, you can call on the land in your vicinity to strike at your enemies. When you take the Attack action, you can use a bonus action to make a rock, branch, root, or other small natural object attack a creature within 30 feet of you. You are proficient with the attack, it counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you add your Dexterity modifier to the attack and damage rolls. The damage is of a type appropriate to the object, such as piercing for a thorny branch or bludgeoning for a rock, and the damage die is a d8.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": "unlimited",
+              "desc": "When you take the Attack action: a natural object attacks a creature within 30 feet (proficient, magical, DEX to attack and damage, 1d8)."
+            }
+          ]
         }
       ],
       "13": [
@@ -114,7 +129,15 @@
       "15": [
         {
           "name": "Living Bulwark",
-          "desc": "Starting at 15th level, the land around you comes to your aid when you are in danger, interposing rocks, branches, vines, roots, or even the ground itself between you and your foes. When a creature you can see targets you with an attack, you can use your reaction to roll a d8 and add it to your AC against the attack."
+          "desc": "Starting at 15th level, the land around you comes to your aid when you are in danger, interposing rocks, branches, vines, roots, or even the ground itself between you and your foes. When a creature you can see targets you with an attack, you can use your reaction to roll a d8 and add it to your AC against the attack.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "reaction",
+              "uses": "unlimited",
+              "desc": "When a creature you can see targets you with an attack, add 1d8 to your AC against it."
+            }
+          ]
         }
       ],
       "17": [

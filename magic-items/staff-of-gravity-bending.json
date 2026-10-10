@@ -3,12 +3,12 @@
   "id": "staff-of-gravity-bending",
   "name": "Staff of Gravity Bending",
   "type": "magic-item",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Rare staff (requires attunement) from Level Up: Advanced 5th Edition. You gain a +2 bonus to attack and damage rolls with this magic quarterstaff. In addition, while holding it you gain a +2 bonus to spell attack rolls.\n\nWhile holding this staff, you can use an action to sense the direction of magnetic north (nothing happens if the staff is used in a location that has no magnetic north.) Alternatively, you can use an action to expend charges to cast one of the following spells (spell save DC 15): feather fall (1 charge), jump (1 charge), levitate (2 charges), telekinesis (5 charges), reverse gravity (7 charges).\n\nThe staff has 10 charges and regains 1d6+4 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the staff loses its magical properties.\n\nHearth applies the +2 to spell attack rolls (your spell save DC is unchanged) and tracks the 10 charges, regaining 1d6+4 each dawn. Hearth applies item attack and damage bonuses to all your weapon attacks while the item is active, not only to the quarterstaff.",
+  "description": "Rare staff (requires attunement) from Level Up: Advanced 5th Edition. You gain a +2 bonus to attack and damage rolls with this magic quarterstaff. In addition, while holding it you gain a +2 bonus to spell attack rolls.\n\nWhile holding this staff, you can use an action to sense the direction of magnetic north (nothing happens if the staff is used in a location that has no magnetic north.) Alternatively, you can use an action to expend charges to cast one of the following spells (spell save DC 15): feather fall (1 charge), jump (1 charge), levitate (2 charges), telekinesis (5 charges), reverse gravity (7 charges).\n\nThe staff has 10 charges and regains 1d6+4 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the staff loses its magical properties.\n\nHearth applies the +2 to spell attack rolls (your spell save DC is unchanged) and tracks the 10 charges, regaining 1d6+4 each dawn. Hearth applies the +2 attack and damage bonus only to this quarterstaff. If you don't carry a separate quarterstaff, the staff itself appears as a +2 quarterstaff attack.",
   "summary": "Rare +2 quarterstaff that adds +2 to spell attacks and casts gravity-bending spells.",
   "tags": [
     "staff",
@@ -23,11 +23,12 @@
     "type": "staff",
     "rarity": "rare",
     "attune": true,
-    "desc": "You gain a +2 bonus to attack and damage rolls with this magic quarterstaff. In addition, while holding it you gain a +2 bonus to spell attack rolls.\n\nWhile holding this staff, you can use an action to sense the direction of magnetic north (nothing happens if the staff is used in a location that has no magnetic north.) Alternatively, you can use an action to expend charges to cast one of the following spells (spell save DC 15): feather fall (1 charge), jump (1 charge), levitate (2 charges), telekinesis (5 charges), reverse gravity (7 charges).\n\nThe staff has 10 charges and regains 1d6+4 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the staff loses its magical properties.\n\nHearth applies the +2 to spell attack rolls (your spell save DC is unchanged) and tracks the 10 charges, regaining 1d6+4 each dawn. Hearth applies item attack and damage bonuses to all your weapon attacks while the item is active, not only to the quarterstaff.",
+    "desc": "You gain a +2 bonus to attack and damage rolls with this magic quarterstaff. In addition, while holding it you gain a +2 bonus to spell attack rolls.\n\nWhile holding this staff, you can use an action to sense the direction of magnetic north (nothing happens if the staff is used in a location that has no magnetic north.) Alternatively, you can use an action to expend charges to cast one of the following spells (spell save DC 15): feather fall (1 charge), jump (1 charge), levitate (2 charges), telekinesis (5 charges), reverse gravity (7 charges).\n\nThe staff has 10 charges and regains 1d6+4 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the staff loses its magical properties.\n\nHearth applies the +2 to spell attack rolls (your spell save DC is unchanged) and tracks the 10 charges, regaining 1d6+4 each dawn. Hearth applies the +2 attack and damage bonus only to this quarterstaff. If you don't carry a separate quarterstaff, the staff itself appears as a +2 quarterstaff attack.",
     "mech": {
       "attackBonus": 2,
       "damageBonus": 2,
-      "spellAttackBonus": 2
+      "spellAttackBonus": 2,
+      "weapon": "quarterstaff"
     },
     "theme": "arcane",
     "templateId": null,

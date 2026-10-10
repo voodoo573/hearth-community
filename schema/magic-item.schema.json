@@ -116,6 +116,11 @@
                     "resistType": {
                       "$ref": "common.schema.json#/$defs/damageType",
                       "description": "Older form of the top-level resist field; Hearth still honours it. Prefer data.resist."
+                    },
+                    "weapon": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z_ ]*$",
+                      "description": "The weapon the item's attackBonus/damageBonus belongs to, e.g. \"quarterstaff\" (Hearth 1.1.1 applies those bonuses only to that weapon; staffs default to quarterstaff)."
                     }
                   }
                 }

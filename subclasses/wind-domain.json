@@ -3,7 +3,7 @@
   "id": "wind-domain",
   "name": "Wind Domain",
   "type": "subclass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -60,7 +60,15 @@
       "2": [
         {
           "name": "Channel Divinity: Grasp Not the Wind",
-          "desc": "At 2nd level, you can use your Channel Divinity to end the grappled condition on yourself and gain a flying speed equal to your walking speed until the end of your turn. You don't provoke opportunity attacks while flying in this way."
+          "desc": "At 2nd level, you can use your Channel Divinity to end the grappled condition on yourself and gain a flying speed equal to your walking speed until the end of your turn. You don't provoke opportunity attacks while flying in this way.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "channel_divinity",
+              "option": "Grasp Not the Wind",
+              "desc": "End the grappled condition on yourself and gain a flying speed equal to your walking speed until the end of your turn, without provoking opportunity attacks."
+            }
+          ]
         }
       ],
       "3": [
@@ -135,7 +143,10 @@
               "count": 1,
               "sides": 8,
               "dtype": "thunder",
-              "freq": "once_per_turn"
+              "freq": "once_per_turn",
+              "scale": {
+                "14": 2
+              }
             }
           ]
         }
