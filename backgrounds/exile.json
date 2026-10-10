@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/background.schema.json",
+  "id": "exile",
+  "name": "Exile",
+  "type": "background",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Exile background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Wisdom and one other ability score. Skill Proficiencies: Survival, and either History or Performance. Equipment: Traveler's clothes, 10 days rations. Fellow Traveler: You gain an expertise die on Persuasion checks against others who are away from their land of birth. Adventures and Advancement: You may occasionally meet others from your native land. Some may be friends, and some dire enemies; few will be indifferent to you. After a few such encounters, you may become the leader of a faction of exiles. Your followers include up to three NPCs of Challenge Rating ½ or less, such as scouts. Hearth preset: Survival and History (the source lets you pick History or Performance). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "summary": "Driven from your homeland, you find kinship with other travellers far from home.",
+  "tags": [
+    "wanderer",
+    "travel",
+    "a5e"
+  ],
+  "credits": "Exile is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v2/backgrounds/a5e-ag_exile/ (Open5e). Changes: converted to Hearth's background format.",
+  "data": {
+    "name": "Exile",
+    "skills": [
+      "survival",
+      "history"
+    ],
+    "gold": 0,
+    "equipment": [
+      "Traveler's clothes",
+      "10 days rations"
+    ],
+    "feature": {
+      "name": "Fellow Traveler",
+      "desc": "You gain an expertise die on Persuasion checks against others who are away from their land of birth."
+    }
+  }
+}

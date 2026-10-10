@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:38:08Z",
+  "updated": "2026-10-10T00:38:27Z",
   "items": [
     {
       "id": "alseid",
@@ -646,6 +646,132 @@
       ]
     },
     {
+      "id": "artisan",
+      "type": "background",
+      "name": "Artisan",
+      "author": "voodoo573",
+      "summary": "A crafter with a workshop in every town who sells their work at full price.",
+      "path": "backgrounds/artisan.json",
+      "version": "1.0.0",
+      "tags": [
+        "crafting",
+        "urban",
+        "a5e"
+      ]
+    },
+    {
+      "id": "deep-hunter",
+      "type": "background",
+      "name": "Deep Hunter",
+      "author": "voodoo573",
+      "summary": "A hunter of the deep tunnels who always knows the way, the depth and a safe camp.",
+      "path": "backgrounds/deep-hunter.json",
+      "version": "1.0.0",
+      "tags": [
+        "underground",
+        "hunter",
+        "a5e"
+      ]
+    },
+    {
+      "id": "dungeon-robber",
+      "type": "background",
+      "name": "Dungeon Robber",
+      "author": "voodoo573",
+      "summary": "A ruin delver with a network of eccentric, not-always-reliable experts.",
+      "path": "backgrounds/dungeon-robber.json",
+      "version": "1.0.0",
+      "tags": [
+        "dungeon",
+        "explorer",
+        "a5e"
+      ]
+    },
+    {
+      "id": "escapee-from-below",
+      "type": "background",
+      "name": "Escapee from Below",
+      "author": "voodoo573",
+      "summary": "You escaped captivity far below and know your captors' culture inside out.",
+      "path": "backgrounds/escapee-from-below.json",
+      "version": "1.0.0",
+      "tags": [
+        "underground",
+        "survivor",
+        "a5e"
+      ]
+    },
+    {
+      "id": "exile",
+      "type": "background",
+      "name": "Exile",
+      "author": "voodoo573",
+      "summary": "Driven from your homeland, you find kinship with other travellers far from home.",
+      "path": "backgrounds/exile.json",
+      "version": "1.0.0",
+      "tags": [
+        "wanderer",
+        "travel",
+        "a5e"
+      ]
+    },
+    {
+      "id": "farmer",
+      "type": "background",
+      "name": "Farmer",
+      "author": "voodoo573",
+      "summary": "You left the farm with a mule, a shovel and a knack for carrying supplies.",
+      "path": "backgrounds/farmer.json",
+      "version": "1.0.0",
+      "tags": [
+        "rural",
+        "animals",
+        "a5e"
+      ]
+    },
+    {
+      "id": "guard",
+      "type": "background",
+      "name": "Guard",
+      "author": "voodoo573",
+      "summary": "A former watch guard whom ordinary folk still instinctively obey.",
+      "path": "backgrounds/guard.json",
+      "version": "1.0.0",
+      "tags": [
+        "urban",
+        "law",
+        "a5e"
+      ]
+    },
+    {
+      "id": "guildmember",
+      "type": "background",
+      "name": "Guildmember",
+      "author": "voodoo573",
+      "summary": "A guild member who earns a living in any town and gets tipped off about jobs.",
+      "path": "backgrounds/guildmember.json",
+      "version": "1.0.0",
+      "tags": [
+        "urban",
+        "crafting",
+        "a5e"
+      ]
+    },
+    {
+      "id": "haunted",
+      "type": "background",
+      "name": "Haunted",
+      "author": "voodoo573",
+      "summary": "A friendly-ish ghost follows you and points out what you missed.",
+      "path": "backgrounds/haunted.json",
+      "version": "1.0.0",
+      "tags": [
+        "spirit",
+        "spooky",
+        "a5e"
+      ]
+    },
+    {
       "id": "example-lamplighter",
       "type": "background",
       "name": "Lamplighter (Example)",
@@ -658,6 +784,20 @@
         "urban"
       ],
       "example": true
+    },
+    {
+      "id": "trader",
+      "type": "background",
+      "name": "Trader",
+      "author": "voodoo573",
+      "summary": "A merchant who profits from carrying goods to the places that need them.",
+      "path": "backgrounds/trader.json",
+      "version": "1.0.0",
+      "tags": [
+        "merchant",
+        "travel",
+        "a5e"
+      ]
     },
     {
       "id": "example-soot-sprite",

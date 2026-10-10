@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/background.schema.json",
+  "id": "escapee-from-below",
+  "name": "Escapee from Below",
+  "type": "background",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Escapee from Below background from Level Up: Advanced 5th Edition (Dungeon Delver's Guide). Ability Score Increases: +1 to Constitution and one other ability score. Skill Proficiencies: Stealth, and either Perception or Survival. Tool Proficiencies: Thieves’ tools. Equipment: Common clothes, thieves’ tools. Alien Culture: Your prolonged captivity has granted you insight into the culture that kept you. You understand their customs, traditions, religion, political ties, and to some extent how they think. You are regarded as an expert in this culture and can usually recall some useful detail when you and your companions face a challenge involving this culture. Adventures and Advancement: You find yourself drawn to the lands you once escaped. When you return there, you may have an opportunity to right wrongs or take revenge for past injuries. When you do, other escapees may look to you for leadership. Hearth preset: Stealth and Perception (the source lets you pick Perception or Survival). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "summary": "You escaped captivity far below and know your captors' culture inside out.",
+  "tags": [
+    "underground",
+    "survivor",
+    "a5e"
+  ],
+  "credits": "Escapee from Below is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v2/backgrounds/a5e-ddg_escapee-from-below/ (Open5e). Changes: converted to Hearth's background format.",
+  "data": {
+    "name": "Escapee from Below",
+    "skills": [
+      "stealth",
+      "perception"
+    ],
+    "gold": 0,
+    "equipment": [
+      "Common clothes",
+      "Thieves’ tools"
+    ],
+    "feature": {
+      "name": "Alien Culture",
+      "desc": "Your prolonged captivity has granted you insight into the culture that kept you. You understand their customs, traditions, religion, political ties, and to some extent how they think. You are regarded as an expert in this culture and can usually recall some useful detail when you and your companions face a challenge involving this culture."
+    }
+  }
+}

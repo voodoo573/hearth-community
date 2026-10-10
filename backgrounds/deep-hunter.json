@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/background.schema.json",
+  "id": "deep-hunter",
+  "name": "Deep Hunter",
+  "type": "background",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Deep Hunter background from Level Up: Advanced 5th Edition (Dungeon Delver's Guide). Ability Score Increases: +1 to Wisdom and one other ability score. Skill Proficiencies: Survival, and either Nature or Stealth. Tool Proficiencies: Leatherworker’s tools. Equipment: chalk, traveler’s clothes, 2 hunting traps. Deep Lore: You always have a sense of how deep you are and which direction is north, provided that you’ve traveled in these regions before. You are also generally aware of the physical and political geography of the region (e.g., “the old dwarf colony is this way and those tunnels are part of the wererat pack’s hunting grounds”). You know where relatively safe places to camp are located and you can usually find fresh sources of water. Adventures and Advancement: Once you’ve collected a few trophies from your hunts, people start offering you money in exchange for help against the subterranean monsters plaguing their communities. After a few such bounties, you gain the free service of up to 4 scouts (or scout variants). You can ask them to adventure with you or dispatch them to gather information on distant areas. Hearth preset: Survival and Nature (the source lets you pick Nature or Stealth). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "summary": "A hunter of the deep tunnels who always knows the way, the depth and a safe camp.",
+  "tags": [
+    "underground",
+    "hunter",
+    "a5e"
+  ],
+  "credits": "Deep Hunter is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v2/backgrounds/a5e-ddg_deep-hunter/ (Open5e). Changes: converted to Hearth's background format.",
+  "data": {
+    "name": "Deep Hunter",
+    "skills": [
+      "survival",
+      "nature"
+    ],
+    "gold": 0,
+    "equipment": [
+      "Chalk",
+      "Traveler’s clothes",
+      "2 hunting traps"
+    ],
+    "feature": {
+      "name": "Deep Lore",
+      "desc": "You always have a sense of how deep you are and which direction is north, provided that you’ve traveled in these regions before. You are also generally aware of the physical and political geography of the region (e.g., “the old dwarf colony is this way and those tunnels are part of the wererat pack’s hunting grounds”). You know where relatively safe places to camp are located and you can usually find fresh sources of water."
+    }
+  }
+}

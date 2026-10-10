@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/background.schema.json",
+  "id": "guard",
+  "name": "Guard",
+  "type": "background",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Guard background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Strength and one other ability score. Skill Proficiencies: Intimidation, and either Athletics or Investigation. Languages: One of your choice. Equipment: Common clothes, halberd, uniform. Natural Authority: Commoners and civilians sometimes assume you are part of a local constabulary force and defer to you. Adventures and Advancement: When you visit the city or countryside you once patrolled you’re sure to get embroiled in the same politics  that drove you out. Should you stick around righting wrongs, you might accidentally find yourself in a  position of responsibility. Hearth preset: Intimidation and Athletics (the source lets you pick Athletics or Investigation). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "summary": "A former watch guard whom ordinary folk still instinctively obey.",
+  "tags": [
+    "urban",
+    "law",
+    "a5e"
+  ],
+  "credits": "Guard is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v2/backgrounds/a5e-ag_guard/ (Open5e). Changes: converted to Hearth's background format.",
+  "data": {
+    "name": "Guard",
+    "skills": [
+      "intimidation",
+      "athletics"
+    ],
+    "gold": 0,
+    "equipment": [
+      "Common clothes",
+      "Halberd",
+      "Uniform"
+    ],
+    "feature": {
+      "name": "Natural Authority",
+      "desc": "Commoners and civilians sometimes assume you are part of a local constabulary force and defer to you."
+    }
+  }
+}
