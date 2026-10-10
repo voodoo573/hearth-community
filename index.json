@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:37:50Z",
+  "updated": "2026-10-10T00:38:08Z",
   "items": [
     {
       "id": "alseid",
@@ -489,6 +489,77 @@
       ]
     },
     {
+      "id": "bull-rush",
+      "type": "feat",
+      "name": "Bull Rush",
+      "author": "voodoo573",
+      "summary": "After a Dash toward a foe, use a bonus action for a hard-hitting attack (+5 damage) or a 10-ft shove.",
+      "path": "feats/bull-rush.json",
+      "version": "1.0.0",
+      "tags": [
+        "melee",
+        "movement",
+        "a5e"
+      ]
+    },
+    {
+      "id": "deflector",
+      "type": "feat",
+      "name": "Deflector",
+      "author": "voodoo573",
+      "summary": "Reaction: add your proficiency bonus to AC against a melee attack while holding a finesse weapon.",
+      "path": "feats/deflector.json",
+      "version": "1.0.0",
+      "tags": [
+        "defence",
+        "reaction",
+        "finesse",
+        "a5e"
+      ]
+    },
+    {
+      "id": "dungeoneer",
+      "type": "feat",
+      "name": "Dungeoneer",
+      "author": "voodoo573",
+      "summary": "Advantage to find secret doors and against traps, and resistance to trap damage.",
+      "path": "feats/dungeoneer.json",
+      "version": "1.0.0",
+      "tags": [
+        "exploration",
+        "traps",
+        "a5e"
+      ]
+    },
+    {
+      "id": "fortunate",
+      "type": "feat",
+      "name": "Fortunate",
+      "author": "voodoo573",
+      "summary": "Three times per long rest, roll a second d20 for an attack, check or save, or against an attack on you.",
+      "path": "feats/fortunate.json",
+      "version": "1.0.0",
+      "tags": [
+        "luck",
+        "d20",
+        "a5e"
+      ]
+    },
+    {
+      "id": "hardy-adventurer",
+      "type": "feat",
+      "name": "Hardy Adventurer",
+      "author": "voodoo573",
+      "summary": "Gain 2 extra hit points per character level and heal more when you spend Hit Dice.",
+      "path": "feats/hardy-adventurer.json",
+      "version": "1.0.0",
+      "tags": [
+        "hit-points",
+        "rest",
+        "a5e"
+      ]
+    },
+    {
       "id": "example-hearth-keeper",
       "type": "feat",
       "name": "Hearth Keeper (Example)",
@@ -502,6 +573,77 @@
         "support"
       ],
       "example": true
+    },
+    {
+      "id": "rallying-speaker",
+      "type": "feat",
+      "name": "Rallying Speaker",
+      "author": "voodoo573",
+      "summary": "A ten-minute rousing speech grants temporary hit points to up to six allies.",
+      "path": "feats/rallying-speaker.json",
+      "version": "1.0.0",
+      "tags": [
+        "support",
+        "charisma",
+        "temp-hp",
+        "a5e"
+      ]
+    },
+    {
+      "id": "shield-focus",
+      "type": "feat",
+      "name": "Shield Focus",
+      "author": "voodoo573",
+      "summary": "Bonus-action shield shoves, add your shield to Dexterity saves, and shrug off effects with a reaction.",
+      "path": "feats/shield-focus.json",
+      "version": "1.0.0",
+      "tags": [
+        "shield",
+        "defence",
+        "a5e"
+      ]
+    },
+    {
+      "id": "skirmisher",
+      "type": "feat",
+      "name": "Skirmisher",
+      "author": "voodoo573",
+      "summary": "+10 ft to all your speeds, ignore difficult terrain when dashing, and avoid opportunity attacks.",
+      "path": "feats/skirmisher.json",
+      "version": "1.0.0",
+      "tags": [
+        "movement",
+        "mobile",
+        "a5e"
+      ]
+    },
+    {
+      "id": "stalwart",
+      "type": "feat",
+      "name": "Stalwart",
+      "author": "voodoo573",
+      "summary": "+1 Constitution and extra healing whenever you roll a Hit Die.",
+      "path": "feats/stalwart.json",
+      "version": "1.0.0",
+      "tags": [
+        "constitution",
+        "rest",
+        "a5e"
+      ]
+    },
+    {
+      "id": "survivor",
+      "type": "feat",
+      "name": "Survivor",
+      "author": "voodoo573",
+      "summary": "Cling to life: move when dropped to 0 HP, advantage on your first death save, and more.",
+      "path": "feats/survivor.json",
+      "version": "1.0.0",
+      "tags": [
+        "defence",
+        "death-saves",
+        "a5e"
+      ]
     },
     {
       "id": "example-lamplighter",

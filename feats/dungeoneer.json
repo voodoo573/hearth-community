@@ -1,0 +1,24 @@
+{
+  "$schema": "../schema/feat.schema.json",
+  "id": "dungeoneer",
+  "name": "Dungeoneer",
+  "type": "feat",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Feat from Level Up: Advanced 5th Edition. You've honed your senses to subterranean danger and opportunity. - You have advantage on checks made to detect hidden openings, passages, or doors. - You have advantage on saving throws made against traps and resistance to any damage they inflict. - Your travel speed does not adversely affect your passive perception score.",
+  "summary": "Advantage to find secret doors and against traps, and resistance to trap damage.",
+  "tags": [
+    "exploration",
+    "traps",
+    "a5e"
+  ],
+  "credits": "Dungeoneer is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/feats/dungeoneer/ (Open5e). Changes: converted to Hearth's feat format.",
+  "data": {
+    "id": "dungeoneer",
+    "name": "Dungeoneer",
+    "desc": "You've honed your senses to subterranean danger and opportunity.\n- You have advantage on checks made to detect hidden openings, passages, or doors.\n- You have advantage on saving throws made against traps and resistance to any damage they inflict.\n- Your travel speed does not adversely affect your passive perception score."
+  }
+}
