@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T01:06:54Z",
+  "updated": "2026-10-10T01:19:50Z",
   "items": [
     {
       "id": "alseid",
@@ -652,7 +652,7 @@
       "author": "voodoo573",
       "summary": "A crafter with a workshop in every town who sells their work at full price.",
       "path": "backgrounds/artisan.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "crafting",
         "urban",
@@ -750,7 +750,7 @@
       "author": "voodoo573",
       "summary": "A guild member who earns a living in any town and gets tipped off about jobs.",
       "path": "backgrounds/guildmember.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "urban",
         "crafting",

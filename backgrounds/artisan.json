@@ -3,7 +3,7 @@
   "id": "artisan",
   "name": "Artisan",
   "type": "background",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -24,7 +24,7 @@
     ],
     "gold": 0,
     "equipment": [
-      "One set of artisan's tools",
+      "Artisan's tools",
       "Traveler's clothes"
     ],
     "feature": {
