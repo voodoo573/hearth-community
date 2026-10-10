@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "sewer-junction",
+  "name": "Sewer Junction",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A four-way junction of brick sewer tunnels with water channels meeting in a central basin. Walkways run along each channel, with two plank bridges, a drain grate, a ladder up to a manhole, pillars, rubble and a few crates. 22 x 22 squares at 64 px per 5-ft square.",
+  "summary": "Four-way sewer tunnel junction with channels and walkways.",
+  "tags": [
+    "sewer",
+    "urban",
+    "underground",
+    "dungeon",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Sewer Junction\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "sewer-junction.jpg",
+    "thumbnail": "sewer-junction-thumb.jpg",
+    "widthPx": 1408,
+    "heightPx": 1408,
+    "gridSizePx": 64,
+    "gridCols": 22,
+    "gridRows": 22,
+    "setting": "sewer"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:42:04Z",
+  "updated": "2026-10-10T00:46:52Z",
   "items": [
     {
       "id": "alseid",
@@ -965,6 +965,74 @@
       ]
     },
     {
+      "id": "crossroads-tavern",
+      "type": "map",
+      "name": "Crossroads Tavern",
+      "author": "voodoo573",
+      "summary": "Cosy tavern common room with bar, hearth, tables and stairs.",
+      "path": "maps/crossroads-tavern.json",
+      "version": "1.0.0",
+      "tags": [
+        "tavern",
+        "interior",
+        "town",
+        "social",
+        "grid"
+      ],
+      "thumbnail": "maps/crossroads-tavern-thumb.jpg"
+    },
+    {
+      "id": "desert-oasis-camp",
+      "type": "map",
+      "name": "Desert Oasis Camp",
+      "author": "voodoo573",
+      "summary": "Desert oasis with palms, pool, tents and a campfire.",
+      "path": "maps/desert-oasis-camp.json",
+      "version": "1.0.0",
+      "tags": [
+        "desert",
+        "outdoor",
+        "camp",
+        "travel",
+        "grid"
+      ],
+      "thumbnail": "maps/desert-oasis-camp-thumb.jpg"
+    },
+    {
+      "id": "forest-shrine-clearing",
+      "type": "map",
+      "name": "Forest Shrine Clearing",
+      "author": "voodoo573",
+      "summary": "Woodland clearing with standing-stone shrine, pond and path.",
+      "path": "maps/forest-shrine-clearing.json",
+      "version": "1.0.0",
+      "tags": [
+        "forest",
+        "outdoor",
+        "shrine",
+        "wilderness",
+        "grid"
+      ],
+      "thumbnail": "maps/forest-shrine-clearing-thumb.jpg"
+    },
+    {
+      "id": "frozen-mountain-pass",
+      "type": "map",
+      "name": "Frozen Mountain Pass",
+      "author": "voodoo573",
+      "summary": "Snowy mountain pass with path, frozen stream and pines.",
+      "path": "maps/frozen-mountain-pass.json",
+      "version": "1.0.0",
+      "tags": [
+        "mountain",
+        "snow",
+        "outdoor",
+        "travel",
+        "grid"
+      ],
+      "thumbnail": "maps/frozen-mountain-pass-thumb.jpg"
+    },
+    {
       "id": "example-grid-dungeon-room",
       "type": "map",
       "name": "Grid Dungeon Room (Example)",
@@ -979,6 +1047,107 @@
       ],
       "example": true,
       "thumbnail": "maps/example-grid-dungeon-room-thumb.png"
+    },
+    {
+      "id": "merchant-ship-deck",
+      "type": "map",
+      "name": "Merchant Ship Deck",
+      "author": "voodoo573",
+      "summary": "Trading ship deck at sea with hatch, cargo and masts.",
+      "path": "maps/merchant-ship-deck.json",
+      "version": "1.0.0",
+      "tags": [
+        "ship",
+        "sea",
+        "travel",
+        "outdoor",
+        "grid"
+      ],
+      "thumbnail": "maps/merchant-ship-deck-thumb.jpg"
+    },
+    {
+      "id": "riverside-village",
+      "type": "map",
+      "name": "Riverside Village",
+      "author": "voodoo573",
+      "summary": "Small village with river, bridge, well square and cottages.",
+      "path": "maps/riverside-village.json",
+      "version": "1.0.0",
+      "tags": [
+        "village",
+        "town",
+        "outdoor",
+        "river",
+        "grid"
+      ],
+      "thumbnail": "maps/riverside-village-thumb.jpg"
+    },
+    {
+      "id": "sewer-junction",
+      "type": "map",
+      "name": "Sewer Junction",
+      "author": "voodoo573",
+      "summary": "Four-way sewer tunnel junction with channels and walkways.",
+      "path": "maps/sewer-junction.json",
+      "version": "1.0.0",
+      "tags": [
+        "sewer",
+        "urban",
+        "underground",
+        "dungeon",
+        "grid"
+      ],
+      "thumbnail": "maps/sewer-junction-thumb.jpg"
+    },
+    {
+      "id": "sunken-crypt",
+      "type": "map",
+      "name": "Sunken Crypt",
+      "author": "voodoo573",
+      "summary": "Stone crypt hall with sarcophagi, pillars and a reliquary alcove.",
+      "path": "maps/sunken-crypt.json",
+      "version": "1.0.0",
+      "tags": [
+        "crypt",
+        "dungeon",
+        "undead",
+        "interior",
+        "grid"
+      ],
+      "thumbnail": "maps/sunken-crypt-thumb.jpg"
+    },
+    {
+      "id": "winding-cavern",
+      "type": "map",
+      "name": "Winding Cavern",
+      "author": "voodoo573",
+      "summary": "Natural cave with winding passages, pillars, fungi and a pool.",
+      "path": "maps/winding-cavern.json",
+      "version": "1.0.0",
+      "tags": [
+        "cave",
+        "underground",
+        "dungeon",
+        "grid"
+      ],
+      "thumbnail": "maps/winding-cavern-thumb.jpg"
+    },
+    {
+      "id": "wizard-tower-library",
+      "type": "map",
+      "name": "Wizard Tower Library",
+      "author": "voodoo573",
+      "summary": "Round tower library with shelves, ritual rug, desk and stairs.",
+      "path": "maps/wizard-tower-library.json",
+      "version": "1.0.0",
+      "tags": [
+        "tower",
+        "interior",
+        "arcane",
+        "library",
+        "grid"
+      ],
+      "thumbnail": "maps/wizard-tower-library-thumb.jpg"
     },
     {
       "id": "bow-of-the-viper",

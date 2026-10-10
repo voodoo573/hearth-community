@@ -1,0 +1,30 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "winding-cavern",
+  "name": "Winding Cavern",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A large natural cave of winding passages and rock pillars, with scattered boulders, patches of glowing fungi and a dark underground pool in the north-east corner. Generated with a cellular-automaton cave algorithm. 26 x 20 squares at 64 px per 5-ft square.",
+  "summary": "Natural cave with winding passages, pillars, fungi and a pool.",
+  "tags": [
+    "cave",
+    "underground",
+    "dungeon",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Winding Cavern\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "winding-cavern.jpg",
+    "thumbnail": "winding-cavern-thumb.jpg",
+    "widthPx": 1664,
+    "heightPx": 1280,
+    "gridSizePx": 64,
+    "gridCols": 26,
+    "gridRows": 20,
+    "setting": "cave"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "riverside-village",
+  "name": "Riverside Village",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A small farming village split by a river. A dirt road crosses a wooden bridge and passes a cobbled square with a well. Seven cottages, a crop field, scattered trees and crates fill the rest of the map. 30 x 22 squares at 64 px per 5-ft square.",
+  "summary": "Small village with river, bridge, well square and cottages.",
+  "tags": [
+    "village",
+    "town",
+    "outdoor",
+    "river",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Riverside Village\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "riverside-village.jpg",
+    "thumbnail": "riverside-village-thumb.jpg",
+    "widthPx": 1920,
+    "heightPx": 1408,
+    "gridSizePx": 64,
+    "gridCols": 30,
+    "gridRows": 22,
+    "setting": "village"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "forest-shrine-clearing",
+  "name": "Forest Shrine Clearing",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A woodland clearing crossed by a dirt path. At its centre a ring of eight standing stones surrounds a small stone altar with a glowing gem; a lily pond sits to the north-west, and dense tree canopy fills the edges for cover. 24 x 18 squares at 64 px per 5-ft square.",
+  "summary": "Woodland clearing with standing-stone shrine, pond and path.",
+  "tags": [
+    "forest",
+    "outdoor",
+    "shrine",
+    "wilderness",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Forest Shrine Clearing\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "forest-shrine-clearing.jpg",
+    "thumbnail": "forest-shrine-clearing-thumb.jpg",
+    "widthPx": 1536,
+    "heightPx": 1152,
+    "gridSizePx": 64,
+    "gridCols": 24,
+    "gridRows": 18,
+    "setting": "forest"
+  }
+}

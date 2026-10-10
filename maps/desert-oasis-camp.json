@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "desert-oasis-camp",
+  "name": "Desert Oasis Camp",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A palm-ringed oasis pool in open desert, with four colourful travellers' tents at the corners, a campfire, supply crates and scattered rocks. Good for caravan stops and ambushes. 24 x 18 squares at 64 px per 5-ft square.",
+  "summary": "Desert oasis with palms, pool, tents and a campfire.",
+  "tags": [
+    "desert",
+    "outdoor",
+    "camp",
+    "travel",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Desert Oasis Camp\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "desert-oasis-camp.jpg",
+    "thumbnail": "desert-oasis-camp-thumb.jpg",
+    "widthPx": 1536,
+    "heightPx": 1152,
+    "gridSizePx": 64,
+    "gridCols": 24,
+    "gridRows": 18,
+    "setting": "desert"
+  }
+}

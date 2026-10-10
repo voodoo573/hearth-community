@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "sunken-crypt",
+  "name": "Sunken Crypt",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A flagstone burial hall entered by stairs from the west. Six stone sarcophagi sit between two rows of pillars, rubble litters the floor, and a candle-lit alcove to the east holds a gilded reliquary. 22 x 16 squares at 64 px per 5-ft square.",
+  "summary": "Stone crypt hall with sarcophagi, pillars and a reliquary alcove.",
+  "tags": [
+    "crypt",
+    "dungeon",
+    "undead",
+    "interior",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Sunken Crypt\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "sunken-crypt.jpg",
+    "thumbnail": "sunken-crypt-thumb.jpg",
+    "widthPx": 1408,
+    "heightPx": 1024,
+    "gridSizePx": 64,
+    "gridCols": 22,
+    "gridRows": 16,
+    "setting": "crypt"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "merchant-ship-deck",
+  "name": "Merchant Ship Deck",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "The top deck of a single-masted trading ship at sea: aft cabin roof, cargo hatch, masts, stacked crates and barrels, and small deck guns along both rails. Surrounded by open water. 28 x 14 squares at 64 px per 5-ft square.",
+  "summary": "Trading ship deck at sea with hatch, cargo and masts.",
+  "tags": [
+    "ship",
+    "sea",
+    "travel",
+    "outdoor",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Merchant Ship Deck\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "merchant-ship-deck.jpg",
+    "thumbnail": "merchant-ship-deck-thumb.jpg",
+    "widthPx": 1792,
+    "heightPx": 896,
+    "gridSizePx": 64,
+    "gridCols": 28,
+    "gridRows": 14,
+    "setting": "ship"
+  }
+}

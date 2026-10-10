@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/map.schema.json",
+  "id": "crossroads-tavern",
+  "name": "Crossroads Tavern",
+  "type": "map",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "A timber-floored common room with seven round tables, an L-shaped bar with stools, a row of barrels, a stone hearth, a staircase and a red rug by the front door. Doors on the south and west walls. 24 x 18 squares at 64 px per 5-ft square.",
+  "summary": "Cosy tavern common room with bar, hearth, tables and stairs.",
+  "tags": [
+    "tavern",
+    "interior",
+    "town",
+    "social",
+    "grid"
+  ],
+  "credits": "Original battle map created for the Hearth Community repository by voodoo573 (2026), drawn procedurally with a Python/PIL script; no third-party art used. Licensed CC BY 4.0. Attribution: \"Crossroads Tavern\" by voodoo573, Hearth Community (https://github.com/voodoo573/hearth-community), CC BY 4.0.",
+  "data": {
+    "image": "crossroads-tavern.jpg",
+    "thumbnail": "crossroads-tavern-thumb.jpg",
+    "widthPx": 1536,
+    "heightPx": 1152,
+    "gridSizePx": 64,
+    "gridCols": 24,
+    "gridRows": 18,
+    "setting": "tavern"
+  }
+}
