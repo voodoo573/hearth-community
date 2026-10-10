@@ -3,12 +3,12 @@
   "id": "lantern-dragonette",
   "name": "Lantern Dragonette",
   "type": "monster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "CR 1/2 tiny dragon from Tome of Beasts (Kobold Press). AC 13 (natural armor), 28 HP. It can hover. This cat-sized drake with a waxy appearance and a glow emanating from its belly can hover in midair, filling a small area with a warm glow.\nThe lantern drake is named for its belly, which glows with a warm light. The beast's yellow, waxy scales darken with age, though lantern drakes rarely live more than 50 years or so. They weigh from 5 to 10 pounds and are 18 inches long. Most believe they are the result of an arcane fusion of a radiant spirit with a paper drake.\nEat Candle Wax. The drake devours four ounces of candle wax per day, plus four more ounces if it uses its belly lantern. A lantern dragonette’s unusual diet leads it to lair in libraries, abbeys, and other places of study. Even though the dragonettes eat candles essential for study during dark hours, they still provide light and protect their adopted homes. Residents and caretakers consider them good luck and enjoy conversing with them.\nTelepathic Chatterbox. This gregarious drake prefers to speak with its companions but uses telepathy if necessary, and the creature hisses when surprised or displeased. It loves nothing more than discussing magic and history with an intelligent and informed individual.\nAdventurous Companions. Occasionally, a dragonette wishing to learn more about the world finds a spellcaster or adventuring party to travel with, purely for the sake of learning or to acquire new sources of knowledge. Most parties enjoy the traveling light source and the abilities these companions bring to bear. A lantern dragonette avoids combat and uses its abilities only to escape or to defend its lair, family, and friends.\nA dragonette lives up to 30 years. A mated pair produces one clutch of two to five eggs every five years, and one parent raises the young dragonettes until they mature after a year and leave to search for their own lairs.",
+  "description": "CR 1/2 tiny dragon from Tome of Beasts (Kobold Press). AC 13 (natural armor), 28 HP. It can hover. This cat-sized drake with a waxy appearance and a glow emanating from its belly can hover in midair, filling a small area with a warm glow.\nThe lantern drake is named for its belly, which glows with a warm light. The beast's yellow, waxy scales darken with age, though lantern drakes rarely live more than 50 years or so. They weigh from 5 to 10 pounds and are 18 inches long. Most believe they are the result of an arcane fusion of a radiant spirit with a paper drake.\nEat Candle Wax. The drake devours four ounces of candle wax per day, plus four more ounces if it uses its belly lantern. A lantern dragonette’s unusual diet leads it to lair in libraries, abbeys, and other places of study. Even though the dragonettes eat candles essential for study during dark hours, they still provide light and protect their adopted homes. Residents and caretakers consider them good luck and enjoy conversing with them.\nTelepathic Chatterbox. This gregarious drake prefers to speak with its companions but uses telepathy if necessary, and the creature hisses when surprised or displeased. It loves nothing more than discussing magic and history with an intelligent and informed individual.\nAdventurous Companions. Occasionally, a dragonette wishing to learn more about the world finds a spellcaster or adventuring party to travel with, purely for the sake of learning or to acquire new sources of knowledge. Most parties enjoy the traveling light source and the abilities these companions bring to bear. A lantern dragonette avoids combat and uses its abilities only to escape or to defend its lair, family, and friends.\nA dragonette lives up to 30 years. A mated pair produces one clutch of two to five eggs every five years, and one parent raises the young dragonettes until they mature after a year and leave to search for their own lairs.\nAverage damage (source wording): Bite: 3 (1d4 + 1) piercing damage.",
   "summary": "Cat-sized scholarly drake whose belly glows like a lantern.",
   "tags": [
     "dragon",
@@ -49,6 +49,10 @@
     "legendary": false,
     "traits": [
       {
+        "name": "Hover",
+        "desc": "Speed 15 ft., fly 40 ft. (hover)."
+      },
+      {
         "name": "Saving Throws",
         "desc": "Dex +3, Wis +3, Cha +3"
       },
@@ -72,7 +76,7 @@
     "actions": [
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d4+1 piercing damage."
       }
     ]
   }

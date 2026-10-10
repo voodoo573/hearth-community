@@ -3,12 +3,12 @@
   "id": "path-of-thorns",
   "name": "Path of Thorns",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "Path of Thorns: a barbarian subclass from Tome of Heroes (Kobold Press). Path of Thorns barbarians use ancient techniques developed by the druids of old that enable them to grow thorns all over their body. The first barbarians of this path fought alongside these druids to defend the natural order. In the centuries since, the knowledge of these techniques has spread, allowing others access to this power.\nThough named for the thorns that covered the first barbarians to walk this path, current followers of this path can display thorns, spines, or boney growths while raging.",
+  "description": "Path of Thorns: a barbarian subclass from Tome of Heroes (Kobold Press). Path of Thorns barbarians use ancient techniques developed by the druids of old that enable them to grow thorns all over their body. The first barbarians of this path fought alongside these druids to defend the natural order. In the centuries since, the knowledge of these techniques has spread, allowing others access to this power.\nThough named for the thorns that covered the first barbarians to walk this path, current followers of this path can display thorns, spines, or bony growths while raging.",
   "summary": "Barbarian path: grow thorns while raging for piercing unarmed strikes, thorny grapples and toxic barrages.",
   "tags": [
     "barbarian",
@@ -21,7 +21,7 @@
     "klass": "barbarian",
     "id": "path_of_thorns",
     "name": "Path of Thorns",
-    "desc": "Path of Thorns barbarians use ancient techniques developed by the druids of old that enable them to grow thorns all over their body. The first barbarians of this path fought alongside these druids to defend the natural order. In the centuries since, the knowledge of these techniques has spread, allowing others access to this power.\nThough named for the thorns that covered the first barbarians to walk this path, current followers of this path can display thorns, spines, or boney growths while raging.",
+    "desc": "Path of Thorns barbarians use ancient techniques developed by the druids of old that enable them to grow thorns all over their body. The first barbarians of this path fought alongside these druids to defend the natural order. In the centuries since, the knowledge of these techniques has spread, allowing others access to this power.\nThough named for the thorns that covered the first barbarians to walk this path, current followers of this path can display thorns, spines, or bony growths while raging.",
     "levelFeatures": {
       "3": [
         {

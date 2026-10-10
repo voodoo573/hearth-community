@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:46:52Z",
+  "updated": "2026-10-10T00:57:30Z",
   "items": [
     {
       "id": "alseid",
@@ -165,7 +165,7 @@
       "author": "voodoo573",
       "summary": "Rogue archetype: a climbing, dodging thief who slips over walls and through locked doors.",
       "path": "subclasses/cat-burglar.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "rogue",
         "tome-of-heroes",
@@ -180,7 +180,7 @@
       "author": "voodoo573",
       "summary": "Druid circle of bees: a Wild Shape stinger, bee bond, a hive-mind link and a mantle of bees.",
       "path": "subclasses/circle-of-bees.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "druid",
         "tome-of-heroes",
@@ -255,7 +255,7 @@
       "author": "voodoo573",
       "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
       "path": "subclasses/oath-of-the-hearth.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "paladin",
         "tome-of-heroes",
@@ -270,7 +270,7 @@
       "author": "voodoo573",
       "summary": "Barbarian path: grow thorns while raging for piercing unarmed strikes, thorny grapples and toxic barrages.",
       "path": "subclasses/path-of-thorns.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "barbarian",
         "tome-of-heroes",
@@ -330,7 +330,7 @@
       "author": "voodoo573",
       "summary": "Cantrip: arcane-boosted unarmed strikes (1d6) using your spellcasting ability, plus Athletics.",
       "path": "spells/arcane-muscles.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "cantrip",
         "unarmed",
@@ -806,7 +806,7 @@
       "author": "voodoo573",
       "summary": "Hulking bear-headed warriors who fight with axe, hammer and bite.",
       "path": "monsters/bearfolk.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "humanoid",
         "warrior",
@@ -821,7 +821,7 @@
       "author": "voodoo573",
       "summary": "Thorny little plant-fey that grapples with spiky limbs and spits thorns.",
       "path": "monsters/child-of-the-briar.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "plant",
         "fey",
@@ -836,7 +836,7 @@
       "author": "voodoo573",
       "summary": "A small, ugly magical bird conjured by ritual that sips nectar and spies for its master.",
       "path": "monsters/cikavak.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "fey",
         "bird",
@@ -851,7 +851,7 @@
       "author": "voodoo573",
       "summary": "Swarm of stony crab-like creatures that pose as paving stones.",
       "path": "monsters/cobbleswarm.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "swarm",
         "urban",
@@ -866,7 +866,7 @@
       "author": "voodoo573",
       "summary": "Dog-sized burrowing mole beast, famed for battling worms in the deep caverns.",
       "path": "monsters/dogmole.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "beast",
         "underground",
@@ -881,7 +881,7 @@
       "author": "voodoo573",
       "summary": "Radiant celestial bird of flame that guides and helps travellers in need.",
       "path": "monsters/firebird.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "celestial",
         "fire",
@@ -896,7 +896,7 @@
       "author": "voodoo573",
       "summary": "Cat-sized scholarly drake whose belly glows like a lantern.",
       "path": "monsters/lantern-dragonette.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "dragon",
         "light",
@@ -911,7 +911,7 @@
       "author": "voodoo573",
       "summary": "Tiny clockwork librarian that befuddles book thieves with a confusing gaze.",
       "path": "monsters/library-automaton.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "construct",
         "clockwork",
@@ -941,7 +941,7 @@
       "author": "voodoo573",
       "summary": "Mote of storm lightning that can leap into and control a creature.",
       "path": "monsters/spark.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "elemental",
         "lightning",
@@ -956,7 +956,7 @@
       "author": "voodoo573",
       "summary": "Large smoky cat that slips into fog and exhales poison mist.",
       "path": "monsters/vapor-lynx.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "monstrosity",
         "cat",
@@ -1396,7 +1396,7 @@
       "author": "voodoo573",
       "summary": "Uncommon shield that grants resistance to poison damage while held.",
       "path": "magic-items/green-scale-shield.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "shield",
         "uncommon",
@@ -1426,7 +1426,7 @@
       "author": "voodoo573",
       "summary": "Very rare shield: radiant resistance and a reaction that reflects spells back at the caster.",
       "path": "magic-items/mirror-shield.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "shield",
         "very-rare",
@@ -1456,7 +1456,7 @@
       "author": "voodoo573",
       "summary": "Rare +2 quarterstaff that adds +2 to spell attacks and casts gravity-bending spells.",
       "path": "magic-items/staff-of-gravity-bending.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "staff",
         "rare",

@@ -3,12 +3,12 @@
   "id": "vapor-lynx",
   "name": "Vapor Lynx",
   "type": "monster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "CR 5 large monstrosity from Tome of Beasts (Kobold Press). AC 14 (natural armor), 127 HP. These great cats pad noiselessly, while tendrils of smoke drift off their sleek gray coats, leaving misty whorls in their wake. Their eyes shift from dull, pallid orbs to pitch black slits. Their lips curl up into a fang-revealing smile as their bodies fades into fog.\nSplit the Herd. Vapor lynxes are capricious hunters. Devious, manipulative, and mischievous, they toy with their prey before killing it. They rarely enjoy a stand-up fight, instead coalescing in and out of the fog to harass victims. Using their ability to solidify and poison the fog around them, they cut large groups into smaller, more manageable morsels.\nDreary Marshlands. Their tactics have earned vapor lynxes a nasty reputation and the occasional bounty on their heads. Additionally, their magical nature makes them valuable to practitioners of the magical arts, and their beautiful, thick coats tempt many a furrier into hunts they may not be prepared for. For these reasons, vapor lynxes avoid civilization, fearing organized reprisal. Instead they haunt marshes and swamps, where the natural fog makes hunting easier. If an intelligent humanoid passes their way, they are happy for a change in their diet.\nChatty with Dinner. Although reclusive, vapor lynxes are intelligent, speaking both Common and Sylvan. They are particularly prideful and take great joy in bantering with potential meals to belittle and frighten them. Survivors of vapor lynx encounters invariably mention their constant needling and self-aggrandizement.",
+  "description": "CR 5 large monstrosity from Tome of Beasts (Kobold Press). AC 14 (natural armor), 127 HP. These great cats pad noiselessly, while tendrils of smoke drift off their sleek gray coats, leaving misty whorls in their wake. Their eyes shift from dull, pallid orbs to pitch black slits. Their lips curl up into a fang-revealing smile as their bodies fades into fog.\nSplit the Herd. Vapor lynxes are capricious hunters. Devious, manipulative, and mischievous, they toy with their prey before killing it. They rarely enjoy a stand-up fight, instead coalescing in and out of the fog to harass victims. Using their ability to solidify and poison the fog around them, they cut large groups into smaller, more manageable morsels.\nDreary Marshlands. Their tactics have earned vapor lynxes a nasty reputation and the occasional bounty on their heads. Additionally, their magical nature makes them valuable to practitioners of the magical arts, and their beautiful, thick coats tempt many a furrier into hunts they may not be prepared for. For these reasons, vapor lynxes avoid civilization, fearing organized reprisal. Instead they haunt marshes and swamps, where the natural fog makes hunting easier. If an intelligent humanoid passes their way, they are happy for a change in their diet.\nChatty with Dinner. Although reclusive, vapor lynxes are intelligent, speaking both Common and Sylvan. They are particularly prideful and take great joy in bantering with potential meals to belittle and frighten them. Survivors of vapor lynx encounters invariably mention their constant needling and self-aggrandizement.\nAverage damage (source wording): Bite: 17 (3d8 + 4) piercing damage; Claw: 13 (2d8 + 4) slashing damage.",
   "summary": "Large smoky cat that slips into fog and exhales poison mist.",
   "tags": [
     "monstrosity",
@@ -64,11 +64,11 @@
       },
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) piercing damage."
+        "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 3d8+4 piercing damage."
       },
       {
         "name": "Claw",
-        "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+        "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 2d8+4 slashing damage."
       },
       {
         "name": "Poison Breath (Recharge 5-6)",

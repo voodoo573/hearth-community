@@ -3,12 +3,12 @@
   "id": "library-automaton",
   "name": "Library Automaton",
   "type": "monster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "CR 1/2 small construct from Tome of Beasts (Kobold Press). AC 13 (natural armor), 7 HP. The humming of servos, ticking of gears, and petite discharges of steam alert you to the presence of this library’s diminutive custodian.\nThese small constructs were created to fulfill organizational responsibilities of huge libraries with staffing problems, but some invariably learn enough about the wider world to seek out adventure and new knowledge, rather than tending the items in their care.\nEyes of the Past. While largely constructed with mechanical components, the automatons include a single human eyeball that is mounted at the end of an articulated appendage. The eye is usually donated by one of the institution’s scholars (prescribed in their will) so that they can continue serving the repositories of knowledge that were their life’s work.\nTelekinetic. While the automatons have no arms, they can move and manipulate written materials telekinetically. Powered by keen analytical engines, the library automaton tirelessly pores through tomes, translates ancient texts, catalogs the institution’s volumes, fetches texts for visitors, and occasionally rids the vast halls of uninvited pests.\nSought by Wizards. Wizards have discovered that these clockwork bureaucrats make particularly effective caretakers for their spellbooks and scrolls while on adventure.\nConstructed Nature. A library automaton doesn’t require air, food, drink, or sleep.",
+  "description": "CR 1/2 small construct from Tome of Beasts (Kobold Press). AC 13 (natural armor), 7 HP. The humming of servos, ticking of gears, and petite discharges of steam alert you to the presence of this library’s diminutive custodian.\nThese small constructs were created to fulfill organizational responsibilities of huge libraries with staffing problems, but some invariably learn enough about the wider world to seek out adventure and new knowledge, rather than tending the items in their care.\nEyes of the Past. While largely constructed with mechanical components, the automatons include a single human eyeball that is mounted at the end of an articulated appendage. The eye is usually donated by one of the institution’s scholars (prescribed in their will) so that they can continue serving the repositories of knowledge that were their life’s work.\nTelekinetic. While the automatons have no arms, they can move and manipulate written materials telekinetically. Powered by keen analytical engines, the library automaton tirelessly pores through tomes, translates ancient texts, catalogs the institution’s volumes, fetches texts for visitors, and occasionally rids the vast halls of uninvited pests.\nSought by Wizards. Wizards have discovered that these clockwork bureaucrats make particularly effective caretakers for their spellbooks and scrolls while on adventure.\nConstructed Nature. A library automaton doesn’t require air, food, drink, or sleep.\nAverage damage (source wording): Gaze of Confusion: 9 (3d4 + 2) psychic damage and have disadvantage on Intelligence-based checks.",
   "summary": "Tiny clockwork librarian that befuddles book thieves with a confusing gaze.",
   "tags": [
     "construct",
@@ -57,7 +57,7 @@
     "actions": [
       {
         "name": "Gaze of Confusion",
-        "desc": "The library automaton chooses one creature it can see within 40 feet. The target must succeed on a DC 12 Intelligence saving throw or take 9 (3d4 + 2) psychic damage and have disadvantage on Intelligence-based checks, saving throws, and attacks until the end of its next turn. If the saving throw succeeds, then the target takes half damage and suffers no other effect."
+        "desc": "The library automaton chooses one creature it can see within 40 feet. The target must succeed on a DC 12 Intelligence saving throw or take 3d4+2 psychic damage and have disadvantage on Intelligence-based checks, saving throws, and attacks until the end of its next turn. If the saving throw succeeds, then the target takes half damage and suffers no other effect."
       },
       {
         "name": "Bibliotelekinesis",

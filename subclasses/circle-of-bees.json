@@ -3,7 +3,7 @@
   "id": "circle-of-bees",
   "name": "Circle of Bees",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,7 +26,7 @@
       "2": [
         {
           "name": "Circle Spells",
-          "desc": "Your bond with bees and other stinging beasts grants you knowledge of certain spells. At 2nd level, you learn the true strike cantrip. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Bees Spells table.\nOnce you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.\n\nCircle of Bee Spells\nDruid Level | Spells\n3rd: blur, bombardment of stings\n5th: fly, haste\n7th: giant insect, locate creature\n9th: insect plague, telepathic bond"
+          "desc": "Your bond with bees and other stinging beasts grants you knowledge of certain spells. At 2nd level, you learn the true strike cantrip. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Bees Spells table.\nOnce you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.\n\nCircle of Bees Spells\nDruid Level | Spells\n3rd: blur, bombardment of stings\n5th: fly, haste\n7th: giant insect, locate creature\n9th: insect plague, telepathic bond"
         },
         {
           "name": "Bee Bond",
@@ -34,7 +34,7 @@
         },
         {
           "name": "Bee Stinger",
-          "desc": "Also at 2nd level, you can use an action and expend one use of your Wild Shape to grow a bee's stinger, typically growing from your wrist, which you can use to make unarmed strikes. When you hit with an unarmed strike while this stinger is active, you use Wisdom instead of Strength for the attack, and your unarmed strike deals piercing damage equal to 1d4 + your Wisdom modifier + poison damage equal to half your proficiency bonus, instead of the bludgeoning damage normal for an unarmed strike.\nThe stinger lasts for a number of hours equal to half your druid level (rounded down) or until you use your Wild Shape again.\nWhen you reach 6th level in this class, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and the poison damage dealt by your stinger equals your proficiency bonus. In addition, the unarmed strike damage you deal while the stringer is active increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level."
+          "desc": "Also at 2nd level, you can use an action and expend one use of your Wild Shape to grow a bee's stinger, typically growing from your wrist, which you can use to make unarmed strikes. When you hit with an unarmed strike while this stinger is active, you use Wisdom instead of Strength for the attack, and your unarmed strike deals piercing damage equal to 1d4 + your Wisdom modifier + poison damage equal to half your proficiency bonus, instead of the bludgeoning damage normal for an unarmed strike.\nThe stinger lasts for a number of hours equal to half your druid level (rounded down) or until you use your Wild Shape again.\nWhen you reach 6th level in this class, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and the poison damage dealt by your stinger equals your proficiency bonus. In addition, the unarmed strike damage you deal while the stinger is active increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level."
         }
       ],
       "6": [

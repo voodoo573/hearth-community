@@ -3,12 +3,12 @@
   "id": "bearfolk",
   "name": "Bearfolk",
   "type": "monster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "CR 3 medium humanoid (bearfolk) from Tome of Beasts (Kobold Press). AC 14 (hide armor), 45 HP. Although it has the head of a shaggy bear, this humanoid creature wears armor and carries a battleaxe in one massive, clawed hand and a warhammer in the other. It’s a solid slab of muscle that towers imposingly over most humans.\nThe hulking bearfolk are intimidating creatures. Brutish and powerful, they combine features of humanoid beings and bears. Their heads are ursine with heavy jaws and sharp teeth. Dark fur covers their bodies, which are packed with muscle. Adult bearfolk stand at least 7 feet tall and weigh more than 600 pounds.\nPassionate and Volatile. Boisterous and jovial, the bearfolk are a people of extremes. They celebrate with great passion and are quick to explosive anger. Settling differences with wrestling matches that leave permanent scars is common, as is seeing two bloodied bearfolk sharing a cask of mead and a raucous song after such a scuffle.",
+  "description": "CR 3 medium humanoid (bearfolk) from Tome of Beasts (Kobold Press). AC 14 (hide armor), 45 HP. Although it has the head of a shaggy bear, this humanoid creature wears armor and carries a battleaxe in one massive, clawed hand and a warhammer in the other. It’s a solid slab of muscle that towers imposingly over most humans.\nThe hulking bearfolk are intimidating creatures. Brutish and powerful, they combine features of humanoid beings and bears. Their heads are ursine with heavy jaws and sharp teeth. Dark fur covers their bodies, which are packed with muscle. Adult bearfolk stand at least 7 feet tall and weigh more than 600 pounds.\nPassionate and Volatile. Boisterous and jovial, the bearfolk are a people of extremes. They celebrate with great passion and are quick to explosive anger. Settling differences with wrestling matches that leave permanent scars is common, as is seeing two bloodied bearfolk sharing a cask of mead and a raucous song after such a scuffle.\nAverage damage (source wording): Battleaxe: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used two-handed; Bite: 11 (2d6 + 4) piercing damage; Warhammer: 8 (1d8 + 4) bludgeoning damage, or 9 (1d10 + 4) bludgeoning damage if used two-handed.",
   "summary": "Hulking bear-headed warriors who fight with axe, hammer and bite.",
   "tags": [
     "humanoid",
@@ -59,15 +59,15 @@
       },
       {
         "name": "Battleaxe",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used two-handed."
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1d8+4 slashing damage (or 1d10+4 damage of the same type if used two-handed)."
       },
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 2d6+4 piercing damage."
       },
       {
         "name": "Warhammer",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or 9 (1d10 + 4) bludgeoning damage if used two-handed."
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1d8+4 bludgeoning damage (or 1d10+4 damage of the same type if used two-handed)."
       }
     ]
   }

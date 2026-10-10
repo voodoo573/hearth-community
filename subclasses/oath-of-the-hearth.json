@@ -3,7 +3,7 @@
   "id": "oath-of-the-hearth",
   "name": "Oath of the Hearth",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -48,7 +48,7 @@
       "7": [
         {
           "name": "Aura of the Hearth",
-          "desc": "Beginning at 7th level, you and friendly creatures within 10 feet of you have advantage on saving throws against spells and effects that deal cold damage. If such a creature succeeds on a saving throw against a spell or effect that allows the creature to take only half the cold damage on a successful save, the creature instead takes no damage. In addition, you and friendly creatures within 10 feet of you have advantage on saving throws against the longterm effects of exposure to cold weather. When you reach 18th level in this class, the range of this aura increases to 30 feet."
+          "desc": "Beginning at 7th level, you and friendly creatures within 10 feet of you have advantage on saving throws against spells and effects that deal cold damage. If such a creature succeeds on a saving throw against a spell or effect that allows the creature to take only half the cold damage on a successful save, the creature instead takes no damage. In addition, you and friendly creatures within 10 feet of you have advantage on saving throws against the long-term effects of exposure to cold weather. When you reach 18th level in this class, the range of this aura increases to 30 feet."
         }
       ],
       "15": [

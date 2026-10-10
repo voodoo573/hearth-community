@@ -3,12 +3,12 @@
   "id": "child-of-the-briar",
   "name": "Child of the Briar",
   "type": "monster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "CR 1 tiny plant from Tome of Beasts (Kobold Press). AC 13, 50 HP. Its eyes gleam like polished walnuts, and its sly smile seems oddly placed on the tiny body, covered in spikes and thorns. The creature’s waist is no thicker than a clenched fist, and its sinuous arms are no wider than a finger but twice the length of its body.\nBorn of Magic. Children of the briar are a frequent nuisance to fey and mortal alike. They grow in deep briar patches in forest clearings or along sunny hillsides and riverbanks. More rarely, they spawn when a sorcerer or magical creature’s blood is spilled on the forest floor, or when summoned into being by obscure druidic items of power.\nThe fey have long used the children of the briar as spies and informants, and the power of the Otherworld now courses through their veins, allowing them to work simple magical tricks and slip between the mortal and faerie realms with relative ease.\n(Lore abridged.)",
+  "description": "CR 1 tiny plant from Tome of Beasts (Kobold Press). AC 13, 50 HP. Its eyes gleam like polished walnuts, and its sly smile seems oddly placed on the tiny body, covered in spikes and thorns. The creature’s waist is no thicker than a clenched fist, and its sinuous arms are no wider than a finger but twice the length of its body.\nBorn of Magic. Children of the briar are a frequent nuisance to fey and mortal alike. They grow in deep briar patches in forest clearings or along sunny hillsides and riverbanks. More rarely, they spawn when a sorcerer or magical creature’s blood is spilled on the forest floor, or when summoned into being by obscure druidic items of power.\nThe fey have long used the children of the briar as spies and informants, and the power of the Otherworld now courses through their veins, allowing them to work simple magical tricks and slip between the mortal and faerie realms with relative ease.\n(Lore abridged.)\nAverage damage (source wording): Claw: 6 (1d6 + 3) piercing damage; Spitdart Tongue (Recharge 4-6): 6 (1d6 + 3) piercing damage; Thorny Grapple: 2 (1d4) piercing damage at the end of the child's turn for as long as it remains grappled.",
   "summary": "Thorny little plant-fey that grapples with spiky limbs and spits thorns.",
   "tags": [
     "plant",
@@ -61,11 +61,11 @@
       },
       {
         "name": "Claw",
-        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d6+3 piercing damage."
       },
       {
         "name": "Spitdart Tongue (Recharge 4-6)",
-        "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage. Every child of the briar can shoot thorns from its mouth."
+        "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 1d6+3 piercing damage. Every child of the briar can shoot thorns from its mouth."
       },
       {
         "name": "Entangle",
@@ -73,7 +73,7 @@
       },
       {
         "name": "Thorny Grapple",
-        "desc": "A child of the briar's long thorny limbs help it grapple creatures up to Medium size. A grappled creature takes 2 (1d4) piercing damage at the end of the child's turn for as long as it remains grappled."
+        "desc": "A child of the briar's long thorny limbs help it grapple creatures up to Medium size. A grappled creature takes 1d4 piercing damage at the end of the child's turn for as long as it remains grappled."
       }
     ]
   }

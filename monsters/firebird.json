@@ -3,12 +3,12 @@
   "id": "firebird",
   "name": "Firebird",
   "type": "monster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "CR 4 small celestial from Tome of Beasts (Kobold Press). AC 16 (natural armor), 99 HP. This proud bird struts like a peacock, made all the more majestic by its flaming fan of feathers, which shift through the color spectrum.\nGuides and Helpers. Firebirds are welcome sights to those in need of warmth and safety. They primarily work at night or in underground areas, where their abilities are most needed. Friendly to all creatures, they become aggressive only upon witnessing obviously evil acts.\nFirebirds enjoy working with good adventuring parties, providing light and healing, though their wanderlust prevents them from staying for long. Well-traveled parties may encounter the same firebird more than once, however.\nRedeemers. Firebirds enjoy acting as reformers. They find mercenary creatures they perceive as potential “light bringers” to whom they grant boons in exchange for a geas to perform a specific good deed, in the hope such acts will redeem them.\nMagical Feathers. Firebird feathers are prized throughout the mortal world; occasionally, the creatures bestow feathers upon those they favor. Firebirds also seed hidden locations with specialized feathers, which burst into full-grown firebirds after a year. As the creatures age, their feathers’ light dims, but this occurs gradually, as the creatures live over 100 years. Firebirds stand three feet tall and weigh 20 lb.",
+  "description": "CR 4 small celestial from Tome of Beasts (Kobold Press). AC 16 (natural armor), 99 HP. This proud bird struts like a peacock, made all the more majestic by its flaming fan of feathers, which shift through the color spectrum.\nGuides and Helpers. Firebirds are welcome sights to those in need of warmth and safety. They primarily work at night or in underground areas, where their abilities are most needed. Friendly to all creatures, they become aggressive only upon witnessing obviously evil acts.\nFirebirds enjoy working with good adventuring parties, providing light and healing, though their wanderlust prevents them from staying for long. Well-traveled parties may encounter the same firebird more than once, however.\nRedeemers. Firebirds enjoy acting as reformers. They find mercenary creatures they perceive as potential “light bringers” to whom they grant boons in exchange for a geas to perform a specific good deed, in the hope such acts will redeem them.\nMagical Feathers. Firebird feathers are prized throughout the mortal world; occasionally, the creatures bestow feathers upon those they favor. Firebirds also seed hidden locations with specialized feathers, which burst into full-grown firebirds after a year. As the creatures age, their feathers’ light dims, but this occurs gradually, as the creatures live over 100 years. Firebirds stand three feet tall and weigh 20 lb.\nAverage damage (source wording): Bite: 8 (1d8 + 4) piercing damage; Claw: 13 (2d8 + 4) slashing damage; Blinding Ray (Recharge 5-6): 24 (7d6) fire damage and become blinded for 1d4 rounds.",
   "summary": "Radiant celestial bird of flame that guides and helps travellers in need.",
   "tags": [
     "celestial",
@@ -80,15 +80,15 @@
       },
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 4) piercing damage."
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1d8+4 piercing damage."
       },
       {
         "name": "Claw",
-        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 4) slashing damage."
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 2d8+4 slashing damage."
       },
       {
         "name": "Blinding Ray (Recharge 5-6)",
-        "desc": "The firebird can fire a burning ray of light from its tail feathers in a line 5 feet wide and up to 50 feet long. Targets in the line must succeed on a DC 15 Dexterity saving throw or take 24 (7d6) fire damage and become blinded for 1d4 rounds. A successful saving throw negates the blindness and reduces the damage by half."
+        "desc": "The firebird can fire a burning ray of light from its tail feathers in a line 5 feet wide and up to 50 feet long. Targets in the line must succeed on a DC 15 Dexterity saving throw or take 7d6 fire damage and become blinded for 1d4 rounds. A successful saving throw negates the blindness and reduces the damage by half."
       }
     ]
   }
