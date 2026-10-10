@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "sporesight",
+  "name": "Sporesight",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 7 evocation spell from Level Up: Advanced 5th Edition. You throw a mushroom at a point within range and detonate it, creating a cloud of spores that fills the area. The cloud of spores travels around corners, and the area is considered lightly obscured for everyone except you. Creatures and objects within the area are covered in spores.\n\nUntil the spell ends, you know the exact location of all affected objects and creatures. Any attack roll you make against an affected creature or object has advantage, and the affected creatures and objects can't benefit from being invisible.",
+  "summary": "7th-level: a spore cloud reveals every creature inside and gives you advantage against them.",
+  "tags": [
+    "detection",
+    "fungus",
+    "area",
+    "a5e"
+  ],
+  "credits": "Sporesight is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/sporesight-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Sporesight",
+    "level": 7,
+    "school": "evocation",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "60 ft (50-ft radius sphere)",
+    "components": "V, S, M (toadstool)",
+    "duration": "Concentration, 10 min",
+    "desc": "Area: 50-foot-radius sphere centred on a point within range. You throw a mushroom at a point within range and detonate it, creating a cloud of spores that fills the area. The cloud of spores travels around corners, and the area is considered lightly obscured for everyone except you. Creatures and objects within the area are covered in spores.\n\nUntil the spell ends, you know the exact location of all affected objects and creatures. Any attack roll you make against an affected creature or object has advantage, and the affected creatures and objects can't benefit from being invisible.",
+    "kind": "utility",
+    "concentration": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "forest-army",
+  "name": "Forest Army",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 9 conjuration spell from Level Up: Advanced 5th Edition. While casting and concentrating on this spell, you enter a deep trance and awaken an army of trees and plants within range. These plants rise up under your control as a grove swarm and act on your initiative. Although you are in a trance and deaf and blind with regard to your own senses, you see and hear through your grove swarm's senses. You can command your grove swarm telepathically, ordering it to advance, attack, or retreat. If the grove swarm enters your space, you can order it to carry you.\n\nIf you take any action other than continuing to concentrate on this spell, the spell ends and the trees and plants set down roots wherever they are currently located.",
+  "summary": "9th-level druid spell: awaken an army of trees and plants as a grove swarm under your command.",
+  "tags": [
+    "summon",
+    "nature",
+    "druid",
+    "a5e"
+  ],
+  "credits": "Forest Army is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/forest-army-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Forest Army",
+    "level": 9,
+    "school": "conjuration",
+    "classes": [
+      "druid"
+    ],
+    "time": "1 hour",
+    "range": "120 ft",
+    "components": "V, S, M (emerald worth at least 10,000 gp)",
+    "duration": "Concentration, 8 hours",
+    "desc": "While casting and concentrating on this spell, you enter a deep trance and awaken an army of trees and plants within range. These plants rise up under your control as a grove swarm and act on your initiative. Although you are in a trance and deaf and blind with regard to your own senses, you see and hear through your grove swarm's senses. You can command your grove swarm telepathically, ordering it to advance, attack, or retreat. If the grove swarm enters your space, you can order it to carry you.\n\nIf you take any action other than continuing to concentrate on this spell, the spell ends and the trees and plants set down roots wherever they are currently located.",
+    "kind": "utility",
+    "concentration": true
+  }
+}

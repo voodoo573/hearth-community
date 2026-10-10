@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "battlecry-ballad",
+  "name": "Battlecry Ballad",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 3 abjuration spell from Level Up: Advanced 5th Edition. You fill your allies with a thirst for glory and battle using your triumphant rallying cry. Expend and roll a Bardic Inspiration die to determine the number of rounds you can maintain concentration on this spell (minimum 1 round). Each target gains a bonus to attack and damage rolls equal to the number of rounds you have maintained concentration on this spell (maximum +4).\n\nYou cannot cast another spell through your spellcasting focus while concentrating on this spell.",
+  "summary": "3rd-level bard song: allies gain growing attack and damage bonuses each round.",
+  "tags": [
+    "buff",
+    "bard",
+    "song",
+    "a5e"
+  ],
+  "credits": "Battlecry Ballad is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/battlecry-ballad-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Battlecry Ballad",
+    "level": 3,
+    "school": "abjuration",
+    "classes": [
+      "bard"
+    ],
+    "time": "action",
+    "range": "30 ft",
+    "components": "V, S, M (banner or flag)",
+    "duration": "Concentration, special",
+    "desc": "Targets: any number of creatures within range. You fill your allies with a thirst for glory and battle using your triumphant rallying cry. Expend and roll a Bardic Inspiration die to determine the number of rounds you can maintain concentration on this spell (minimum 1 round). Each target gains a bonus to attack and damage rolls equal to the number of rounds you have maintained concentration on this spell (maximum +4).\n\nYou cannot cast another spell through your spellcasting focus while concentrating on this spell.\n\nAt higher levels: You can maintain concentration on this spell for an additional round for each slot level above 3rd.",
+    "kind": "utility",
+    "concentration": true
+  }
+}

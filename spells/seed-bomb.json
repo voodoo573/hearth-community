@@ -1,0 +1,45 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "seed-bomb",
+  "name": "Seed Bomb",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 2 conjuration spell from Level Up: Advanced 5th Edition. Up to four seeds appear in your hand and are infused with magic for the duration. As an action, a creature can throw one of these seeds at a point up to 60 feet away. Each creature within 5 feet of that point makes a Dexterity saving throw or takes 4d6 piercing damage. Depending on the material component used, a seed bomb also causes one of the following additional effects: Pinecone. Seed shrapnel explodes outward.\n\nA creature in the area of the exploding seed bomb makes a Constitution saving throw or it is blinded until the end of its next turn.\n\nSunflower. Seeds enlarge into a blanket of pointy needles. The area affected by the exploding seed bomb becomes difficult terrain for the next minute.\n\nTumbleweed. The weeds unravel to latch around creatures. A creature in the area of the exploding seed bomb makes a Dexterity saving throw or it becomes grappled until the end of its next turn.",
+  "summary": "2nd-level: conjure up to four seed bombs that burst for 4d6 piercing with a plant-based rider.",
+  "tags": [
+    "damage",
+    "nature",
+    "area",
+    "a5e"
+  ],
+  "credits": "Seed Bomb is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/seed-bomb-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Seed Bomb",
+    "level": 2,
+    "school": "conjuration",
+    "classes": [
+      "druid",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "Self (thrown 60 ft)",
+    "components": "S, M (tumbleweed, pinecone, or sunflower head)",
+    "duration": "1 minute",
+    "desc": "Up to four seeds appear in your hand and are infused with magic for the duration. As an action, a creature can throw one of these seeds at a point up to 60 feet away. Each creature within 5 feet of that point makes a Dexterity saving throw or takes 4d6 piercing damage. Depending on the material component used, a seed bomb also causes one of the following additional effects: Pinecone. Seed shrapnel explodes outward.\n\nA creature in the area of the exploding seed bomb makes a Constitution saving throw or it is blinded until the end of its next turn.\n\nSunflower. Seeds enlarge into a blanket of pointy needles. The area affected by the exploding seed bomb becomes difficult terrain for the next minute.\n\nTumbleweed. The weeds unravel to latch around creatures. A creature in the area of the exploding seed bomb makes a Dexterity saving throw or it becomes grappled until the end of its next turn.\n\nAt higher levels: The damage increases by 1d6 for each slot level above 2nd.",
+    "kind": "save",
+    "save": "dex",
+    "damageType": "piercing",
+    "dice": {
+      "count": 4,
+      "sides": 6
+    },
+    "scaleType": "slot",
+    "scaleAt": {
+      "dice": 1
+    }
+  }
+}

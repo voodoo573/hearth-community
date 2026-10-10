@@ -1,0 +1,45 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "whirlwind-kick",
+  "name": "Whirlwind Kick",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 3 transmutation spell from Level Up: Advanced 5th Edition. You must be able to move in order to cast this spell. You leap into the air and spin like a tornado, striking foes all around you with supernatural force as you fly up to 60 feet in a straight line. Your movement (which does not provoke attacks of opportunity) must end on a surface that can support your weight or you fall as normal.\n\nAs part of the casting of this spell, make a melee spell attack against any number of creatures in the area. On a hit, you deal your unarmed strike damage plus 2d6 thunder damage. In addition, creatures in the area make a Dexterity saving throw or are either pulled 10 feet closer to you or pushed 10 feet away (your choice).",
+  "summary": "3rd-level: spin through a 60-ft line, striking every foe for unarmed damage plus 2d6 thunder.",
+  "tags": [
+    "damage",
+    "movement",
+    "unarmed",
+    "a5e"
+  ],
+  "credits": "Whirlwind Kick is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/whirlwind-kick-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Whirlwind Kick",
+    "level": 3,
+    "school": "transmutation",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "Self (60-ft line)",
+    "components": "V, S",
+    "duration": "Instant",
+    "desc": "Area: a line up to 60 feet long and 15 feet wide. You must be able to move in order to cast this spell. You leap into the air and spin like a tornado, striking foes all around you with supernatural force as you fly up to 60 feet in a straight line. Your movement (which does not provoke attacks of opportunity) must end on a surface that can support your weight or you fall as normal.\n\nAs part of the casting of this spell, make a melee spell attack against any number of creatures in the area. On a hit, you deal your unarmed strike damage plus 2d6 thunder damage. In addition, creatures in the area make a Dexterity saving throw or are either pulled 10 feet closer to you or pushed 10 feet away (your choice).\n\nAt higher levels: The extra thunder damage increases by 1d6 for each slot level above 3rd.\n\nHearth note: the dice shown are the extra thunder damage; add your unarmed strike damage on a hit and handle the Dexterity save (pull or push 10 feet) by hand.",
+    "kind": "attack",
+    "damageType": "thunder",
+    "dice": {
+      "count": 2,
+      "sides": 6
+    },
+    "scaleType": "slot",
+    "scaleAt": {
+      "dice": 1
+    }
+  }
+}

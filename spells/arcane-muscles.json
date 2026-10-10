@@ -1,0 +1,39 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "arcane-muscles",
+  "name": "Arcane Muscles",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Cantrip transmutation spell from Level Up: Advanced 5th Edition. Your muscles swell with arcane power. They're too clumsy to effectively wield weapons but certainly strong enough for a powerful punch. Until the spell ends, you can choose to use your spellcasting ability score for Athletics checks, and for the attack and damage rolls of unarmed strikes. In addition, your unarmed strikes deal 1d6 bludgeoning damage and count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+  "summary": "Cantrip: arcane-boosted unarmed strikes (1d6) using your spellcasting ability, plus Athletics.",
+  "tags": [
+    "cantrip",
+    "unarmed",
+    "buff",
+    "a5e"
+  ],
+  "credits": "Arcane Muscles is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/arcane-muscles-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Arcane Muscles",
+    "level": 0,
+    "school": "transmutation",
+    "classes": [
+      "artificer",
+      "cleric",
+      "paladin",
+      "sorcerer",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, 1 min",
+    "desc": "Your muscles swell with arcane power. They're too clumsy to effectively wield weapons but certainly strong enough for a powerful punch. Until the spell ends, you can choose to use your spellcasting ability score for Athletics checks, and for the attack and damage rolls of unarmed strikes. In addition, your unarmed strikes deal 1d6 bludgeoning damage and count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+    "kind": "utility",
+    "concentration": true
+  }
+}

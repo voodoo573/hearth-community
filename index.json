@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:36:41Z",
+  "updated": "2026-10-10T00:37:50Z",
   "items": [
     {
       "id": "alseid",
@@ -324,6 +324,66 @@
       ]
     },
     {
+      "id": "arcane-muscles",
+      "type": "spell",
+      "name": "Arcane Muscles",
+      "author": "voodoo573",
+      "summary": "Cantrip: arcane-boosted unarmed strikes (1d6) using your spellcasting ability, plus Athletics.",
+      "path": "spells/arcane-muscles.json",
+      "version": "1.0.0",
+      "tags": [
+        "cantrip",
+        "unarmed",
+        "buff",
+        "a5e"
+      ]
+    },
+    {
+      "id": "battlecry-ballad",
+      "type": "spell",
+      "name": "Battlecry Ballad",
+      "author": "voodoo573",
+      "summary": "3rd-level bard song: allies gain growing attack and damage bonuses each round.",
+      "path": "spells/battlecry-ballad.json",
+      "version": "1.0.0",
+      "tags": [
+        "buff",
+        "bard",
+        "song",
+        "a5e"
+      ]
+    },
+    {
+      "id": "earth-barrier",
+      "type": "spell",
+      "name": "Earth Barrier",
+      "author": "voodoo573",
+      "summary": "1st-level druid reaction: raise a stone pillar that gives you three-quarters cover.",
+      "path": "spells/earth-barrier.json",
+      "version": "1.0.0",
+      "tags": [
+        "defence",
+        "reaction",
+        "earth",
+        "a5e"
+      ]
+    },
+    {
+      "id": "forest-army",
+      "type": "spell",
+      "name": "Forest Army",
+      "author": "voodoo573",
+      "summary": "9th-level druid spell: awaken an army of trees and plants as a grove swarm under your command.",
+      "path": "spells/forest-army.json",
+      "version": "1.0.0",
+      "tags": [
+        "summon",
+        "nature",
+        "druid",
+        "a5e"
+      ]
+    },
+    {
       "id": "example-hearthfire-bolt",
       "type": "spell",
       "name": "Hearthfire Bolt (Example)",
@@ -337,6 +397,96 @@
         "fire"
       ],
       "example": true
+    },
+    {
+      "id": "mindshield",
+      "type": "spell",
+      "name": "Mindshield",
+      "author": "voodoo573",
+      "summary": "4th-level ward: psychic resistance and advantage on saves against charm and fear.",
+      "path": "spells/mindshield.json",
+      "version": "1.0.0",
+      "tags": [
+        "defence",
+        "psychic",
+        "buff",
+        "a5e"
+      ]
+    },
+    {
+      "id": "searing-equation",
+      "type": "spell",
+      "name": "Searing Equation",
+      "author": "voodoo573",
+      "summary": "1st-level psychic cone: 3d4 psychic and deafened; Intelligence save.",
+      "path": "spells/searing-equation.json",
+      "version": "1.0.0",
+      "tags": [
+        "damage",
+        "psychic",
+        "area",
+        "a5e"
+      ]
+    },
+    {
+      "id": "seed-bomb",
+      "type": "spell",
+      "name": "Seed Bomb",
+      "author": "voodoo573",
+      "summary": "2nd-level: conjure up to four seed bombs that burst for 4d6 piercing with a plant-based rider.",
+      "path": "spells/seed-bomb.json",
+      "version": "1.0.0",
+      "tags": [
+        "damage",
+        "nature",
+        "area",
+        "a5e"
+      ]
+    },
+    {
+      "id": "sporesight",
+      "type": "spell",
+      "name": "Sporesight",
+      "author": "voodoo573",
+      "summary": "7th-level: a spore cloud reveals every creature inside and gives you advantage against them.",
+      "path": "spells/sporesight.json",
+      "version": "1.0.0",
+      "tags": [
+        "detection",
+        "fungus",
+        "area",
+        "a5e"
+      ]
+    },
+    {
+      "id": "storm-kick",
+      "type": "spell",
+      "name": "Storm Kick",
+      "author": "voodoo573",
+      "summary": "5th-level: flash across the field feet-first for thunder and lightning damage, then land beside the target.",
+      "path": "spells/storm-kick.json",
+      "version": "1.0.0",
+      "tags": [
+        "damage",
+        "lightning",
+        "teleport",
+        "a5e"
+      ]
+    },
+    {
+      "id": "whirlwind-kick",
+      "type": "spell",
+      "name": "Whirlwind Kick",
+      "author": "voodoo573",
+      "summary": "3rd-level: spin through a 60-ft line, striking every foe for unarmed damage plus 2d6 thunder.",
+      "path": "spells/whirlwind-kick.json",
+      "version": "1.0.0",
+      "tags": [
+        "damage",
+        "movement",
+        "unarmed",
+        "a5e"
+      ]
     },
     {
       "id": "example-hearth-keeper",

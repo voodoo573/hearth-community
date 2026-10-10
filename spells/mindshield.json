@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "mindshield",
+  "name": "Mindshield",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 4 abjuration spell from Level Up: Advanced 5th Edition. The target has resistance to psychic damage and advantage on saving throws made to resist being charmed or frightened.",
+  "summary": "4th-level ward: psychic resistance and advantage on saves against charm and fear.",
+  "tags": [
+    "defence",
+    "psychic",
+    "buff",
+    "a5e"
+  ],
+  "credits": "Mindshield is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/mindshield-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Mindshield",
+    "level": 4,
+    "school": "abjuration",
+    "classes": [
+      "artificer",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "time": "1 minute",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "Concentration, 10 min",
+    "desc": "Target: one creature you touch. The target has resistance to psychic damage and advantage on saving throws made to resist being charmed or frightened.",
+    "kind": "utility",
+    "concentration": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "searing-equation",
+  "name": "Searing Equation",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 1 enchantment spell from Level Up: Advanced 5th Edition. You briefly go into a magical trance and whisper an alien equation which you never fully remember once the spell is complete. Each creature in the area takes 3d4 psychic damage and is deafened for 1 round.\n\nCreatures who are unable to hear the equation, immune to psychic damage, or who have an Intelligence score lower than 4 are immune to this spell.",
+  "summary": "1st-level psychic cone: 3d4 psychic and deafened; Intelligence save.",
+  "tags": [
+    "damage",
+    "psychic",
+    "area",
+    "a5e"
+  ],
+  "credits": "Searing Equation is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/searing-equation-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Searing Equation",
+    "level": 1,
+    "school": "enchantment",
+    "classes": [
+      "artificer",
+      "warlock",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "Self (15-ft cone)",
+    "components": "V, S",
+    "duration": "Instant",
+    "desc": "Area: 15-foot cone. Intelligence saving throw: a success halves the damage and negates the deafened condition. You briefly go into a magical trance and whisper an alien equation which you never fully remember once the spell is complete. Each creature in the area takes 3d4 psychic damage and is deafened for 1 round.\n\nCreatures who are unable to hear the equation, immune to psychic damage, or who have an Intelligence score lower than 4 are immune to this spell.\n\nAt higher levels: Creatures are deafened for 1 additional round for each slot level above 1st.",
+    "kind": "save",
+    "save": "int",
+    "damageType": "psychic",
+    "dice": {
+      "count": 3,
+      "sides": 4
+    }
+  }
+}

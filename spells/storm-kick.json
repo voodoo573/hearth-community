@@ -1,0 +1,43 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "storm-kick",
+  "name": "Storm Kick",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Level 5 transmutation spell from Level Up: Advanced 5th Edition. You must be able to move in order to cast this spell.\n\nYou leap into the air and flash across the battlefield, arriving feet-first with the force of a thunderbolt. As part of casting this spell, make a ranged spell attack against a creature you can see within range. If you hit, you instantly flash to an open space of your choosing adjacent to the target, dealing bludgeoning damage equal to 1d6 + your spellcasting modifier plus 3d8 thunder damage and 6d8 lightning damage. If your unarmed strike normally uses a larger die, use that instead of a d6. If you miss, you may still choose to teleport next to the target.",
+  "summary": "5th-level: flash across the field feet-first for thunder and lightning damage, then land beside the target.",
+  "tags": [
+    "damage",
+    "lightning",
+    "teleport",
+    "a5e"
+  ],
+  "credits": "Storm Kick is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/spells/storm-kick-a5e/ (Open5e). Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Storm Kick",
+    "level": 5,
+    "school": "transmutation",
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "120 ft",
+    "components": "V, S",
+    "duration": "Instant",
+    "desc": "You must be able to move in order to cast this spell.\n\nYou leap into the air and flash across the battlefield, arriving feet-first with the force of a thunderbolt. As part of casting this spell, make a ranged spell attack against a creature you can see within range. If you hit, you instantly flash to an open space of your choosing adjacent to the target, dealing bludgeoning damage equal to 1d6 + your spellcasting modifier plus 3d8 thunder damage and 6d8 lightning damage. If your unarmed strike normally uses a larger die, use that instead of a d6. If you miss, you may still choose to teleport next to the target.\n\nAt higher levels: When using a 6th-level spell slot or higher, if you are able to make more than one attack when you take the Attack action, you may make an additional melee weapon attack against the target. When using a 7th-level spell slot, you may choose an additional target within 30 feet of the target for each spell slot level above 6th, forcing each additional target to make a Dexterity saving throw or take 6d8 lightning damage.\n\nHearth note: the dice shown are the 6d8 lightning damage; add 1d6 + your spellcasting modifier bludgeoning and 3d8 thunder on a hit.",
+    "kind": "attack",
+    "damageType": "lightning",
+    "dice": {
+      "count": 6,
+      "sides": 8
+    }
+  }
+}
