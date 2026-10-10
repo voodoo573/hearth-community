@@ -1,0 +1,52 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "way-of-the-humble-elephant",
+  "name": "Way of the Humble Elephant",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Way of the Humble Elephant: a monk subclass from Tome of Heroes (Kobold Press). Like their namesake, monks of the Way of the Humble Elephant are respectful and accommodating. A large part of their training involves traveling through their home region and assisting local farmers and common folk with problems ranging from rebuilding burned homes to dispatching troublesome bandits. In areas where their Way is known, adherents are welcomed into the community and their needs are seen to in exchange for the host of benefits their presence brings to the community.",
+  "summary": "Monk tradition: patient, sturdy monks who punish attackers, shrug off terrain and harden their hide.",
+  "tags": [
+    "monk",
+    "tome-of-heroes",
+    "defence",
+    "ki"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/monk/ (Way of the Humble Elephant) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "monk",
+    "id": "way_of_the_humble_elephant",
+    "name": "Way of the Humble Elephant",
+    "desc": "Like their namesake, monks of the Way of the Humble Elephant are respectful and accommodating. A large part of their training involves traveling through their home region and assisting local farmers and common folk with problems ranging from rebuilding burned homes to dispatching troublesome bandits. In areas where their Way is known, adherents are welcomed into the community and their needs are seen to in exchange for the host of benefits their presence brings to the community.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Slow to Anger",
+          "desc": "Starting when you choose this tradition at 3rd level, when you use Patient Defense and an attack hits you, you can use your reaction to halve the damage that you take. When you use Patient Defense and a melee attack made by a creature within your reach misses you, you can use your reaction to force the target to make a Strength saving throw. On a failure, the target is knocked prone.\nWhen you use either of these reactions, you can spend 1 ki point. If you do, your first melee weapon attack that hits before the end of your next turn deals extra damage equal to one roll of your Martial Arts die + your Wisdom modifier."
+        }
+      ],
+      "6": [
+        {
+          "name": "Unyielding Step",
+          "desc": "Starting at 6th level, you can spend 1 ki point on your turn to ignore difficult terrain for 1 minute or until you are incapacitated. For the duration, your speed can't be reduced below 15 feet. If you use this feature while grappled, the creature can use its reaction to move with you whenever you move; otherwise, the grapple ends. If you use this feature while restrained but not grappled, such as by a spider's web, you break free from the restraining material unless it is capable of moving with you."
+        }
+      ],
+      "11": [
+        {
+          "name": "Decisive in Wrath",
+          "desc": "At 11th level, when you spend 1 ki point as part of your Slow to Anger feature, all of your melee weapon attacks that hit before the end of your next turn deal extra damage equal to one roll of your Martial Arts die + your Wisdom modifier."
+        }
+      ],
+      "17": [
+        {
+          "name": "Thick Hide",
+          "desc": "At 17th level, you can spend 5 ki points as a bonus action to gain resistance to bludgeoning, piercing, and slashing damage for 10 minutes."
+        }
+      ]
+    }
+  }
+}

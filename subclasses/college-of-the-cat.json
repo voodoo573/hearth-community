@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "college-of-the-cat",
+  "name": "College of the Cat",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "College of the Cat: a bard subclass from Tome of Heroes (Kobold Press). Scholars and spies, heroes and hunters: whether wooing an admirer in the bright sunlight or stalking prey under the gentle rays of the moon, bards of the College of the Cat excel at diverse skills and exhibit contrary tendencies. The adventurous spirits who favor the College of the Cat let their curiosity and natural talents get them into impossible places. Most are skilled, cunning, and vicious enough to extricate themselves from even the most dangerous situations.",
+  "summary": "Bard college: nimble cat-like performers who pounce with Bardic Inspiration and land on their feet.",
+  "tags": [
+    "bard",
+    "tome-of-heroes",
+    "agile",
+    "support"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/bard/ (College of the Cat) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "bard",
+    "id": "college_of_the_cat",
+    "name": "College of the Cat",
+    "desc": "Scholars and spies, heroes and hunters: whether wooing an admirer in the bright sunlight or stalking prey under the gentle rays of the moon, bards of the College of the Cat excel at diverse skills and exhibit contrary tendencies. The adventurous spirits who favor the College of the Cat let their curiosity and natural talents get them into impossible places. Most are skilled, cunning, and vicious enough to extricate themselves from even the most dangerous situations.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Bonus Proficiencies",
+          "desc": "When you join the College of the Cat at 3rd level, you gain proficiency with the Acrobatics and Stealth skills and with thieves' tools if you don't already have them. In addition, if you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
+        },
+        {
+          "name": "Inspired Pounce",
+          "desc": "Also at 3rd level, you learn to stalk unsuspecting foes engaged in combat with your allies. When an ally you can see uses one of your Bardic Inspiration dice on a weapon attack roll against a creature, you can use your reaction to move up to half your speed and make one melee weapon attack against that creature. You gain a bonus on your attack roll equal to the result of the spent Bardic Inspiration die.\nWhen you reach 6th level in this class, you gain a climbing speed equal to your walking speed, and when you use Inspired Pounce, you can move up to your speed as part of the reaction."
+        }
+      ],
+      "6": [
+        {
+          "name": "My Claws Are Sharp",
+          "desc": "Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, when you use two-weapon fighting to make an attack as a bonus action, you can give a Bardic Inspiration die to a friendly creature within 60 feet of you as part of that same bonus action."
+        }
+      ],
+      "14": [
+        {
+          "name": "Catlike Tread",
+          "desc": "Starting at 14th level, while a creature has one of your Bardic Inspiration dice, it has advantage on Dexterity (Stealth) checks. When you have no uses of Bardic Inspiration left, you have advantage on Dexterity (Stealth) checks."
+        }
+      ]
+    }
+  }
+}

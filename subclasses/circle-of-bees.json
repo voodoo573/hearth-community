@@ -1,0 +1,60 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "circle-of-bees",
+  "name": "Circle of Bees",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Circle of Bees: a druid subclass from Tome of Heroes (Kobold Press). Druids of the Circle of Bees are friends to all stinging insects but focus their attention on honeybees and other pollinating insects. When not adventuring, they tend hives, either created by the insects or by themselves. They tap into the horror inherent in stinging insects to protect their allies or the fields hosting their bee friends.",
+  "summary": "Druid circle of bees: a Wild Shape stinger, bee bond, a hive-mind link and a mantle of bees.",
+  "tags": [
+    "druid",
+    "tome-of-heroes",
+    "nature",
+    "insects"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/druid/ (Circle of Bees) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "druid",
+    "id": "circle_of_bees",
+    "name": "Circle of Bees",
+    "desc": "Druids of the Circle of Bees are friends to all stinging insects but focus their attention on honeybees and other pollinating insects. When not adventuring, they tend hives, either created by the insects or by themselves. They tap into the horror inherent in stinging insects to protect their allies or the fields hosting their bee friends.",
+    "levelFeatures": {
+      "2": [
+        {
+          "name": "Circle Spells",
+          "desc": "Your bond with bees and other stinging beasts grants you knowledge of certain spells. At 2nd level, you learn the true strike cantrip. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Bees Spells table.\nOnce you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.\n\nCircle of Bee Spells\nDruid Level | Spells\n3rd: blur, bombardment of stings\n5th: fly, haste\n7th: giant insect, locate creature\n9th: insect plague, telepathic bond"
+        },
+        {
+          "name": "Bee Bond",
+          "desc": "When you choose this circle at 2nd level, you gain proficiency in the Acrobatics or Stealth skill (your choice), and you can speak and understand Bee Dance, a language shared by bees that involves flying in dance-like patterns. Bees refuse to attack you, even with magical coercion.\nWhen a beast other than a bee attacks you with a weapon that deals poison damage, such as a giant spider's bite or a scorpion's sting, it must succeed on a Charisma saving throw against your spell save DC or have disadvantage on its attack rolls against you until the start of its next turn."
+        },
+        {
+          "name": "Bee Stinger",
+          "desc": "Also at 2nd level, you can use an action and expend one use of your Wild Shape to grow a bee's stinger, typically growing from your wrist, which you can use to make unarmed strikes. When you hit with an unarmed strike while this stinger is active, you use Wisdom instead of Strength for the attack, and your unarmed strike deals piercing damage equal to 1d4 + your Wisdom modifier + poison damage equal to half your proficiency bonus, instead of the bludgeoning damage normal for an unarmed strike.\nThe stinger lasts for a number of hours equal to half your druid level (rounded down) or until you use your Wild Shape again.\nWhen you reach 6th level in this class, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and the poison damage dealt by your stinger equals your proficiency bonus. In addition, the unarmed strike damage you deal while the stringer is active increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level."
+        }
+      ],
+      "6": [
+        {
+          "name": "Bumblebee Rush",
+          "desc": "At 6th level, you can take the Dash action as a bonus action. When you do so, creatures have disadvantage on attack rolls against you until the start of your next turn. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+        }
+      ],
+      "10": [
+        {
+          "name": "Hive Mind",
+          "desc": "At 10th level, when you cast telepathic bond, each creature in the link has advantage on Intelligence, Wisdom, and Charisma checks if at least one creature in the link has proficiency in a skill that applies to that check. In addition, if one creature in the link succeeds on a Wisdom (Perception) check to notice a hidden creature or on a Wisdom (Insight) check, each creature in the link also succeeds on the check. Finally, when a linked creature makes an attack, it has advantage on the attack roll if another linked creature that can see it uses a reaction to assist it."
+        }
+      ],
+      "14": [
+        {
+          "name": "Mantle of Bees",
+          "desc": "At 14th level, you can use an action to cover yourself in bees for 1 hour or until you dismiss them (no action required). While you are covered in a mantle of bees, you gain a +2 bonus to AC, and you have advantage on Charisma (Intimidation) checks. In addition, when a creature within 5 feet of you hits you with a melee weapon, it must make a Constitution saving throw against your spell save DC. On a failure, the attacker takes 1d8 piercing damage and 1d8 poison damage and is poisoned until the end of its next turn. On a successful save, the attacker takes half the damage and isn't poisoned.\nWhile the mantle is active, you can use an action to direct the bees to swarm a 10-foot-radius sphere within 60 feet of you. Each creature in the area must make a Constitution saving throw against your spell save DC. On a failure, a creature takes 4d6 piercing damage and 4d6 poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn't poisoned. The bees then disperse, and your mantle ends.\nOnce you use this feature, you can't use it again until you finish a short or long rest, unless you expend a spell slot of 5th level or higher to create the mantle again."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "wind-domain",
+  "name": "Wind Domain",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Wind Domain: a cleric subclass from Tome of Heroes (Kobold Press). You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells                                                        |\n|--------------|---------------------------------------------------------------|\n| 1st          | feather fall, thunderwave                                 |\n| 3rd          | gust of wind, misty step                                  |\n| 5th          | fly, wind wall                                            |\n| 7th          | conjure minor elementals (air only), freedom of movement  |\n| 9th          | cloudkill, conjure elemental (air only)                   |",
+  "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
+  "tags": [
+    "cleric",
+    "tome-of-heroes",
+    "air",
+    "control"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/cleric/ (Wind Domain) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "cleric",
+    "id": "wind_domain",
+    "name": "Wind Domain",
+    "desc": "You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells                                                        |\n|--------------|---------------------------------------------------------------|\n| 1st          | feather fall, thunderwave                                 |\n| 3rd          | gust of wind, misty step                                  |\n| 5th          | fly, wind wall                              …",
+    "levelFeatures": {
+      "1": [
+        {
+          "name": "Wind's Chosen",
+          "desc": "When you choose this domain at 1st level, you learn the mage hand cantrip and gain proficiency in the Nature skill. When you cast mage hand, you can make the hand invisible, and you can control the hand as a bonus action."
+        }
+      ],
+      "2": [
+        {
+          "name": "Channel Divinity: Grasp Not the Wind",
+          "desc": "At 2nd level, you can use your Channel Divinity to end the grappled condition on yourself and gain a flying speed equal to your walking speed until the end of your turn. You don't provoke opportunity attacks while flying in this way."
+        }
+      ],
+      "6": [
+        {
+          "name": "Stormshield",
+          "desc": "At 6th level, when you take lightning or thunder damage, you can use your reaction to gain resistance to lightning and thunder damage, including against the triggering attack, until the start of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+        }
+      ],
+      "8": [
+        {
+          "name": "Divine Strike",
+          "desc": "At 8th level, you infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+        }
+      ],
+      "17": [
+        {
+          "name": "Dire Tempest",
+          "desc": "At 17th level, you can create a 20-foot-radius tornado of swirling wind and debris at a point you can see within 120 feet. The storm lasts until the start of your next turn. All Huge or smaller creatures within the area must make a Strength saving throw against your spell save DC. On a failure, a creature takes 8d6 bludgeoning damage and is thrown 1d4 x 10 feet into the air. On a success, a creature takes half the damage and isn't thrown into the air. Creatures thrown into the air take falling damage as normal and land prone.\nIn addition, each creature that starts its turn within 15 feet of the tornado must succeed on a Strength saving throw against your spell save DC or be dragged into the tornado's area. A creature that enters the tornado's area is thrown 1d4 x 10 feet into the air, taking falling damage as normal and landing prone.\nOnce you use this feature, you can't use it again until you finish a long rest."
+        }
+      ]
+    }
+  }
+}

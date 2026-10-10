@@ -1,0 +1,68 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "oath-of-the-hearth",
+  "name": "Oath of the Hearth",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Oath of the Hearth: a paladin subclass from Tome of Heroes (Kobold Press). Paladins who swear the Oath of the Hearth endeavor to extend the comforts of home to others, by allaying the rigors of travel or simply assuring those who grow despondent of the possibility of returning home. Ironically, paladins who follow this oath remain far from home in pursuit of their goals. Their oath reflects the welcoming warmth and light provided by the hearth, and paladins following the oath use these elements to turn away the cold or defeat enemies who employ cold as weapons.",
+  "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
+  "tags": [
+    "paladin",
+    "tome-of-heroes",
+    "fire",
+    "support"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/paladin/ (Oath of the Hearth) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "paladin",
+    "id": "oath_of_the_hearth",
+    "name": "Oath of the Hearth",
+    "desc": "Paladins who swear the Oath of the Hearth endeavor to extend the comforts of home to others, by allaying the rigors of travel or simply assuring those who grow despondent of the possibility of returning home. Ironically, paladins who follow this oath remain far from home in pursuit of their goals. Their oath reflects the welcoming warmth and light provided by the hearth, and paladins following the oath use these elements to turn away the cold or defeat enemies who employ cold as weapons.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Tenets of the Hearth",
+          "desc": "Paladins who take the Oath of the Hearth accommodate all creatures and attempt to find diplomatic solutions to conflicts. Once engaged in battle, though, these paladins fight until they defeat their enemies, or their enemies surrender. They rarely extend this peaceful stance to creatures who attack with cold or desire to spread cold conditions beyond natural confines.\n\nBastion of Peace. Reach out the hand of friendship when encountering strangers, and advocate for peace at the outset of any meeting. Encourage your companions to do likewise. When it becomes clear your opponents wish for violence, don't shrink away from combat.\n\nBeacon in the Dark. When winter comes and the nights increasingly lengthen, shine a welcoming light to which all people can rally. No creature shall prey on others under the cover of darkness while you are there.\n\nHospitality of Home. Provide the comforts of home to those who meet with you peacefully. Respect others' cultures and traditions, provided they don't espouse aggression and violence toward others.\n\nProtection from the Elements. Ensure all people have shelter from the weather. Help during spring flooding, wintry blizzards, and when the blistering sun threatens heatstroke in the summer.\n\nRepel the Cold. Strive against foes that seek to bring eternal winter to the world or expand their icy domains into warmer climates. Understand the necessity of the changing of seasons and seek to banish only cold that is abnormal."
+        },
+        {
+          "name": "Divine Sense",
+          "desc": "In addition to knowing the location of any celestial, fiend, or undead, your Divine Sense feature allows you to know the location of any cold creature within 60 feet of you that is not behind total cover."
+        },
+        {
+          "name": "Fiery Smite",
+          "desc": "When you use your Divine Smite feature, you can choose for the extra damage you deal to be fire or radiant, and the extra damage increases to 1d8 only if the target is an undead or a cold creature."
+        },
+        {
+          "name": "Oath Spells",
+          "desc": "You gain oath spells at the paladin levels listed in the Oath of the Hearth Spells table. See the Sacred Oath class feature for how oath spells work.\n\nOath of the Hearth Spells (table)\nPaladin Level | Spells\n3rd: burning hands, sanctuary\n5th: calm emotions, flame blade\n9th: protection from energy, tiny hut\n13th: guardian of faith, wall of fire\n17th: flame strike, hallow"
+        },
+        {
+          "name": "Channel Divinity",
+          "desc": "When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\nCease Hostility. As an action, you can use your Channel Divinity and speak soothing words. For 1 minute, each creature within 60 feet of you that can see or hear you must succeed on a Charisma saving throw to attack another creature. A creature hostile to you has disadvantage on the saving throw. This effect ends on a creature if it is attacked or harmed by a spell.\n\nTurn Boreal Creatures. As an action, you can use your Channel Divinity and speak a prayer against unnatural cold. Each cold creature within 30 feet of you and that can see or hear you must succeed on a Wisdom saving throw or be turned for 1 minute or until it takes damage.\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ],
+      "7": [
+        {
+          "name": "Aura of the Hearth",
+          "desc": "Beginning at 7th level, you and friendly creatures within 10 feet of you have advantage on saving throws against spells and effects that deal cold damage. If such a creature succeeds on a saving throw against a spell or effect that allows the creature to take only half the cold damage on a successful save, the creature instead takes no damage. In addition, you and friendly creatures within 10 feet of you have advantage on saving throws against the longterm effects of exposure to cold weather. When you reach 18th level in this class, the range of this aura increases to 30 feet."
+        }
+      ],
+      "15": [
+        {
+          "name": "Icewalker",
+          "desc": "Starting at 15th level, you have resistance to cold damage, and you can't be restrained or petrified by cold or ice. In addition, you can move across and climb icy surfaces without needing to make an ability check, and difficult terrain composed of ice or snow doesn't cost you extra movement."
+        }
+      ],
+      "20": [
+        {
+          "name": "Roaring Fire",
+          "desc": "At 20th level, you can take on the aspects of a healthy, tended fire, radiating heat and light. For 1 minute, you gain the following benefits:\n* You shed bright light in a 20-foot radius and dim light for an additional 20 feet.\n* Whenever a cold creature starts its turn within 20 feet of you, the creature takes 2d8 fire damage, which ignores resistance and immunity to fire damage.\n* Whenever you cast a paladin spell that deals fire damage and has a casting time of 1 action, you can cast it as a bonus action instead.\n* Your weapon attacks deal an extra 1d6 fire damage on a hit. If you deal fire damage to a cold creature, it must succeed on a Wisdom saving throw or become frightened of you for 1 minute, or until it takes any damage.\nOnce you use this feature, you can't use it again until you finish a long rest."
+        }
+      ]
+    }
+  }
+}

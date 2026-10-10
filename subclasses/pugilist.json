@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "pugilist",
+  "name": "Pugilist",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Pugilist: a fighter subclass from Tome of Heroes (Kobold Press). Pugilists live by their fists, bare-knuckle warriors who do not hesitate to throw hands if the situation demands it. They know the intense, close, violent intimacy of melee, and they operate unapologetically in that space. Whether in fighting pits by the docks to make some extra coin, in the king's grand arena as champions of quarreling nobles, or in the employ of local merchants in need of seemingly weaponless guards, pugilists can be found in all rungs of society. Pugilists take pleasure in a battle hard won and thrill in the energy of the fight rather than in a kill. They can often be found celebrating or having drinks with a former opponent hours after the fight, regardless of the bout's winner.",
+  "summary": "Fighter archetype: a bare-knuckle brawler with tough unarmed strikes, grit and debilitating blows.",
+  "tags": [
+    "fighter",
+    "tome-of-heroes",
+    "unarmed",
+    "tank"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/fighter/ (Pugilist) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "fighter",
+    "id": "pugilist",
+    "name": "Pugilist",
+    "desc": "Pugilists live by their fists, bare-knuckle warriors who do not hesitate to throw hands if the situation demands it. They know the intense, close, violent intimacy of melee, and they operate unapologetically in that space. Whether in fighting pits by the docks to make some extra coin, in the king's grand arena as champions of quarreling nobles, or in the employ of local merchants in need of seemingly weaponless guards, pugilists can be found in all rungs of society. Pugilists take pleasure in a battle hard won and thrill in the energy of the fight rather than in a kill.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Unarmed Warrior",
+          "desc": "When you choose this archetype at 3rd level, you learn to use your fists, knees, elbows, head, and feet to attack your opponents. You gain the following benefits while you are not wearing heavy armor and while you are not wielding weapons or a shield:\n* Your unarmed strikes deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. Your unarmed strike damage increases as you reach higher levels. The d6 becomes a d8 at 10th level and a d10 at 18th level.\n* When you use the Attack action to make one or more unarmed strikes, you can make one unarmed strike as a bonus action."
+        },
+        {
+          "name": "Resilient Fighter",
+          "desc": "Starting at 3rd level, you learn to endure great amounts of physical punishment. You add your Constitution modifier (minimum of 1) to any death saving throw you make. In addition, you can use Second Wind a number of times equal to your proficiency bonus. You regain all expended uses when you finish a short or long rest."
+        }
+      ],
+      "7": [
+        {
+          "name": "Uncanny Fortitude",
+          "desc": "Beginning at 7th level, if damage reduces you to 0 hit points, you can make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, you drop to 1 hit point instead. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.\nIn addition, when you use Second Wind, you now regain hit points equal to 1d10 + your fighter level + your Constitution modifier."
+        }
+      ],
+      "10": [
+        {
+          "name": "Debilitating Blow",
+          "desc": "At 10th level, when you hit one target with two unarmed strikes in the same turn, you can use a bonus action to force the target to make a Constitution saving throw (DC equals 8 + your proficiency bonus + your Strength modifier). On a failure, the target has disadvantage on the next attack roll, ability check, or saving throw it makes before the start of your next turn."
+        }
+      ],
+      "15": [
+        {
+          "name": "Withstand Death",
+          "desc": "At 15th level, when you are reduced to 0 hit points, you can use Second Wind as a reaction, provided you have uses of Second Wind remaining. You can decide to use this reaction before or after your Uncanny Fortitude feature triggers.\nIn addition, when you make a death saving throw and roll a 1 on the d20, it counts as one failure instead of two."
+        }
+      ],
+      "18": [
+        {
+          "name": "Opportunistic Brawler",
+          "desc": "Starting at 18th level, you might not look for a fight around every corner, but you're ready in case one happens. You have advantage on initiative rolls.\nIn addition, when a creature you can see enters a space within 5 feet of you, you can make one opportunity attack against the creature. This opportunity attack must be made with an unarmed strike. You have a number of reactions each turn equal to your proficiency bonus, but these reactions can be used only to perform opportunity attacks."
+        }
+      ]
+    }
+  }
+}

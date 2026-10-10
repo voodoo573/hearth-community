@@ -1,0 +1,60 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "grove-warden",
+  "name": "Grove Warden",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Grove Warden: a ranger subclass from Tome of Heroes (Kobold Press). Fiercely protective of their territory, alseid herds form close bonds with their home forests. In return for their diligent protection, the forests offer their blessings to dedicated alseid rangers. In recent years, woodsy adventurers of other races who have earned the forests' trust also received this blessing, though their numbers are scant. These Grove Wardens can tap into the living magic of ancient forests. Your senses travel through the plants and earth of the woods, and the very land rises up to strike down your enemies.",
+  "summary": "Ranger archetype: guardians of sacred groves who wield the forest's will against intruders.",
+  "tags": [
+    "ranger",
+    "tome-of-heroes",
+    "nature",
+    "forest"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/ranger/ (Grove Warden) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "ranger",
+    "id": "grove_warden",
+    "name": "Grove Warden",
+    "desc": "Fiercely protective of their territory, alseid herds form close bonds with their home forests. In return for their diligent protection, the forests offer their blessings to dedicated alseid rangers. In recent years, woodsy adventurers of other races who have earned the forests' trust also received this blessing, though their numbers are scant. These Grove Wardens can tap into the living magic of ancient forests. Your senses travel through the plants and earth of the woods, and the very land rises up to strike down your enemies.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Grove Warden Magic",
+          "desc": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Grove Warden Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\nGrove Warden Spells\nRanger Level | Spells\n3rd: entangle\n5th: branding smite\n9th: speak with plants\n13th: hallucinatory terrain\n17th: animate objects"
+        },
+        {
+          "name": "Whispers of the Forest",
+          "desc": "At 3rd level, when you use your Primeval Awareness feature while within a forest, you add humanoids to the list of creature types you can sense. When sensing humanoids, you know the general direction of the creatures, and you know if a humanoid is solitary, in a small group of up to 5 humanoids, or a pack of more than 5 humanoids."
+        },
+        {
+          "name": "Forest's Will",
+          "desc": "At 3rd level, you can magically draw on the living essence of the land to hamper your foes. As a bonus action, choose one creature you can see within 60 feet of you. Your next weapon attack against that creature has advantage. If that attack hits, the creature's speed is reduced by 10 feet until the start of your next turn. When you reach 11th level in this class, if that attack hits, the creature's speed is instead halved until the start of your next turn."
+        }
+      ],
+      "7": [
+        {
+          "name": "Intruder's Bane",
+          "desc": "At 7th level, you can command the land around you to come to your aid. As a bonus action, choose a point you can see on the ground within 60 feet. You cause the area within 15 feet of that point to undulate and warp. Each creature in the area must make a Dexterity saving throw against your spell save DC. On a failure, a creature is pushed up to 15 feet in a direction of your choice and knocked prone. Once you use this feature, you can't use it again until you finish a short or long rest."
+        }
+      ],
+      "11": [
+        {
+          "name": "Wrath of the Forest",
+          "desc": "At 11th level, you can call on the land in your vicinity to strike at your enemies. When you take the Attack action, you can use a bonus action to make a rock, branch, root, or other small natural object attack a creature within 30 feet of you. You are proficient with the attack, it counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you add your Dexterity modifier to the attack and damage rolls. The damage is of a type appropriate to the object, such as piercing for a thorny branch or bludgeoning for a rock, and the damage die is a d8."
+        }
+      ],
+      "15": [
+        {
+          "name": "Living Bulwark",
+          "desc": "Starting at 15th level, the land around you comes to your aid when you are in danger, interposing rocks, branches, vines, roots, or even the ground itself between you and your foes. When a creature you can see targets you with an attack, you can use your reaction to roll a d8 and add it to your AC against the attack."
+        }
+      ]
+    }
+  }
+}

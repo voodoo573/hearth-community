@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "path-of-thorns",
+  "name": "Path of Thorns",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Path of Thorns: a barbarian subclass from Tome of Heroes (Kobold Press). Path of Thorns barbarians use ancient techniques developed by the druids of old that enable them to grow thorns all over their body. The first barbarians of this path fought alongside these druids to defend the natural order. In the centuries since, the knowledge of these techniques has spread, allowing others access to this power.\nThough named for the thorns that covered the first barbarians to walk this path, current followers of this path can display thorns, spines, or boney growths while raging.",
+  "summary": "Barbarian path: grow thorns while raging for piercing unarmed strikes, thorny grapples and toxic barrages.",
+  "tags": [
+    "barbarian",
+    "tome-of-heroes",
+    "nature",
+    "unarmed"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/barbarian/ (Path of Thorns) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "barbarian",
+    "id": "path_of_thorns",
+    "name": "Path of Thorns",
+    "desc": "Path of Thorns barbarians use ancient techniques developed by the druids of old that enable them to grow thorns all over their body. The first barbarians of this path fought alongside these druids to defend the natural order. In the centuries since, the knowledge of these techniques has spread, allowing others access to this power.\nThough named for the thorns that covered the first barbarians to walk this path, current followers of this path can display thorns, spines, or boney growths while raging.",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Blossoming Thorns",
+          "desc": "Beginning at 3rd level, when you enter your rage, hard, sharp thorns emerge over your whole body, turning your unarmed strikes into dangerous weapons. When you hit with an unarmed strike while raging, your unarmed strike deals piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. In addition, while raging, when you use the Attack action with an unarmed strike on your turn, you can make one unarmed strike as a bonus action.\nThe unarmed strike damage you deal while raging increases when you reach certain levels in this class: to 1d6 at 8th level and to 1d8 at 14th level."
+        },
+        {
+          "name": "Thorned Grasp",
+          "desc": "Also at 3rd level, when you use the Attack action to grapple a creature while raging, the target takes 1d4 piercing damage if your grapple check succeeds, and it takes 1d4 piercing damage at the start of each of your turns, provided you continue to grapple the creature and are raging. When you reach 10th level in this class, this damage increases to 2d4."
+        }
+      ],
+      "6": [
+        {
+          "name": "Nature's Blessing",
+          "desc": "At 6th level, the thorns you grow while raging become more powerful and count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. When you are hit by a melee weapon attack by a creature within 5 feet of you while raging, that creature takes 1d4 piercing damage. When you reach 10th level in this class, this damage increases to 2d4.\nAlternatively, while raging, you can use your reaction to disarm a creature that hits you with a melee weapon while within 5 feet of you by catching its weapon in your thorns instead of the attacker taking damage from your thorns. The attacker must succeed on a Strength saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or drop the weapon it used to attack you. The weapon lands at its feet. The attacker must be wielding a weapon for you to use this reaction."
+        }
+      ],
+      "10": [
+        {
+          "name": "Toxic Infusion",
+          "desc": "Starting at 10th level, when you enter your rage or as a bonus action while raging, you can infuse your thorns with toxins for 1 minute. While your thorns are infused with toxins, the first creature you hit on each of your turns with an unarmed strike must succeed on a Constitution saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or be poisoned until the end of its next turn.\nYou can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+        }
+      ],
+      "14": [
+        {
+          "name": "Thorn Barrage",
+          "desc": "At 14th level, you can use an action to shoot the thorns from your body while raging. Each creature within 10 feet of you must make a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus), taking 4d6 piercing damage on a failed save, or half as much damage on a successful one.\nYou can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+        }
+      ]
+    }
+  }
+}

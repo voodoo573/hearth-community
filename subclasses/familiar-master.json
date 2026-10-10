@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "familiar-master",
+  "name": "Familiar Master",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Familiar Master: a wizard subclass from Tome of Heroes (Kobold Press). Each wizard has a strong connection with their familiar, but some mages eschew specializing in a school of magic in favor of forming a powerful bond with a familiar. This bond allows the two to work in tandem in ways that few arcane practitioners could even dream of. Those who encounter such a familiar never look at a rodent or bird the same way again.",
+  "summary": "Wizard tradition: mages who bond with a greater familiar and channel spells through it.",
+  "tags": [
+    "wizard",
+    "tome-of-heroes",
+    "familiar",
+    "arcane"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/wizard/ (Familiar Master) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "wizard",
+    "id": "familiar_master",
+    "name": "Familiar Master",
+    "desc": "Each wizard has a strong connection with their familiar, but some mages eschew specializing in a school of magic in favor of forming a powerful bond with a familiar. This bond allows the two to work in tandem in ways that few arcane practitioners could even dream of. Those who encounter such a familiar never look at a rodent or bird the same way again.",
+    "levelFeatures": {
+      "2": [
+        {
+          "name": "Familiar Savant",
+          "desc": "Beginning when you select this arcane tradition at 2nd level, you learn the find familiar spell if you don't know it already. You innately know this spell and don't need to have it scribed in your spellbook or prepared in order to cast it. When you cast find familiar, the casting time is 1 action, and it requires no material components.\nYou can cast find familiar without expending a spell slot. You can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.\nIn addition, when you cast the find familiar spell, you can choose for your familiar to take the form of any Small or smaller beast that is CR 1/4 or lower, such as a flying snake, giant moth (see Creature Codex), or giant armadillo (see Tome of Beasts 2). The familiar has the statistics of the chosen beast form, but it is a celestial, fey, or fiend (your choice) instead of a beast.\nWhen you reach 6th level in this class, your familiar can take the form of any Small or smaller beast that is CR 1 or lower. Alternatively, at the GM's discretion, your familiar can be any Tiny celestial, dragon, fey, or fiend that is CR 1 or lower."
+        },
+        {
+          "name": "Greater Familiar",
+          "desc": "Also at 2nd level, when you cast find familiar, your familiar gains the following additional benefits:\n* Your familiar adds your proficiency bonus to its Armor Class, and it uses your proficiency bonus in place of its own when making ability checks and saving throws. It is proficient in any saving throw in which you are proficient.\n* Your familiar's hit points equal its normal hit point maximum or 1 + your Intelligence modifier + three times your wizard level, whichever is higher. It has a number of Hit Dice (d4s) equal to your wizard level.\n* In combat, your familiar shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but, if you don't issue any commands to it, the only action it takes is the Dodge action. You can use your bonus action to direct it to take any action in its stat block or some other action. If you are incapacitated, the familiar can take any action of its choice, not just Dodge.\n* Your familiar's attacks are enhanced by the magic bond you share with it. When making attack rolls, your familiar uses your spell attack bonus or its normal attack bonus, whichever is higher. In addition, when your familiar hits with an attack, the attack deals force damage equal to 1d4 + its Strength or Dexterity modifier (your choice) + your proficiency bonus instead of its normal damage. If the familiar's attack normally deals additional damage, such as a flying snake's poison, or has an additional effect, such as an octopus's grapple, the familiar's attack still has that additional damage or effect.\n* Your familiar's Intelligence increases to 8 unless it is already higher. It can understand and speak Common and either Celestial (if celestial), Sylvan (if fey), or Abyssal or Infernal (if fiend)."
+        }
+      ],
+      "6": [
+        {
+          "name": "Strengthened Bond",
+          "desc": "Starting at 6th level, your magical bond with your familiar grows stronger. If your familiar has a trait or action that forces a creature to make a saving throw, it uses your spell save DC. In addition, you can access your familiar's senses by using either an action or a bonus action, and whenever your familiar is within 100 feet of you, it can expend its reaction to deliver any wizard spell you cast. If the spell has a range of 5 feet or more, you must be sharing your familiar's senses before casting the spell. If the spell requires an attack roll, ability check, or saving throw, you use your own statistics to adjudicate the result."
+        }
+      ],
+      "10": [
+        {
+          "name": "Arcane Amplification",
+          "desc": "Starting at 10th level, you can add your Intelligence modifier to one damage roll of any wizard spell you cast through your familiar. In addition, your familiar has advantage on saving throws against spells and other magical effects."
+        }
+      ],
+      "14": [
+        {
+          "name": "Companion Concentration",
+          "desc": "Starting at 14th level, when you are concentrating on a spell of 3rd level or lower, you can use an action to draw on your connection with your familiar to pass the burden of concentration onto it, freeing you up to concentrate on a different spell. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+        }
+      ]
+    }
+  }
+}

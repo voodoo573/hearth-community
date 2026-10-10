@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:36:26Z",
+  "updated": "2026-10-10T00:36:41Z",
   "items": [
     {
       "id": "alseid",
@@ -159,6 +159,81 @@
       ]
     },
     {
+      "id": "cat-burglar",
+      "type": "subclass",
+      "name": "Cat Burglar",
+      "author": "voodoo573",
+      "summary": "Rogue archetype: a climbing, dodging thief who slips over walls and through locked doors.",
+      "path": "subclasses/cat-burglar.json",
+      "version": "1.0.0",
+      "tags": [
+        "rogue",
+        "tome-of-heroes",
+        "stealth",
+        "climbing"
+      ]
+    },
+    {
+      "id": "circle-of-bees",
+      "type": "subclass",
+      "name": "Circle of Bees",
+      "author": "voodoo573",
+      "summary": "Druid circle of bees: a Wild Shape stinger, bee bond, a hive-mind link and a mantle of bees.",
+      "path": "subclasses/circle-of-bees.json",
+      "version": "1.0.0",
+      "tags": [
+        "druid",
+        "tome-of-heroes",
+        "nature",
+        "insects"
+      ]
+    },
+    {
+      "id": "college-of-the-cat",
+      "type": "subclass",
+      "name": "College of the Cat",
+      "author": "voodoo573",
+      "summary": "Bard college: nimble cat-like performers who pounce with Bardic Inspiration and land on their feet.",
+      "path": "subclasses/college-of-the-cat.json",
+      "version": "1.0.0",
+      "tags": [
+        "bard",
+        "tome-of-heroes",
+        "agile",
+        "support"
+      ]
+    },
+    {
+      "id": "familiar-master",
+      "type": "subclass",
+      "name": "Familiar Master",
+      "author": "voodoo573",
+      "summary": "Wizard tradition: mages who bond with a greater familiar and channel spells through it.",
+      "path": "subclasses/familiar-master.json",
+      "version": "1.0.0",
+      "tags": [
+        "wizard",
+        "tome-of-heroes",
+        "familiar",
+        "arcane"
+      ]
+    },
+    {
+      "id": "grove-warden",
+      "type": "subclass",
+      "name": "Grove Warden",
+      "author": "voodoo573",
+      "summary": "Ranger archetype: guardians of sacred groves who wield the forest's will against intruders.",
+      "path": "subclasses/grove-warden.json",
+      "version": "1.0.0",
+      "tags": [
+        "ranger",
+        "tome-of-heroes",
+        "nature",
+        "forest"
+      ]
+    },
+    {
       "id": "example-lanternbearer",
       "type": "subclass",
       "name": "Lanternbearer (Example)",
@@ -172,6 +247,81 @@
         "support"
       ],
       "example": true
+    },
+    {
+      "id": "oath-of-the-hearth",
+      "type": "subclass",
+      "name": "Oath of the Hearth",
+      "author": "voodoo573",
+      "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
+      "path": "subclasses/oath-of-the-hearth.json",
+      "version": "1.0.0",
+      "tags": [
+        "paladin",
+        "tome-of-heroes",
+        "fire",
+        "support"
+      ]
+    },
+    {
+      "id": "path-of-thorns",
+      "type": "subclass",
+      "name": "Path of Thorns",
+      "author": "voodoo573",
+      "summary": "Barbarian path: grow thorns while raging for piercing unarmed strikes, thorny grapples and toxic barrages.",
+      "path": "subclasses/path-of-thorns.json",
+      "version": "1.0.0",
+      "tags": [
+        "barbarian",
+        "tome-of-heroes",
+        "nature",
+        "unarmed"
+      ]
+    },
+    {
+      "id": "pugilist",
+      "type": "subclass",
+      "name": "Pugilist",
+      "author": "voodoo573",
+      "summary": "Fighter archetype: a bare-knuckle brawler with tough unarmed strikes, grit and debilitating blows.",
+      "path": "subclasses/pugilist.json",
+      "version": "1.0.0",
+      "tags": [
+        "fighter",
+        "tome-of-heroes",
+        "unarmed",
+        "tank"
+      ]
+    },
+    {
+      "id": "way-of-the-humble-elephant",
+      "type": "subclass",
+      "name": "Way of the Humble Elephant",
+      "author": "voodoo573",
+      "summary": "Monk tradition: patient, sturdy monks who punish attackers, shrug off terrain and harden their hide.",
+      "path": "subclasses/way-of-the-humble-elephant.json",
+      "version": "1.0.0",
+      "tags": [
+        "monk",
+        "tome-of-heroes",
+        "defence",
+        "ki"
+      ]
+    },
+    {
+      "id": "wind-domain",
+      "type": "subclass",
+      "name": "Wind Domain",
+      "author": "voodoo573",
+      "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
+      "path": "subclasses/wind-domain.json",
+      "version": "1.0.0",
+      "tags": [
+        "cleric",
+        "tome-of-heroes",
+        "air",
+        "control"
+      ]
     },
     {
       "id": "example-hearthfire-bolt",

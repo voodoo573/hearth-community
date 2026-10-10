@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/subclass.schema.json",
+  "id": "cat-burglar",
+  "name": "Cat Burglar",
+  "type": "subclass",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Cat Burglar: a rogue subclass from Tome of Heroes (Kobold Press). As a cat burglar, you've honed your ability to enter closed or restricted areas, drawing upon a tradition first developed among the catfolk, who often are innately curious and driven to learn what wonders, riches, or unusual friends and foes lie beyond their reach or just out of sight. In ages past, some allowed this inquisitiveness to guide them toward a rogue's life devoted to bridging that gap by breaking into any and all structures, dungeons, or walled-off regions that prevented them from satisfying their curiosity.\n\nSo successful were these first catfolk burglars that other rogues soon began emulating their techniques. Walls become but minor inconveniences once you work out the best methods of scaling them and learn to mitigate injuries from falls. In time, cat burglars become adept at breaching any openings they find; after all, if a door was not meant to be opened, why would it have been placed there? Those who devote a lifetime to such endeavors eventually learn to spot and bypass even the cleverest traps and hidden doors, including those disguised or warded by magic.\n\nSome cat burglars use their abilities to help themselves to the contents of treasure vaults or uncover hidden secrets, others become an integral part of an adventuring party that values skillful infiltration techniques, and still others get the jump on their foes by taking the fight to them where and when they least expect it, up to and including private bed chambers or inner sanctums. You'll likely end up someplace you're not supposed to be, but those are the places most worth visiting!",
+  "summary": "Rogue archetype: a climbing, dodging thief who slips over walls and through locked doors.",
+  "tags": [
+    "rogue",
+    "tome-of-heroes",
+    "stealth",
+    "climbing"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/classes/rogue/ (Cat Burglar) (Open5e). Changes: converted to Hearth's subclass format.",
+  "data": {
+    "klass": "rogue",
+    "id": "cat_burglar",
+    "name": "Cat Burglar",
+    "desc": "As a cat burglar, you've honed your ability to enter closed or restricted areas, drawing upon a tradition first developed among the catfolk, who often are innately curious and driven to learn what wonders, riches, or unusual friends and foes lie beyond their reach or just out of sight. In ages past, some allowed this inquisitiveness to guide them toward a rogue's life devoted to bridging that gap by breaking into any and all structures, dungeons, or walled-off regions that prevented them from satisfying their curiosity.\n\nSo successful were these first catfolk burglars that other rogues soon…",
+    "levelFeatures": {
+      "3": [
+        {
+          "name": "Up, Over, and In",
+          "desc": "Beginning when you choose this archetype at 3rd level, you have a climbing speed equal to your walking speed. If you already have a climbing speed equal to or greater than your walking speed, it increases by 5 feet. In addition, when you are falling, you can use your reaction to soften the fall. You reduce the falling damage you take by an amount equal to your proficiency bonus + your rogue level. You don't land prone, unless the damage you take from the fall would reduce you to less than half your hit point maximum."
+        },
+        {
+          "name": "Artful Dodger",
+          "desc": "At 3rd level, alert to the dangers posed by hidden traps and wards, you have advantage on saving throws made to avoid or resist a trap or a magic effect with a trigger, such as the glyph of warding spell, and you have resistance to the damage dealt by such effects."
+        }
+      ],
+      "9": [
+        {
+          "name": "Cat's Eye",
+          "desc": "Starting at 9th level, you have advantage on Wisdom (Perception) or Intelligence (Investigation) checks made to find or disarm traps, locate secret or hidden doors, discern the existence of an illusion, or spot a glyph of warding. You can also search for traps while traveling at a normal pace, instead of only while at a slow pace."
+        }
+      ],
+      "13": [
+        {
+          "name": "Breaking and Entering",
+          "desc": "At 13th level, when you make an attack against a door, gate, window, shutters, bars, or similar object or structure that is blocking or barring an egress, you have advantage on the attack roll, and you can add your Sneak Attack damage on a hit. You can choose for this damage to be audible out to a range of 100 feet or to be audible only within 5 feet of the point where you hit the object or structure. Similarly, you can choose for this damage to appear more or less impactful than it actually is, such as neatly carving a hole for you to squeeze through a wall or window or bursting a door off its hinges.\n\nYour expertise at deftly dismantling crafted works extends to constructs and undead. You don't need advantage on the attack roll to use your Sneak Attack feature against constructs and undead. As normal, you can't use Sneak Attack if you have disadvantage on the attack roll."
+        }
+      ],
+      "17": [
+        {
+          "name": "Master Burglar",
+          "desc": "At 17th level, you can slip past a fire-breathing statue unscathed or tread lightly enough to not set off a pressure plate. The first time on each of your turns 118 that you would trigger a trap or magic effect with a trigger, such as the glyph of warding spell, you can choose to not trigger it.\nAs a bonus action, you can choose a number of creatures equal to your proficiency bonus that you can see within 30 feet of you and grant them the effects of this feature for 1 hour. Once you grant this feature to others, you can't do so again until you finish a long rest."
+        }
+      ]
+    }
+  }
+}
