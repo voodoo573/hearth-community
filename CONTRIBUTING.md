@@ -105,7 +105,10 @@ are required.
     `"option": "Name"` so it appears in the Channel Divinity chooser). `uses` is a number, `"pb"`,
     an ability name such as `"wis"` (that modifier, minimum 1) or `"unlimited"`. Add `"ki": 2` for
     a ki cost instead of a use counter. For a save, `saveAbility` is the target's save and `dc` is
-    `"spell"` or the ability behind 8 + proficiency bonus + modifier. `desc` is a short card text.
+    `"spell"` or the ability behind 8 + proficiency bonus + modifier (or `"text"` with `dcText`, e.g.
+    `"5 + the damage taken"`, or `"none"`). `desc` is a short card text. A feature that lasts a while
+    can add `"duration": "1 minute"` and `"rider": { "count": 1, "sides": 6, "dtype": "fire" }`
+    (extra damage on every weapon hit while it's on).
   - `rider`: extra weapon damage, `{ "count": 1, "sides": 8, "dtype": "thunder", "freq": "once_per_turn", "scale": { "14": 2 } }`.
   - `smite`: Divine Smite changes, `{ "kind": "smite", "dtypes": ["fire", "radiant"], "vs": "undead or cold creature" }`.
   - `second_wind`: `{ "kind": "second_wind", "uses": "pb" }` and/or `"addCon": true`.
@@ -113,6 +116,7 @@ are required.
     "when": "always" | "rage" | "feature", "scale": { "10": { "sides": 8 } } }`.
   - `speed`: `{ "amount": 5 }` adds walking speed; `{ "type": "climb", "amount": "walk" }` (or a
     number of feet) gives another movement type. Any effect can carry `"minLevel": 6`.
+  Set `"infer": false` on a feature to stop Hearth reading extra effects from its text.
   If you're unsure, leave `effects` out.
 
 ### Spell (`spells/`): see `schema/spell.schema.json`
@@ -128,7 +132,8 @@ are required.
 
 `data`: `id` (snake_case), `name`, `desc`. Optional: `prerequisite`, `hpPerLevel`
 (as in the Tough feat), `abilityIncrease` for a fixed ability score increase (`{ "con": 1 }`)
-and `speed`, a walking speed bonus in feet (`10`).
+`speed`, a walking speed bonus in feet (`10`), and `speeds`, other movement speeds
+(`{ "climb": 30 }`).
 
 ### Background (`backgrounds/`): see `schema/background.schema.json`
 

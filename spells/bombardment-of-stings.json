@@ -1,0 +1,48 @@
+{
+  "$schema": "../schema/spell.schema.json",
+  "id": "bombardment-of-stings",
+  "name": "Bombardment of Stings",
+  "type": "spell",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "2nd-level evocation spell from Kobold Press's Warlock 23: Bearfolk, granted by the Circle of Bees druid circle (Tome of Heroes) at 3rd level. Each creature in a 30-foot cone must make a Dexterity saving throw. On a failed save, a creature takes 4d6 piercing damage and is poisoned for 1 minute. On a successful save, a creature takes half as much damage and isn't poisoned. At the end of each of its turns, a poisoned target can make a Constitution saving throw. On a success, the condition ends on the target.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
+  "summary": "2nd-level: a 30-foot cone of stings, 4d6 piercing and poisoned on a failed Dexterity save.",
+  "tags": [
+    "area",
+    "poison",
+    "insects",
+    "kobold-press"
+  ],
+  "credits": "Open Game Content from Warlock 23: Bearfolk. Copyright 2020, Open Design LLC; Authors Celeste Conowitch, Sarah Madsen, and Mike Welham. Published by Kobold Press (https://koboldpress.com/kpstore/product-category/all-products/warlock-5th-edition-dnd/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/spells/bombardment-of-stings/ (Open5e, Warlock Archives); material component text from the same publication as listed at http://kpogl.wikidot.com/spell:bombardment-of-stings. Changes: converted to Hearth's spell format.",
+  "data": {
+    "name": "Bombardment of Stings",
+    "level": 2,
+    "school": "evocation",
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "time": "action",
+    "range": "Self (30-ft cone)",
+    "components": "V, S, M (a handful of bee stingers)",
+    "duration": "Instant",
+    "desc": "Each creature in a 30-foot cone must make a Dexterity saving throw. On a failed save, a creature takes 4d6 piercing damage and is poisoned for 1 minute. On a successful save, a creature takes half as much damage and isn't poisoned. At the end of each of its turns, a poisoned target can make a Constitution saving throw. On a success, the condition ends on the target.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
+    "kind": "save",
+    "save": "dex",
+    "damageType": "piercing",
+    "concentration": false,
+    "dice": {
+      "count": 4,
+      "sides": 6
+    },
+    "scaleType": "slot",
+    "scaleAt": {
+      "dice": 1
+    }
+  }
+}

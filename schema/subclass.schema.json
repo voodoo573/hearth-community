@@ -59,7 +59,7 @@
                       },
                       "effects": {
                         "type": "array",
-                        "description": "Optional structured Forge effects. Explicit effects win; Hearth 1.1.1 also infers some effects from the rules text when a feature has none of that kind. Kinds Hearth applies: 'grant_spells' {spells, ability}; 'skill' {skill, level: 'prof'|'expertise'}; 'skill_choice' {options: [skills], count, level?}; 'proficiency' {tools?, weapons?, armor?}; 'active' {cost: 'action'|'bonus'|'reaction'|'none'|'triggered'|'channel_divinity', uses: number|'pb'|ability|'unlimited', reset: 'short'|'long', saveAbility?, dc?: 'spell'|ability, ki?: N, option? (Channel Divinity option name), desc?}; 'resist' {dtype}; 'rider' {count, sides, dtype, freq: 'once_per_turn'|'each_hit', scale?: {level: count | {count, sides}}}; 'smite' {dtypes, vs}; 'second_wind' {uses?, addCon?}; 'unarmed' {count, sides, dtype, ability, when: 'always'|'rage'|'feature', scale?: {level: {count?, sides?}}, extra?: {dtype, half, fullAt}, note?}; 'speed' {amount} (walking bonus) or {type: 'climb'|'swim'|'fly'|'burrow', amount: feet|'walk'}; 'ac' {amount}; 'extra_attack'. Any effect may carry minLevel (class level it starts at). Unknown kinds are ignored by Hearth.",
+                        "description": "Optional structured Forge effects. Explicit effects win; Hearth 1.1.1 also infers some effects from the rules text when a feature has none of that kind. Kinds Hearth applies: 'grant_spells' {spells, ability}; 'skill' {skill, level: 'prof'|'expertise'}; 'skill_choice' {options: [skills], count, level?}; 'proficiency' {tools?, weapons?, armor?}; 'active' {cost: 'action'|'bonus'|'reaction'|'none'|'triggered'|'channel_divinity', uses: number|'pb'|ability|'unlimited', reset: 'short'|'long', saveAbility?, dc?: 'spell'|ability, ki?: N, option? (Channel Divinity option name), desc?}; 'resist' {dtype}; 'rider' {count, sides, dtype, freq: 'once_per_turn'|'each_hit', scale?: {level: count | {count, sides}}}; 'smite' {dtypes, vs}; 'second_wind' {uses?, addCon?}; 'unarmed' {count, sides, dtype, ability, when: 'always'|'rage'|'feature', scale?: {level: {count?, sides?}}, extra?: {dtype, half, fullAt}, note?}; 'speed' {amount} (walking bonus) or {type: 'climb'|'swim'|'fly'|'burrow', amount: feet|'walk'}; 'ac' {amount}; 'extra_attack'. 'active' may also carry duration and rider {count, sides, dtype} (a timed state), and dc 'text' with dcText or dc 'none'. Any effect may carry minLevel (class level it starts at). Unknown kinds are ignored by Hearth.",
                         "items": {
                           "type": "object",
                           "required": [
@@ -148,12 +148,15 @@
                                 "int",
                                 "wis",
                                 "cha",
-                                ""
+                                "",
+                                "none"
                               ]
                             },
                             "dc": {
                               "enum": [
                                 "spell",
+                                "text",
+                                "none",
                                 "str",
                                 "dex",
                                 "con",
@@ -161,7 +164,7 @@
                                 "wis",
                                 "cha"
                               ],
-                              "description": "DC source for saveAbility: 'spell' (your spell save DC) or the ability in 8 + proficiency bonus + modifier."
+                              "description": "DC source for saveAbility: 'spell' (your spell save DC), an ability (8 + proficiency bonus + modifier), 'text' (show dcText, e.g. '5 + the damage taken') or 'none' (no DC)."
                             },
                             "ki": {
                               "type": "integer",
@@ -315,9 +318,68 @@
                                 "prof",
                                 "expertise"
                               ]
+                            },
+                            "dcText": {
+                              "type": "string",
+                              "maxLength": 60,
+                              "description": "With dc 'text': the rules' own DC formula."
+                            },
+                            "duration": {
+                              "type": "string",
+                              "maxLength": 40,
+                              "description": "active: how long it lasts once used, e.g. '1 minute'. Hearth 1.1.2+ shows it as a timed state."
+                            },
+                            "rider": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "sides"
+                              ],
+                              "properties": {
+                                "count": {
+                                  "type": "integer",
+                                  "minimum": 1,
+                                  "maximum": 20
+                                },
+                                "sides": {
+                                  "type": "integer",
+                                  "minimum": 2,
+                                  "maximum": 20
+                                },
+                                "dtype": {
+                                  "$ref": "common.schema.json#/$defs/damageType"
+                                }
+                              },
+                              "description": "active: extra damage on every weapon hit while its timed state is on (e.g. Roaring Fire's +1d6 fire)."
+                            },
+                            "spells": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "required": [
+                                      "name"
+                                    ],
+                                    "properties": {
+                                      "name": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "description": "grant_spells: spell names (must match a Hearth or community spell exactly), or objects with { name, level, school, castTime, range, components, duration, desc } for a spell Hearth doesn't have."
                             }
                           }
                         }
+                      },
+                      "infer": {
+                        "type": "boolean",
+                        "description": "false stops Hearth (1.1.2+) reading extra effects from this feature's text. An explicit empty effects list does the same."
                       }
                     }
                   }

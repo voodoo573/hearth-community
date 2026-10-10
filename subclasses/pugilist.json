@@ -3,7 +3,7 @@
   "id": "pugilist",
   "name": "Pugilist",
   "type": "subclass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -68,7 +68,10 @@
               "cost": "triggered",
               "uses": "pb",
               "reset": "long",
-              "desc": "When damage (not from a critical hit) reduces you to 0 hit points, make a Constitution saving throw with a DC of 5 + the damage taken; on a success you drop to 1 hit point instead."
+              "desc": "When damage (not from a critical hit) reduces you to 0 hit points, make a Constitution saving throw with a DC of 5 + the damage taken; on a success you drop to 1 hit point instead.",
+              "saveAbility": "con",
+              "dc": "text",
+              "dcText": "5 + the damage taken"
             },
             {
               "kind": "second_wind",

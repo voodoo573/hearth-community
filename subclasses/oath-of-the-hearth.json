@@ -3,7 +3,7 @@
   "id": "oath-of-the-hearth",
   "name": "Oath of the Hearth",
   "type": "subclass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -177,7 +177,13 @@
               "reset": "long",
               "desc": "For 1 minute: light, 2d8 fire to cold creatures starting their turn within 20 feet, fire paladin spells as a bonus action, +1d6 fire on weapon hits.",
               "saveAbility": "wis",
-              "dc": "spell"
+              "dc": "spell",
+              "duration": "1 minute",
+              "rider": {
+                "count": 1,
+                "sides": 6,
+                "dtype": "fire"
+              }
             }
           ]
         }

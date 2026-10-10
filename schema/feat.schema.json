@@ -47,6 +47,10 @@
               "minimum": 5,
               "maximum": 30,
               "description": "Walking speed bonus in feet that Hearth adds automatically (Hearth v0.92.1+)."
+            },
+            "speeds": {
+              "$ref": "common.schema.json#/$defs/speeds",
+              "description": "Other movement speeds the feat grants, in feet (Hearth 1.1.2+)."
             }
           }
         }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T02:44:39Z",
+  "updated": "2026-10-10T04:22:34Z",
   "items": [
     {
       "id": "alseid",
@@ -272,7 +272,7 @@
       "author": "voodoo573",
       "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
       "path": "subclasses/oath-of-the-hearth.json",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "tags": [
         "paladin",
         "tome-of-heroes",
@@ -304,7 +304,7 @@
       "author": "voodoo573",
       "summary": "Fighter archetype: a bare-knuckle brawler with tough unarmed strikes, grit and debilitating blows.",
       "path": "subclasses/pugilist.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "fighter",
         "tome-of-heroes",
@@ -374,6 +374,22 @@
         "bard",
         "song",
         "a5e"
+      ],
+      "added": "2026-10-10"
+    },
+    {
+      "id": "bombardment-of-stings",
+      "type": "spell",
+      "name": "Bombardment of Stings",
+      "author": "voodoo573",
+      "summary": "2nd-level: a 30-foot cone of stings, 4d6 piercing and poisoned on a failed Dexterity save.",
+      "path": "spells/bombardment-of-stings.json",
+      "version": "1.0.0",
+      "tags": [
+        "area",
+        "poison",
+        "insects",
+        "kobold-press"
       ],
       "added": "2026-10-10"
     },
