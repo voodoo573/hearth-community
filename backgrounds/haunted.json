@@ -3,12 +3,12 @@
   "id": "haunted",
   "name": "Haunted",
   "type": "background",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Haunted background from Level Up: Advanced 5th Edition (Gate Pass Gazette). Ability Score Increases: +1 Wisdom and one other ability score of your choice. Skill Proficiencies: Religion, and any one skill of your choice that the spirit has imparted to you. Languages: Two of your choice, one of which is the spirit’s native language. Equipment: 2 days worth of rations, bell, 5 candles, ink, ink pen, 10 sheets of paper, 5 pieces of chalk, traveler’s clothes. Silent Aid: Being in tune with your spirit allows them to point out something you might have missed, if only for their own purposes. You gain a +2 to your choice of your passive Perception, Investigation, or Insight score, depending on your spirit’s skills.\nIf you banish, free, or otherwise lose your spirit, consult with the Narrator to choose an appropriate feature from another background. Alternatively, the Narrator may rule that you’ve become a beacon for the supernatural and another spirit has taken up haunting you. Adventures and Advancement: Whether you seek to violently banish the restless dead or help them to peacefully pass on, you will gain a reputation as a spirit-speaker. Common folk and nobility alike are likely to approach you for advice and aid with everything from hereditary curses to irritable poltergeists to speaking with a dead relative about a lost treasure.\nAfter you have solved several such problems, you’ve become known to those who deal in certain kinds of esoteric knowledge and gain access to their private libraries. These vast personal collections contain esoteric mysteries, such as those answerable with a DC 25 Arcana, History, or Religion check. Hearth preset: Religion and Insight (the source lets you pick any one skill your spirit taught you). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "description": "Haunted background from Level Up: Advanced 5th Edition (Gate Pass Gazette). Ability Score Increases: +1 Wisdom and one other ability score of your choice. Skill Proficiencies: Religion, and any one skill of your choice that the spirit has imparted to you. Languages: Two of your choice, one of which is the spirit’s native language. Equipment: 2 days worth of rations, bell, 5 candles, ink, ink pen, 10 sheets of paper, 5 pieces of chalk, traveler’s clothes. Silent Aid: Being in tune with your spirit allows them to point out something you might have missed, if only for their own purposes. You gain a +2 to your choice of your passive Perception, Investigation, or Insight score, depending on your spirit’s skills.\nIf you banish, free, or otherwise lose your spirit, consult with the Narrator to choose an appropriate feature from another background. Alternatively, the Narrator may rule that you’ve become a beacon for the supernatural and another spirit has taken up haunting you. Adventures and Advancement: Whether you seek to violently banish the restless dead or help them to peacefully pass on, you will gain a reputation as a spirit-speaker. Common folk and nobility alike are likely to approach you for advice and aid with everything from hereditary curses to irritable poltergeists to speaking with a dead relative about a lost treasure.\nAfter you have solved several such problems, you’ve become known to those who deal in certain kinds of esoteric knowledge and gain access to their private libraries. These vast personal collections contain esoteric mysteries, such as those answerable with a DC 25 Arcana, History, or Religion check. Hearth preset: Religion and Insight (the source lets you pick any one skill your spirit taught you). Hearth applies the fixed +1 to Wisdom for 2014-rules characters; the second ability score increase, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
   "summary": "A friendly-ish ghost follows you and points out what you missed.",
   "tags": [
     "spirit",
@@ -36,6 +36,9 @@
     "feature": {
       "name": "Silent Aid",
       "desc": "Being in tune with your spirit allows them to point out something you might have missed, if only for their own purposes. You gain a +2 to your choice of your passive Perception, Investigation, or Insight score, depending on your spirit’s skills.\nIf you banish, free, or otherwise lose your spirit, consult with the Narrator to choose an appropriate feature from another background. Alternatively, the Narrator may rule that you’ve become a beacon for the supernatural and another spirit has taken up haunting you."
+    },
+    "abilityIncrease": {
+      "wis": 1
     }
   }
 }

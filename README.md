@@ -71,13 +71,15 @@ the items its Magic Item Forge stores), so imported items work just like built-i
       "path": "races/example-emberkin.json",
       "version": "1.0.0",
       "tags": ["example", "small", "fire"],
+      "added": "2026-10-09",
       "example": true
     }
   ]
 }
 ```
 
-Map entries also have a `thumbnail` path. The full format is in
+`added` is the date the item's file was first committed (worked out from git history when the
+index is rebuilt). Map entries also have a `thumbnail` path. The full format is in
 [`schema/index.schema.json`](schema/index.schema.json).
 
 ## Running the checks locally

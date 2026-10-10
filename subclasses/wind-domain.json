@@ -3,7 +3,7 @@
   "id": "wind-domain",
   "name": "Wind Domain",
   "type": "subclass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -98,7 +98,15 @@
       "6": [
         {
           "name": "Stormshield",
-          "desc": "At 6th level, when you take lightning or thunder damage, you can use your reaction to gain resistance to lightning and thunder damage, including against the triggering attack, until the start of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+          "desc": "At 6th level, when you take lightning or thunder damage, you can use your reaction to gain resistance to lightning and thunder damage, including against the triggering attack, until the start of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "reaction",
+              "uses": "wis",
+              "reset": "long"
+            }
+          ]
         }
       ],
       "7": [
@@ -120,7 +128,16 @@
       "8": [
         {
           "name": "Divine Strike",
-          "desc": "At 8th level, you infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+          "desc": "At 8th level, you infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8.",
+          "effects": [
+            {
+              "kind": "rider",
+              "count": 1,
+              "sides": 8,
+              "dtype": "thunder",
+              "freq": "once_per_turn"
+            }
+          ]
         }
       ],
       "9": [

@@ -4,30 +4,113 @@
   "title": "Hearth community subclass",
   "description": "`data` mirrors the shape Hearth's Subclass Forge stores for homebrew subclasses (loadAiHomebrew entries with type 'subclass', injected into SUBCLASSES[klass][id] by injectHomebrewSubclassesIntoRegistry): { klass, id, name, desc, levelFeatures }.",
   "allOf": [
-    { "$ref": "common.schema.json" },
+    {
+      "$ref": "common.schema.json"
+    },
     {
       "properties": {
-        "type": { "const": "subclass" },
+        "type": {
+          "const": "subclass"
+        },
         "data": {
           "type": "object",
-          "required": ["klass", "id", "name", "desc", "levelFeatures"],
+          "required": [
+            "klass",
+            "id",
+            "name",
+            "desc",
+            "levelFeatures"
+          ],
           "properties": {
-            "klass": { "$ref": "common.schema.json#/$defs/klass", "description": "Parent class key" },
-            "id": { "$ref": "common.schema.json#/$defs/key", "description": "snake_case registry key, conventionally the item id with - replaced by _" },
-            "name": { "type": "string" },
-            "desc": { "type": "string", "maxLength": 600 },
+            "klass": {
+              "$ref": "common.schema.json#/$defs/klass",
+              "description": "Parent class key"
+            },
+            "id": {
+              "$ref": "common.schema.json#/$defs/key",
+              "description": "snake_case registry key, conventionally the item id with - replaced by _"
+            },
+            "name": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string",
+              "maxLength": 600
+            },
             "levelFeatures": {
               "type": "object",
               "description": "Keyed by class level (\"1\" to \"20\"), each an array of { name, desc, effects? } features.",
               "patternProperties": {
                 "^([1-9]|1[0-9]|20)$": {
-                  "type": "array", "minItems": 1,
+                  "type": "array",
+                  "minItems": 1,
                   "items": {
-                    "type": "object", "required": ["name", "desc"],
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "desc"
+                    ],
                     "properties": {
-                      "name": { "type": "string" },
-                      "desc": { "type": "string" },
-                      "effects": { "type": "array", "description": "Optional structured Forge effects (kind: 'active', 'resist', 'skill', 'speed', 'ac', 'rider', 'grant_spells', ...). Unknown kinds are ignored by Hearth.", "items": { "type": "object", "required": ["kind"], "properties": { "kind": { "type": "string" } } } }
+                      "name": {
+                        "type": "string"
+                      },
+                      "desc": {
+                        "type": "string"
+                      },
+                      "effects": {
+                        "type": "array",
+                        "description": "Optional structured Forge effects. Kinds Hearth applies: 'grant_spells' {spells, ability}, 'skill' {skill, level: 'prof'|'expertise'}, 'proficiency' {tools?, weapons?, armor?} (lists of names; Hearth v0.92.1+), 'active' {cost: 'action'|'bonus'|'reaction', uses, reset: 'short'|'long'}, 'resist' {dtype}, 'rider' {count, sides, dtype, freq: 'once_per_turn'|'each_hit'}, 'ac' {amount}, 'speed' {amount}, 'extra_attack'. Unknown kinds are ignored by Hearth.",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "kind"
+                          ],
+                          "properties": {
+                            "kind": {
+                              "type": "string"
+                            },
+                            "uses": {
+                              "anyOf": [
+                                {
+                                  "type": "integer",
+                                  "minimum": 1,
+                                  "maximum": 20
+                                },
+                                {
+                                  "enum": [
+                                    "pb",
+                                    "str",
+                                    "dex",
+                                    "con",
+                                    "int",
+                                    "wis",
+                                    "cha"
+                                  ]
+                                }
+                              ],
+                              "description": "A number, 'pb' (proficiency bonus) or an ability name such as 'wis' (that modifier, minimum 1; Hearth v0.92.1+)."
+                            },
+                            "tools": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "weapons": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "armor": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }

@@ -3,12 +3,12 @@
   "id": "guildmember",
   "name": "Guildmember",
   "type": "background",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Guildmember background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Constitution and one other ability score. Skill Proficiencies: Two of your choice. Tool Proficiencies: Either one type of artisan’s tools, musical instrument, or vehicle. Equipment: One set of artisan's tools or one instrument, traveler's clothes, guild badge. Guild Business: While in a city or town, you can maintain a moderate lifestyle by plying your trade. Furthermore, the guild occasionally informs you of jobs that need doing. Completing such a job might require performing a downtime activity, or it might require a full adventure. The guild provides a modest reward if you're successful. Adventures and Advancement: Once you have completed several quests or endeavors advancing guild business, you may be promoted to guild officer. You gain access to more lucrative contracts. In addition, the guild supports you at a moderate lifestyle without you having to work. Hearth preset: Insight and Persuasion (the source lets you pick any two skills). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source. Equipment note: the source lets you take one set of artisan's tools or one musical instrument; Hearth lists artisan's tools by default, so swap it on your sheet if you prefer an instrument.",
+  "description": "Guildmember background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Constitution and one other ability score. Skill Proficiencies: Two of your choice. Tool Proficiencies: Either one type of artisan’s tools, musical instrument, or vehicle. Equipment: One set of artisan's tools or one instrument, traveler's clothes, guild badge. Guild Business: While in a city or town, you can maintain a moderate lifestyle by plying your trade. Furthermore, the guild occasionally informs you of jobs that need doing. Completing such a job might require performing a downtime activity, or it might require a full adventure. The guild provides a modest reward if you're successful. Adventures and Advancement: Once you have completed several quests or endeavors advancing guild business, you may be promoted to guild officer. You gain access to more lucrative contracts. In addition, the guild supports you at a moderate lifestyle without you having to work. Hearth preset: Insight and Persuasion (the source lets you pick any two skills). Hearth applies the fixed +1 to Constitution for 2014-rules characters; the second ability score increase, tool proficiencies and languages are applied by hand. No starting gold is listed in the source. Equipment note: the source lets you take one set of artisan's tools or one musical instrument; Hearth lists artisan's tools by default, so swap it on your sheet if you prefer an instrument.",
   "summary": "A guild member who earns a living in any town and gets tipped off about jobs.",
   "tags": [
     "urban",
@@ -31,6 +31,9 @@
     "feature": {
       "name": "Guild Business",
       "desc": "While in a city or town, you can maintain a moderate lifestyle by plying your trade. Furthermore, the guild occasionally informs you of jobs that need doing. Completing such a job might require performing a downtime activity, or it might require a full adventure. The guild provides a modest reward if you're successful."
+    },
+    "abilityIncrease": {
+      "con": 1
     }
   }
 }

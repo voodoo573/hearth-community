@@ -3,12 +3,12 @@
   "id": "dungeon-robber",
   "name": "Dungeon Robber",
   "type": "background",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Dungeon Robber background from Level Up: Advanced 5th Edition (Dungeon Delver's Guide). Ability Score Increases: +1 to Intelligence and one other ability score. Skill Proficiencies: History, and either Investigation or Religion. Tool Proficiencies: Cartographers’ tools. Languages: Any six (three of them no longer spoken). Equipment: Cartographers’ tools, miner’s pick, traveler’s clothes, shovel. Unreliable Intelligence: You know conspiracy theorists, armchair historians, disgraced academics, and other people with useful, if unreliable, knowledge. While in a city, once per day you can find an NPC who can make an Intelligence check with a +10 bonus to recall a fact. When you do so, the Narrator secretly rolls a d6. On a 1, your contact’s information is dangerously inaccurate. Adventures and Advancement: As you build your reputation, shady people approach you with requests to “discover” items of uncertain ownership. After enough successes, a legitimate organization, such as a wizard’s college or esteemed museum, takes an interest in you. They offer you a position, which comes with funding granting a Wealthy lifestyle, access to free spellcasting services, and legal representation when you inevitably run afoul of the law. Hearth preset: History and Investigation (the source lets you pick Investigation or Religion). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "description": "Dungeon Robber background from Level Up: Advanced 5th Edition (Dungeon Delver's Guide). Ability Score Increases: +1 to Intelligence and one other ability score. Skill Proficiencies: History, and either Investigation or Religion. Tool Proficiencies: Cartographers’ tools. Languages: Any six (three of them no longer spoken). Equipment: Cartographers’ tools, miner’s pick, traveler’s clothes, shovel. Unreliable Intelligence: You know conspiracy theorists, armchair historians, disgraced academics, and other people with useful, if unreliable, knowledge. While in a city, once per day you can find an NPC who can make an Intelligence check with a +10 bonus to recall a fact. When you do so, the Narrator secretly rolls a d6. On a 1, your contact’s information is dangerously inaccurate. Adventures and Advancement: As you build your reputation, shady people approach you with requests to “discover” items of uncertain ownership. After enough successes, a legitimate organization, such as a wizard’s college or esteemed museum, takes an interest in you. They offer you a position, which comes with funding granting a Wealthy lifestyle, access to free spellcasting services, and legal representation when you inevitably run afoul of the law. Hearth preset: History and Investigation (the source lets you pick Investigation or Religion). Hearth applies the fixed +1 to Intelligence for 2014-rules characters; the second ability score increase, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
   "summary": "A ruin delver with a network of eccentric, not-always-reliable experts.",
   "tags": [
     "dungeon",
@@ -32,6 +32,9 @@
     "feature": {
       "name": "Unreliable Intelligence",
       "desc": "You know conspiracy theorists, armchair historians, disgraced academics, and other people with useful, if unreliable, knowledge. While in a city, once per day you can find an NPC who can make an Intelligence check with a +10 bonus to recall a fact. When you do so, the Narrator secretly rolls a d6. On a 1, your contact’s information is dangerously inaccurate."
+    },
+    "abilityIncrease": {
+      "int": 1
     }
   }
 }

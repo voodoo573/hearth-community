@@ -10,6 +10,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, dirname, basename, extname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SCHEMA_DIR = join(ROOT, 'schema');
@@ -113,6 +114,28 @@ function validate(value, schema, baseFile, path, out) {
 }
 
 // ---------------------------------------------------------------------------
+// "added" dates: the day each file was first committed (from git history).
+// Files that aren't committed yet, or a checkout without history (a shallow
+// clone, or no git at all), fall back to today. CI checks out with
+// fetch-depth: 0 so the real dates are available there.
+// ---------------------------------------------------------------------------
+const TODAY = new Date().toISOString().slice(0, 10);
+const firstAdded = new Map();
+try {
+  // Newest first; keep overwriting so the oldest "added" commit wins.
+  const log = execFileSync('git', ['log', '--diff-filter=A', '--no-renames', '--format=@@%as', '--name-only', '--', ...Object.keys(FOLDERS)],
+    { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
+  let day = null;
+  for (const line of log.split('\n')) {
+    if (line.startsWith('@@')) day = line.slice(2).trim();
+    else if (line.trim() && day) firstAdded.set(line.trim(), day);
+  }
+} catch {
+  warnings.push('git history unavailable; every item gets today\'s date as "added"');
+}
+const addedDate = (rel) => firstAdded.get(rel) || TODAY;
+
+// ---------------------------------------------------------------------------
 // Walk content folders
 // ---------------------------------------------------------------------------
 const items = [];
@@ -191,7 +214,7 @@ for (const [folder, type] of Object.entries(FOLDERS)) {
       const summary = item.summary || truncate(item.description, 140);
       const entry = {
         id: item.id, type: item.type, name: item.name, author: item.author, summary,
-        path: rel, version: item.version, tags: item.tags,
+        path: rel, version: item.version, tags: item.tags, added: addedDate(rel),
       };
       if (item.example === true) entry.example = true;
       if (thumbnail) entry.thumbnail = thumbnail;

@@ -2,21 +2,52 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "feat.schema.json",
   "title": "Hearth community feat",
-  "description": "`data` mirrors one entry of Hearth's FEATS array: { id, name, desc, hpPerLevel? }, plus optional prerequisite and ability text.",
+  "description": "`data` mirrors one entry of Hearth's FEATS array: { id, name, desc, hpPerLevel? }, plus optional prerequisite, abilityIncrease (fixed ability score increase, e.g. { con: 1 }) and speed (walking speed bonus in feet).",
   "allOf": [
-    { "$ref": "common.schema.json" },
+    {
+      "$ref": "common.schema.json"
+    },
     {
       "properties": {
-        "type": { "const": "feat" },
+        "type": {
+          "const": "feat"
+        },
         "data": {
           "type": "object",
-          "required": ["id", "name", "desc"],
+          "required": [
+            "id",
+            "name",
+            "desc"
+          ],
           "properties": {
-            "id": { "$ref": "common.schema.json#/$defs/key" },
-            "name": { "type": "string" },
-            "desc": { "type": "string", "maxLength": 3000 },
-            "prerequisite": { "type": "string", "maxLength": 200 },
-            "hpPerLevel": { "type": "integer", "minimum": 1, "maximum": 3 }
+            "id": {
+              "$ref": "common.schema.json#/$defs/key"
+            },
+            "name": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string",
+              "maxLength": 3000
+            },
+            "prerequisite": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "hpPerLevel": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 3
+            },
+            "abilityIncrease": {
+              "$ref": "common.schema.json#/$defs/abilityIncrease"
+            },
+            "speed": {
+              "type": "integer",
+              "minimum": 5,
+              "maximum": 30,
+              "description": "Walking speed bonus in feet that Hearth adds automatically (Hearth v0.92.1+)."
+            }
           }
         }
       }

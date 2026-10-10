@@ -3,7 +3,7 @@
   "id": "college-of-the-cat",
   "name": "College of the Cat",
   "type": "subclass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -37,6 +37,12 @@
               "kind": "skill",
               "skill": "stealth",
               "level": "prof"
+            },
+            {
+              "kind": "proficiency",
+              "tools": [
+                "Thieves’ tools"
+              ]
             }
           ]
         },

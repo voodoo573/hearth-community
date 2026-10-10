@@ -93,7 +93,10 @@ are required.
 - `levelFeatures` is keyed by class level: `{ "3": [ {feature}, ... ], "7": [...] }`
 - Features may carry optional structured `effects` that Hearth's Subclass Forge understands,
   such as `{ "kind": "skill", "skill": "perception", "level": "prof" }` or
-  `{ "kind": "resist", "dtype": "necrotic" }`. If you're unsure, leave `effects` out, because the
+  `{ "kind": "resist", "dtype": "necrotic" }`. Tool, weapon or armour proficiencies use
+  `{ "kind": "proficiency", "tools": ["Thieves' tools"] }` (also `weapons` and `armor` lists).
+  An `active` feature's `uses` can be a number, `"pb"` or an ability name such as `"wis"`
+  (that modifier, minimum 1). If you're unsure, leave `effects` out, because the
   text alone works.
 
 ### Spell (`spells/`): see `schema/spell.schema.json`
@@ -107,12 +110,15 @@ are required.
 
 ### Feat (`feats/`): see `schema/feat.schema.json`
 
-`data`: `id` (snake_case), `name`, `desc`. Optional: `prerequisite` and `hpPerLevel`
-(as in the Tough feat).
+`data`: `id` (snake_case), `name`, `desc`. Optional: `prerequisite`, `hpPerLevel`
+(as in the Tough feat), `abilityIncrease` for a fixed ability score increase (`{ "con": 1 }`)
+and `speed`, a walking speed bonus in feet (`10`).
 
 ### Background (`backgrounds/`): see `schema/background.schema.json`
 
 `data`: `name`, `skills` (exactly 2), `gold`, `equipment` (list), and `feature` (`{name, desc}`).
+Optional: `abilityIncrease`, a fixed ability score increase such as `{ "int": 1 }` that Hearth
+applies to 2014-rules characters. Increases the player chooses stay in the description.
 
 ### Monster (`monsters/`): see `schema/monster.schema.json`
 
@@ -151,8 +157,13 @@ with `-` replaced by `_`), `name`, `type` (`weapon`, `armor`, `shield`, `ring`, 
 `potion`, `scroll`, `wand`, `staff` or `rod`), `rarity` (`common`, `uncommon`, `rare`,
 `very_rare`, `legendary` or `artifact`), `attune` (true/false), `desc`, and `mech`.
 - `mech` is `null` for a text-only item, or an object with any of `attackBonus`, `damageBonus`,
-  `acBonus`, `saveBonus`, `spellAttackBonus` (each 1 to 3), `hpBonus` and `resistType`
-  (a damage type).
+  `acBonus`, `saveBonus`, `spellAttackBonus` (spell attack rolls only), `spellDcBonus` (spell
+  save DC only; each 1 to 3) and `hpBonus`.
+- Optional `resist`: a damage type (or `"choice"`) the item grants resistance to while active.
+  The older `mech.resistType` still works, but prefer `resist`.
+- Optional `charges`: `{ "max": 10, "recharge": "1d6+4 at dawn" }` (Hearth tracks them; dice at
+  the start of `recharge` are the amount regained, otherwise all; "short"/"long" in the text means
+  a short or long rest, otherwise dawn). Items with uses per day instead can set `perDay`.
 - Optional: `theme` (`shadow`, `fire`, `frost`, `storm`, `nature`, `holy`, `arcane`, `blood`,
   `trickster` or `void`) and `templateId`.
 

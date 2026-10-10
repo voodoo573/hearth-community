@@ -3,7 +3,7 @@
   "id": "stalwart",
   "name": "Stalwart",
   "type": "feat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -19,6 +19,9 @@
   "data": {
     "id": "stalwart",
     "name": "Stalwart",
-    "desc": "You can quickly recover from injuries that leave lesser creatures broken.\n- Raise your Constitution attribute by 1, up to the attribute cap of 20.\n- You regain an additional number of hit points equal to double your Constitution modifier (minimum 2) whenever you roll a hit die to regain hit points."
+    "desc": "You can quickly recover from injuries that leave lesser creatures broken.\n- Raise your Constitution attribute by 1, up to the attribute cap of 20.\n- You regain an additional number of hit points equal to double your Constitution modifier (minimum 2) whenever you roll a hit die to regain hit points.",
+    "abilityIncrease": {
+      "con": 1
+    }
   }
 }

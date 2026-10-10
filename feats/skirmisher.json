@@ -3,7 +3,7 @@
   "id": "skirmisher",
   "name": "Skirmisher",
   "type": "feat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -19,6 +19,7 @@
   "data": {
     "id": "skirmisher",
     "name": "Skirmisher",
-    "desc": "You are as swift and elusive as the wind.\n- Any form of movement you possess is increased by 10 feet.\n- Difficult terrain does not impede your movement when you have taken the dash action.\n- Your attacks prevent creatures from making opportunity attacks against you."
+    "desc": "You are as swift and elusive as the wind.\n- Any form of movement you possess is increased by 10 feet.\n- Difficult terrain does not impede your movement when you have taken the dash action.\n- Your attacks prevent creatures from making opportunity attacks against you.",
+    "speed": 10
   }
 }

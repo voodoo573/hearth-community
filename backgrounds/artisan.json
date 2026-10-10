@@ -3,12 +3,12 @@
   "id": "artisan",
   "name": "Artisan",
   "type": "background",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Artisan background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Intelligence and one other ability score. Skill Proficiencies: Persuasion, and either Insight or History. Tool Proficiencies: One type of artisan’s tools or smith’s tools. Equipment: One set of artisan's tools, traveler's clothes. Trade Mark: When in a city or town, you have access to a fully-stocked workshop with everything you need to ply your trade. Furthermore, you can expect to earn full price when you sell items you have crafted (though there is no guarantee of a buyer). Adventures and Advancement: If you participate in the creation of a magic item (a “master work”), you will gain the services of up to 8 commoner apprentices with the appropriate tool proficiency. Hearth preset: Persuasion and Insight (the source lets you pick Insight or History). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "description": "Artisan background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Intelligence and one other ability score. Skill Proficiencies: Persuasion, and either Insight or History. Tool Proficiencies: One type of artisan’s tools or smith’s tools. Equipment: One set of artisan's tools, traveler's clothes. Trade Mark: When in a city or town, you have access to a fully-stocked workshop with everything you need to ply your trade. Furthermore, you can expect to earn full price when you sell items you have crafted (though there is no guarantee of a buyer). Adventures and Advancement: If you participate in the creation of a magic item (a “master work”), you will gain the services of up to 8 commoner apprentices with the appropriate tool proficiency. Hearth preset: Persuasion and Insight (the source lets you pick Insight or History). Hearth applies the fixed +1 to Intelligence for 2014-rules characters; the second ability score increase, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
   "summary": "A crafter with a workshop in every town who sells their work at full price.",
   "tags": [
     "crafting",
@@ -30,6 +30,9 @@
     "feature": {
       "name": "Trade Mark",
       "desc": "When in a city or town, you have access to a fully-stocked workshop with everything you need to ply your trade. Furthermore, you can expect to earn full price when you sell items you have crafted (though there is no guarantee of a buyer)."
+    },
+    "abilityIncrease": {
+      "int": 1
     }
   }
 }

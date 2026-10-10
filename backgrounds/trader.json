@@ -3,12 +3,12 @@
   "id": "trader",
   "name": "Trader",
   "type": "background",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Trader background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Charisma and one other ability score. Skill Proficiencies: Persuasion, and either Culture, Deception, or Insight. Tool Proficiencies: One vehicle. Equipment: Traveler's clothes, abacus, merchant's scale. Supply and Demand: When you buy a trade good and sell it elsewhere to a community in need of that good, you gain a 10% bonus to its sale price for every 100 miles between the buy and sell location (maximum of 50%). Adventures and Advancement: Because of your commercial contacts you may be offered money to lead or escort trade caravans. You'll receive a fee from each trader that reaches their destination safely. Hearth preset: Persuasion and Insight (the source lets you pick Culture (a Level Up skill), Deception or Insight). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "description": "Trader background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Charisma and one other ability score. Skill Proficiencies: Persuasion, and either Culture, Deception, or Insight. Tool Proficiencies: One vehicle. Equipment: Traveler's clothes, abacus, merchant's scale. Supply and Demand: When you buy a trade good and sell it elsewhere to a community in need of that good, you gain a 10% bonus to its sale price for every 100 miles between the buy and sell location (maximum of 50%). Adventures and Advancement: Because of your commercial contacts you may be offered money to lead or escort trade caravans. You'll receive a fee from each trader that reaches their destination safely. Hearth preset: Persuasion and Insight (the source lets you pick Culture (a Level Up skill), Deception or Insight). Hearth applies the fixed +1 to Charisma for 2014-rules characters; the second ability score increase, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
   "summary": "A merchant who profits from carrying goods to the places that need them.",
   "tags": [
     "merchant",
@@ -31,6 +31,9 @@
     "feature": {
       "name": "Supply and Demand",
       "desc": "When you buy a trade good and sell it elsewhere to a community in need of that good, you gain a 10% bonus to its sale price for every 100 miles between the buy and sell location (maximum of 50%)."
+    },
+    "abilityIncrease": {
+      "cha": 1
     }
   }
 }

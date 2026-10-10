@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T01:19:50Z",
+  "updated": "2026-10-10T01:26:31Z",
   "items": [
     {
       "id": "alseid",
@@ -15,7 +15,8 @@
         "fey",
         "forest",
         "quadruped"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "catfolk",
@@ -29,7 +30,8 @@
         "tome-of-heroes",
         "feline",
         "claws"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "derro",
@@ -43,7 +45,8 @@
         "tome-of-heroes",
         "underground",
         "small-folk"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "drow-tome-of-heroes",
@@ -57,7 +60,8 @@
         "tome-of-heroes",
         "underground",
         "elf"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-emberkin",
@@ -72,6 +76,7 @@
         "small",
         "fire"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -86,7 +91,8 @@
         "tome-of-heroes",
         "hedgehog",
         "burrow"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "gearforged",
@@ -100,7 +106,8 @@
         "tome-of-heroes",
         "construct",
         "clockwork"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "minotaur",
@@ -114,7 +121,8 @@
         "tome-of-heroes",
         "horns",
         "strong"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "mushroomfolk",
@@ -128,7 +136,8 @@
         "tome-of-heroes",
         "fungus",
         "underground"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "satarre",
@@ -142,7 +151,8 @@
         "tome-of-heroes",
         "planar",
         "necrotic"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "shade",
@@ -156,7 +166,8 @@
         "tome-of-heroes",
         "ghostly",
         "undead"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "cat-burglar",
@@ -171,7 +182,8 @@
         "tome-of-heroes",
         "stealth",
         "climbing"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "circle-of-bees",
@@ -186,7 +198,8 @@
         "tome-of-heroes",
         "nature",
         "insects"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "college-of-the-cat",
@@ -195,13 +208,14 @@
       "author": "voodoo573",
       "summary": "Bard college: nimble cat-like performers who pounce with Bardic Inspiration and land on their feet.",
       "path": "subclasses/college-of-the-cat.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "bard",
         "tome-of-heroes",
         "agile",
         "support"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "familiar-master",
@@ -216,7 +230,8 @@
         "tome-of-heroes",
         "familiar",
         "arcane"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "grove-warden",
@@ -231,7 +246,8 @@
         "tome-of-heroes",
         "nature",
         "forest"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-lanternbearer",
@@ -246,6 +262,7 @@
         "fighter",
         "support"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -261,7 +278,8 @@
         "tome-of-heroes",
         "fire",
         "support"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "path-of-thorns",
@@ -276,7 +294,8 @@
         "tome-of-heroes",
         "nature",
         "unarmed"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "pugilist",
@@ -291,7 +310,8 @@
         "tome-of-heroes",
         "unarmed",
         "tank"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "way-of-the-humble-elephant",
@@ -306,7 +326,8 @@
         "tome-of-heroes",
         "defence",
         "ki"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "wind-domain",
@@ -315,13 +336,14 @@
       "author": "voodoo573",
       "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
       "path": "subclasses/wind-domain.json",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "cleric",
         "tome-of-heroes",
         "air",
         "control"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "arcane-muscles",
@@ -336,7 +358,8 @@
         "unarmed",
         "buff",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "battlecry-ballad",
@@ -351,7 +374,8 @@
         "bard",
         "song",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "earth-barrier",
@@ -366,7 +390,8 @@
         "reaction",
         "earth",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "forest-army",
@@ -381,7 +406,8 @@
         "nature",
         "druid",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-hearthfire-bolt",
@@ -396,6 +422,7 @@
         "damage",
         "fire"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -411,7 +438,8 @@
         "psychic",
         "buff",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "searing-equation",
@@ -426,7 +454,8 @@
         "psychic",
         "area",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "seed-bomb",
@@ -441,7 +470,8 @@
         "nature",
         "area",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "sporesight",
@@ -456,7 +486,8 @@
         "fungus",
         "area",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "storm-kick",
@@ -471,7 +502,8 @@
         "lightning",
         "teleport",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "whirlwind-kick",
@@ -486,7 +518,8 @@
         "movement",
         "unarmed",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "bull-rush",
@@ -500,7 +533,8 @@
         "melee",
         "movement",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "deflector",
@@ -515,7 +549,8 @@
         "reaction",
         "finesse",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "dungeoneer",
@@ -529,7 +564,8 @@
         "exploration",
         "traps",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "fortunate",
@@ -543,7 +579,8 @@
         "luck",
         "d20",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "hardy-adventurer",
@@ -557,7 +594,8 @@
         "hit-points",
         "rest",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-hearth-keeper",
@@ -572,6 +610,7 @@
         "rest",
         "support"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -587,7 +626,8 @@
         "charisma",
         "temp-hp",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "shield-focus",
@@ -601,7 +641,8 @@
         "shield",
         "defence",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "skirmisher",
@@ -610,12 +651,13 @@
       "author": "voodoo573",
       "summary": "+10 ft to all your speeds, ignore difficult terrain when dashing, and avoid opportunity attacks.",
       "path": "feats/skirmisher.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "movement",
         "mobile",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "stalwart",
@@ -624,12 +666,13 @@
       "author": "voodoo573",
       "summary": "+1 Constitution and extra healing whenever you roll a Hit Die.",
       "path": "feats/stalwart.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "constitution",
         "rest",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "survivor",
@@ -643,7 +686,8 @@
         "defence",
         "death-saves",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "artisan",
@@ -652,12 +696,13 @@
       "author": "voodoo573",
       "summary": "A crafter with a workshop in every town who sells their work at full price.",
       "path": "backgrounds/artisan.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "crafting",
         "urban",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "deep-hunter",
@@ -666,12 +711,13 @@
       "author": "voodoo573",
       "summary": "A hunter of the deep tunnels who always knows the way, the depth and a safe camp.",
       "path": "backgrounds/deep-hunter.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "underground",
         "hunter",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "dungeon-robber",
@@ -680,12 +726,13 @@
       "author": "voodoo573",
       "summary": "A ruin delver with a network of eccentric, not-always-reliable experts.",
       "path": "backgrounds/dungeon-robber.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "dungeon",
         "explorer",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "escapee-from-below",
@@ -694,12 +741,13 @@
       "author": "voodoo573",
       "summary": "You escaped captivity far below and know your captors' culture inside out.",
       "path": "backgrounds/escapee-from-below.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "underground",
         "survivor",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "exile",
@@ -708,12 +756,13 @@
       "author": "voodoo573",
       "summary": "Driven from your homeland, you find kinship with other travellers far from home.",
       "path": "backgrounds/exile.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "wanderer",
         "travel",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "farmer",
@@ -722,12 +771,13 @@
       "author": "voodoo573",
       "summary": "You left the farm with a mule, a shovel and a knack for carrying supplies.",
       "path": "backgrounds/farmer.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "rural",
         "animals",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "guard",
@@ -736,12 +786,13 @@
       "author": "voodoo573",
       "summary": "A former watch guard whom ordinary folk still instinctively obey.",
       "path": "backgrounds/guard.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "urban",
         "law",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "guildmember",
@@ -750,12 +801,13 @@
       "author": "voodoo573",
       "summary": "A guild member who earns a living in any town and gets tipped off about jobs.",
       "path": "backgrounds/guildmember.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "urban",
         "crafting",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "haunted",
@@ -764,12 +816,13 @@
       "author": "voodoo573",
       "summary": "A friendly-ish ghost follows you and points out what you missed.",
       "path": "backgrounds/haunted.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "spirit",
         "spooky",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-lamplighter",
@@ -783,6 +836,7 @@
         "example",
         "urban"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -792,12 +846,13 @@
       "author": "voodoo573",
       "summary": "A merchant who profits from carrying goods to the places that need them.",
       "path": "backgrounds/trader.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "merchant",
         "travel",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "bearfolk",
@@ -812,7 +867,8 @@
         "warrior",
         "mid-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "child-of-the-briar",
@@ -827,7 +883,8 @@
         "fey",
         "forest",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "cikavak",
@@ -842,7 +899,8 @@
         "bird",
         "low-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "cobbleswarm",
@@ -857,7 +915,8 @@
         "urban",
         "ambush",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "dogmole",
@@ -872,7 +931,8 @@
         "underground",
         "burrow",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "firebird",
@@ -887,7 +947,8 @@
         "fire",
         "mid-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "lantern-dragonette",
@@ -902,7 +963,8 @@
         "light",
         "low-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "library-automaton",
@@ -917,7 +979,8 @@
         "clockwork",
         "low-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-soot-sprite",
@@ -932,6 +995,7 @@
         "elemental",
         "low-cr"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -947,7 +1011,8 @@
         "lightning",
         "mid-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "vapor-lynx",
@@ -962,7 +1027,8 @@
         "cat",
         "mid-cr",
         "tome-of-beasts"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "crossroads-tavern",
@@ -979,6 +1045,7 @@
         "social",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/crossroads-tavern-thumb.jpg"
     },
     {
@@ -996,6 +1063,7 @@
         "travel",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/desert-oasis-camp-thumb.jpg"
     },
     {
@@ -1013,6 +1081,7 @@
         "wilderness",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/forest-shrine-clearing-thumb.jpg"
     },
     {
@@ -1030,6 +1099,7 @@
         "travel",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/frozen-mountain-pass-thumb.jpg"
     },
     {
@@ -1045,6 +1115,7 @@
         "dungeon",
         "grid"
       ],
+      "added": "2026-10-09",
       "example": true,
       "thumbnail": "maps/example-grid-dungeon-room-thumb.png"
     },
@@ -1063,6 +1134,7 @@
         "outdoor",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/merchant-ship-deck-thumb.jpg"
     },
     {
@@ -1080,6 +1152,7 @@
         "river",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/riverside-village-thumb.jpg"
     },
     {
@@ -1097,6 +1170,7 @@
         "dungeon",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/sewer-junction-thumb.jpg"
     },
     {
@@ -1114,6 +1188,7 @@
         "interior",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/sunken-crypt-thumb.jpg"
     },
     {
@@ -1130,6 +1205,7 @@
         "dungeon",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/winding-cavern-thumb.jpg"
     },
     {
@@ -1147,6 +1223,7 @@
         "library",
         "grid"
       ],
+      "added": "2026-10-10",
       "thumbnail": "maps/wizard-tower-library-thumb.jpg"
     },
     {
@@ -1162,7 +1239,8 @@
         "rare",
         "poison",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "doorbreaker",
@@ -1177,7 +1255,8 @@
         "rare",
         "construct",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "echo-force",
@@ -1192,7 +1271,8 @@
         "rare",
         "force",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-ember-hatchet",
@@ -1207,6 +1287,7 @@
         "fire",
         "axe"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -1222,7 +1303,8 @@
         "rare",
         "rogue",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "glorys-glaive",
@@ -1237,7 +1319,8 @@
         "uncommon",
         "sentient",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "heartbreaks-dagger",
@@ -1252,7 +1335,8 @@
         "uncommon",
         "bleed",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-09"
     },
     {
       "id": "iron-foe-mace",
@@ -1267,7 +1351,8 @@
         "very-rare",
         "rust",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "long-fang-of-the-moon",
@@ -1282,7 +1367,8 @@
         "legendary",
         "radiant",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "parasol-of-the-blade",
@@ -1297,7 +1383,8 @@
         "rare",
         "radiant",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "prospectors-pick",
@@ -1312,7 +1399,8 @@
         "very-rare",
         "earth",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "bicycle-bell-of-flight",
@@ -1327,7 +1415,8 @@
         "rare",
         "flying",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "birdsong-whistle",
@@ -1342,7 +1431,8 @@
         "common",
         "birds",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "bubble-wand",
@@ -1351,13 +1441,14 @@
       "author": "voodoo573",
       "summary": "Uncommon wand of colourful bubbles; snap it to wrap yourself in a protective bubble.",
       "path": "magic-items/bubble-wand.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "wand",
         "uncommon",
         "bubbles",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "explorers-chalk",
@@ -1366,13 +1457,14 @@
       "author": "voodoo573",
       "summary": "Common never-ending chalk that leaves lasting marks and points you back to them.",
       "path": "magic-items/explorers-chalk.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "wondrous",
         "common",
         "exploration",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "fathomers-ring",
@@ -1387,7 +1479,8 @@
         "common",
         "water",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "green-scale-shield",
@@ -1396,13 +1489,14 @@
       "author": "voodoo573",
       "summary": "Uncommon shield that grants resistance to poison damage while held.",
       "path": "magic-items/green-scale-shield.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "shield",
         "uncommon",
         "poison",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "example-lantern-of-warding",
@@ -1417,6 +1511,7 @@
         "wondrous",
         "defence"
       ],
+      "added": "2026-10-09",
       "example": true
     },
     {
@@ -1426,13 +1521,14 @@
       "author": "voodoo573",
       "summary": "Very rare shield: radiant resistance and a reaction that reflects spells back at the caster.",
       "path": "magic-items/mirror-shield.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "shield",
         "very-rare",
         "counterspell",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "phoenix-feather-cap",
@@ -1441,13 +1537,14 @@
       "author": "voodoo573",
       "summary": "Legendary cap: cast fly at will and Wild Shape like a 10th-level druid.",
       "path": "magic-items/phoenix-feather-cap.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "wondrous",
         "legendary",
         "flying",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "staff-of-gravity-bending",
@@ -1456,13 +1553,14 @@
       "author": "voodoo573",
       "summary": "Rare +2 quarterstaff that adds +2 to spell attacks and casts gravity-bending spells.",
       "path": "magic-items/staff-of-gravity-bending.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "staff",
         "rare",
         "gravity",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     },
     {
       "id": "wand-of-erudition",
@@ -1471,13 +1569,14 @@
       "author": "voodoo573",
       "summary": "Uncommon wand that lends an ally one of your languages, skills or memories for an hour.",
       "path": "magic-items/wand-of-erudition.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "wand",
         "uncommon",
         "knowledge",
         "a5e"
-      ]
+      ],
+      "added": "2026-10-10"
     }
   ]
 }

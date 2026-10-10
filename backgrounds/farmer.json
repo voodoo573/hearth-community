@@ -3,12 +3,12 @@
   "id": "farmer",
   "name": "Farmer",
   "type": "background",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
   "license": "CC-BY-4.0",
-  "description": "Farmer background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Wisdom and one other ability score. Skill Proficiencies: Nature, and either Animal Handling or Survival. Tool Proficiencies: Land vehicles. Equipment: Common clothes, shovel, mule with saddlebags, 5 Supply (rations). Bit and Bridle: You know how to stow and transport food. You and one animal under your care can each carry additional Supply equal to your proficiency bonus. Adventures and Advancement: You left the farm for a reason but you still have an eye for land. If you acquire farming property, estates, or domains, you can earn twice as much as you otherwise would from their harvests, or be supported by your lands at a lifestyle one level higher than you otherwise would be. Hearth preset: Nature and Animal Handling (the source lets you pick Animal Handling or Survival). Ability score increases, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
+  "description": "Farmer background from Level Up: Advanced 5th Edition (Adventurer's Guide). Ability Score Increases: +1 to Wisdom and one other ability score. Skill Proficiencies: Nature, and either Animal Handling or Survival. Tool Proficiencies: Land vehicles. Equipment: Common clothes, shovel, mule with saddlebags, 5 Supply (rations). Bit and Bridle: You know how to stow and transport food. You and one animal under your care can each carry additional Supply equal to your proficiency bonus. Adventures and Advancement: You left the farm for a reason but you still have an eye for land. If you acquire farming property, estates, or domains, you can earn twice as much as you otherwise would from their harvests, or be supported by your lands at a lifestyle one level higher than you otherwise would be. Hearth preset: Nature and Animal Handling (the source lets you pick Animal Handling or Survival). Hearth applies the fixed +1 to Wisdom for 2014-rules characters; the second ability score increase, tool proficiencies and languages are applied by hand. No starting gold is listed in the source.",
   "summary": "You left the farm with a mule, a shovel and a knack for carrying supplies.",
   "tags": [
     "rural",
@@ -32,6 +32,9 @@
     "feature": {
       "name": "Bit and Bridle",
       "desc": "You know how to stow and transport food. You and one animal under your care can each carry additional Supply equal to your proficiency bonus."
+    },
+    "abilityIncrease": {
+      "wis": 1
     }
   }
 }
