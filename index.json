@@ -1,7 +1,64 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-09T21:55:31Z",
+  "updated": "2026-10-10T00:36:26Z",
   "items": [
+    {
+      "id": "alseid",
+      "type": "race",
+      "name": "Alseid",
+      "author": "voodoo573",
+      "summary": "Swift deer-like forest folk: +2 Dex, +1 Wis, 40 ft speed, spear and shortbow training.",
+      "path": "races/alseid.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "fey",
+        "forest",
+        "quadruped"
+      ]
+    },
+    {
+      "id": "catfolk",
+      "type": "race",
+      "name": "Catfolk",
+      "author": "voodoo573",
+      "summary": "Agile cat-people with claws and keen senses; Malkin and Pantheran subraces.",
+      "path": "races/catfolk.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "feline",
+        "claws"
+      ]
+    },
+    {
+      "id": "derro",
+      "type": "race",
+      "name": "Derro",
+      "author": "voodoo573",
+      "summary": "Underground folk with superior darkvision and resilience to spells; three subraces.",
+      "path": "races/derro.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "underground",
+        "small-folk"
+      ]
+    },
+    {
+      "id": "drow-tome-of-heroes",
+      "type": "race",
+      "name": "Drow (Tome of Heroes)",
+      "author": "voodoo573",
+      "summary": "Tome of Heroes drow: +2 Int, superior darkvision, minds of steel; Delver, Fever-Bit or Purified.",
+      "path": "races/drow-tome-of-heroes.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "underground",
+        "elf"
+      ]
+    },
     {
       "id": "example-emberkin",
       "type": "race",
@@ -16,6 +73,90 @@
         "fire"
       ],
       "example": true
+    },
+    {
+      "id": "erina",
+      "type": "race",
+      "name": "Erina",
+      "author": "voodoo573",
+      "summary": "Spiny hedgehog folk: +2 Dex, poison resistance, spines and a 20 ft burrow speed.",
+      "path": "races/erina.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "hedgehog",
+        "burrow"
+      ]
+    },
+    {
+      "id": "gearforged",
+      "type": "race",
+      "name": "Gearforged",
+      "author": "voodoo573",
+      "summary": "Living clockwork bodies holding a soul gem; choose a dwarf, gnome, human or kobold chassis.",
+      "path": "races/gearforged.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "construct",
+        "clockwork"
+      ]
+    },
+    {
+      "id": "minotaur",
+      "type": "race",
+      "name": "Minotaur",
+      "author": "voodoo573",
+      "summary": "Horned folk: +2 Str, +1 Con, horn attacks, a charging shove and an unerring sense of direction.",
+      "path": "races/minotaur.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "horns",
+        "strong"
+      ]
+    },
+    {
+      "id": "mushroomfolk",
+      "type": "race",
+      "name": "Mushroomfolk",
+      "author": "voodoo573",
+      "summary": "Fungal humanoids: +2 Wis, poison resistance, disease immunity; Acid Cap, Favored or Morel.",
+      "path": "races/mushroomfolk.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "fungus",
+        "underground"
+      ]
+    },
+    {
+      "id": "satarre",
+      "type": "race",
+      "name": "Satarre",
+      "author": "voodoo573",
+      "summary": "Keepers of planar secrets: +2 Con, +1 Int, necrotic resistance and a rotting touch.",
+      "path": "races/satarre.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "planar",
+        "necrotic"
+      ]
+    },
+    {
+      "id": "shade",
+      "type": "race",
+      "name": "Shade",
+      "author": "voodoo573",
+      "summary": "Echoes of the living who linger past death: ghostly flesh, life drain and spectral resilience.",
+      "path": "races/shade.json",
+      "version": "1.0.0",
+      "tags": [
+        "tome-of-heroes",
+        "ghostly",
+        "undead"
+      ]
     },
     {
       "id": "example-lanternbearer",

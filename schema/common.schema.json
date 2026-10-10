@@ -69,8 +69,11 @@
       "$ref": "#/$defs/tags"
     },
     "license": {
-      "const": "CC-BY-4.0",
-      "description": "Optional. All content in this repo is CC BY 4.0."
+      "enum": [
+        "CC-BY-4.0",
+        "OGL-1.0a"
+      ],
+      "description": "Optional. Original content in this repo is CC BY 4.0 (the default when omitted). Use \"OGL-1.0a\" only for Open Game Content reused from an OGL 1.0a publication; its Section 15 line goes in `credits` and in LICENSE-OGL.txt."
     },
     "example": {
       "type": "boolean",

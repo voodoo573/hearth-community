@@ -1,0 +1,127 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "drow-tome-of-heroes",
+  "name": "Drow (Tome of Heroes)",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Drow (Tome of Heroes) (Tome of Heroes, Kobold Press). Size. Drow are slightly shorter and slimmer than humans. Your size is Medium. Age. Drow physically mature at the same rate as humans, but they aren't considered adults until they reach the age of 50. They typically live to be around 500.",
+  "summary": "Tome of Heroes drow: +2 Int, superior darkvision, minds of steel; Delver, Fever-Bit or Purified.",
+  "tags": [
+    "tome-of-heroes",
+    "underground",
+    "elf"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/drow/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Drow (Tome of Heroes)",
+    "speed": 25,
+    "size": "Medium",
+    "bonuses": {
+      "int": 2
+    },
+    "languages": [
+      "Elvish",
+      "Common or Undercommon (choose one)"
+    ],
+    "traits": [
+      {
+        "name": "Superior Darkvision",
+        "desc": "Accustomed to life in the darkest depths of the world, you can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "name": "Mind of Steel",
+        "desc": "You understand the complexities of minds, as well as the magic that can affect them. You have advantage on Wisdom, Intelligence, and Charisma saving throws against spells."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+      }
+    ],
+    "subraces": {
+      "delver": {
+        "name": "Delver",
+        "traits": [
+          {
+            "name": "Rapport with Insects",
+            "desc": "Your caste's years of working alongside the giant spiders and beetles that your people utilized in building and defending cities has left your caste with an innate affinity with the creatures. You can communicate simple ideas with insect-like beasts with an Intelligence of 3 or lower, such as spiders, beetles, wasps, scorpions, and centipedes. You can understand them in return, though this understanding is often limited to knowing the creature's current or most recent state, such as “hungry,” “content,” or “in danger.” Delver drow often keep such creatures as pets, mounts, or beasts of burden."
+          },
+          {
+            "name": "Specialized Training",
+            "desc": "You are proficient in one skill and one tool of your choice."
+          },
+          {
+            "name": "Martial Excellence",
+            "desc": "You are proficient with one martial weapon of your choice and with light armor."
+          }
+        ],
+        "bonuses": {
+          "str": 1,
+          "dex": 1
+        }
+      },
+      "fever_bit": {
+        "name": "Fever-Bit",
+        "traits": [
+          {
+            "name": "Deathly Resilience",
+            "desc": "Your long exposure to the life-sapping energies of darakhul fever has made you more resilient. You have resistance to necrotic damage, and advantage on death saving throws."
+          },
+          {
+            "name": "Iron Constitution",
+            "desc": "You are immune to disease."
+          },
+          {
+            "name": "Near-Death Experience",
+            "desc": "Your brush with death has made you more stalwart in the face of danger. You have advantage on saving throws against being frightened."
+          }
+        ],
+        "bonuses": {
+          "con": 1
+        }
+      },
+      "purified": {
+        "name": "Purified",
+        "traits": [
+          {
+            "name": "Innate Spellcasting",
+            "desc": "You know the poison spray cantrip. When you reach 3rd level, you can cast suggestion once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the tongues spell once and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+          },
+          {
+            "name": "Born Leader",
+            "desc": "You gain proficiency with two of the following skills of your choice: History, Insight, Performance, and Persuasion."
+          }
+        ],
+        "bonuses": {
+          "cha": 1
+        },
+        "spellAbility": "int",
+        "racialSpells": [
+          {
+            "spell": "Poison Spray",
+            "level": 0
+          },
+          {
+            "spell": "Suggestion",
+            "level": 2,
+            "atLevel": 3,
+            "freePerLongRest": 1
+          },
+          {
+            "spell": "Tongues",
+            "level": 3,
+            "atLevel": 5,
+            "freePerLongRest": 1
+          }
+        ]
+      }
+    }
+  }
+}

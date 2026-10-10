@@ -94,6 +94,11 @@ node scripts/build-index.mjs           # validate and rewrite index.json (mainta
 - **Content** (everything in the content folders, plus `index.json`) is licensed under
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See `LICENSE-CONTENT.txt`.
   If you reuse an item, credit its author, which is the GitHub handle in its `author` field.
+  Items reused from CC BY 4.0 publications (A5E SRD, Black Flag Reference Document) carry the
+  publisher's attribution in their `credits` field; keep it when you reuse them.
+- **OGL items**: items whose `license` is `OGL-1.0a` (for example races and subclasses from
+  Kobold Press's Tome of Heroes) are Open Game Content under the Open Game License v1.0a, not
+  CC BY 4.0. See `LICENSE-OGL.txt` for the licence and its Section 15 copyright notices.
 - **Code** (`scripts/`, `schema/`, `.github/`) is licensed under the MIT License. See `LICENSE`.
 
 Hearth is an unofficial fan project and isn't affiliated with or endorsed by Wizards of the

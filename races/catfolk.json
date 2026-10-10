@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "catfolk",
+  "name": "Catfolk",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Catfolk (Tome of Heroes, Kobold Press). Size. Catfolk have a similar stature to humans but are generally leaner and more muscular. Your size is Medium. Age. Catfolk mature at the same rate as humans and can live just past a century.",
+  "summary": "Agile cat-people with claws and keen senses; Malkin and Pantheran subraces.",
+  "tags": [
+    "tome-of-heroes",
+    "feline",
+    "claws"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/catfolk/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Catfolk",
+    "speed": 30,
+    "size": "Medium",
+    "bonuses": {
+      "dex": 2
+    },
+    "languages": [
+      "Common"
+    ],
+    "proficiencies": {
+      "skills": [
+        "perception",
+        "stealth"
+      ]
+    },
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Cat's Claws",
+        "desc": "Your sharp claws can cut with ease. Your claws are natural melee weapons, which you can use to make unarmed strikes. When you hit with a claw, your claw deals slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Hunter's Senses",
+        "desc": "You have proficiency in the Perception and Stealth skills."
+      }
+    ],
+    "subraces": {
+      "malkin": {
+        "name": "Malkin",
+        "traits": [
+          {
+            "name": "Curiously Clever",
+            "desc": "You have proficiency in the Investigation skill."
+          },
+          {
+            "name": "Charmed Curiosity",
+            "desc": "When you roll a 1 on the d20 for a Dexterity check or saving throw, you can reroll the die and must use the new roll."
+          }
+        ],
+        "bonuses": {
+          "int": 1
+        },
+        "proficiencies": {
+          "skills": [
+            "investigation"
+          ]
+        }
+      },
+      "pantheran": {
+        "name": "Pantheran",
+        "traits": [
+          {
+            "name": "Hunter's Charge",
+            "desc": "Once per turn, if you move at least 10 feet toward a target and hit it with a melee weapon attack in the same turn, you can use a bonus action to attack that creature with your Cat's Claws. You can use this trait a number of times per day equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          },
+          {
+            "name": "One With the Wilds",
+            "desc": "You have proficiency in one of the following skills of your choice: Insight, Medicine, Nature, or Survival."
+          }
+        ],
+        "bonuses": {
+          "wis": 1
+        }
+      }
+    }
+  }
+}

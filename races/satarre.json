@@ -1,0 +1,66 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "satarre",
+  "name": "Satarre",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Satarre (Tome of Heroes, Kobold Press). Size. Satarre are tall but thin, from 6 to 7 feet tall with peculiar, segmented limbs. Your size is Medium. Age. Satarre grow quickly, walking soon after hatching and reaching the development of a 15-year-old human by age 6. They maintain the same appearance until about 50, then begin a rapid decline. Satarre often die violently, but those who live longer survive to no more than 65 years of age.",
+  "summary": "Keepers of planar secrets: +2 Con, +1 Int, necrotic resistance and a rotting touch.",
+  "tags": [
+    "tome-of-heroes",
+    "planar",
+    "necrotic"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/satarre/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Satarre",
+    "speed": 30,
+    "size": "Medium",
+    "bonuses": {
+      "con": 2,
+      "int": 1
+    },
+    "languages": [
+      "Common",
+      "Abyssal, Infernal or Void Speech (choose one)"
+    ],
+    "proficiencies": {
+      "skills": [
+        "arcana"
+      ]
+    },
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Thanks to your dark planar parentage, you have superior vision in darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "A Friend to Death",
+        "desc": "You have resistance to necrotic damage."
+      },
+      {
+        "name": "Keeper of Secrets",
+        "desc": "You have proficiency in the Arcana skill, and you have advantage on Intelligence (Arcana) checks related to the planes and planar travel. In addition, you have proficiency in one of the following skills of your choice: History, Insight, and Religion."
+      },
+      {
+        "name": "Carrier of Rot",
+        "desc": "You can use your action to inflict rot on a creature you can see within 10 feet of you. The creature must make a Constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d4 necrotic damage on a failed save, and half as much damage on a successful one. A creature that fails the saving throw also rots for 1 minute. A rotting creature takes 1d4 necrotic damage at the end of each of its turns. The target or a creature within 5 feet of it can use an action to excise the rot with a successful Wisdom (Medicine) check. The DC for the check equals the rot's Constitution saving throw DC. The rot also disappears if the target receives magical healing. The damage for the initial action and the rotting increases to 2d4 at 6th level, 3d4 at 11th level, and 4d4 at 16th level. After you use your Carrier of Rot trait, you can't use it again until you complete a short or long rest."
+      }
+    ],
+    "racialAbilities": [
+      {
+        "id": "carrier_of_rot",
+        "name": "Carrier of Rot",
+        "action": "action",
+        "usesPerLongRest": 1,
+        "recovery": "short",
+        "damageType": "necrotic",
+        "desc": "Action: one creature you can see within 10 ft makes a Con save (DC 8 + Con mod + proficiency bonus); 1d4 necrotic on a fail (half on a success) and it rots for 1 minute (1d4 necrotic at the end of each of its turns). Damage increases to 2d4 at 6th, 3d4 at 11th and 4d4 at 16th level. Once per short or long rest."
+      }
+    ]
+  }
+}

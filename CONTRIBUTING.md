@@ -11,13 +11,17 @@ Thanks for sharing your homebrew! Everything merged here shows up in the Content
    Monster Manual or any other book beyond the free 5e System Reference Document (SRD 5.1).
    Material from other CC BY 4.0 sources (for example the A5E SRD by EN Publishing) is welcome
    if you put the publisher's full attribution statement and a source link in `credits`.
+   Open Game Content under the OGL 1.0a (for example Kobold Press's Tome of Heroes) is also
+   accepted: set `"license": "OGL-1.0a"`, put the work's Section 15 copyright line in `credits`,
+   and add that line to Section 15 of `LICENSE-OGL.txt`.
    Don't reuse non-SRD names, such as specific setting characters, places or monsters.
 3. **Family-friendly.** Hearth is played by all ages, so no sexual content, gore, slurs or hateful
    themes.
 4. **Maps must be under 5 MB.** PNG, JPG or WebP only. About 1400 px on the long edge is plenty,
    because Hearth scales maps to that size anyway.
 5. **By submitting, you license your content under
-   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**, with credit to your GitHub handle.
+   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**, with credit to your GitHub handle
+   (OGL items stay under the OGL 1.0a).
 
 Maintainers may ask for balance tweaks, or decline items that duplicate existing content or
 don't fit.
@@ -59,7 +63,7 @@ Every item is one JSON object with these **common fields**:
 | `tags`        | yes | Up to 12 kebab-case tags, e.g. `["fire", "low-cr"]`. Use `[]` for none. |
 | `summary`     | no  | A one-liner of up to 140 characters for the library list. Defaults to the start of `description`. |
 | `credits`     | no  | Co-authors, art credit, inspiration, or the attribution and source URL for CC BY material (up to 600 characters) |
-| `license`     | no  | If present, must be `"CC-BY-4.0"` |
+| `license`     | no  | `"CC-BY-4.0"` (default) or `"OGL-1.0a"` for reused OGL Open Game Content |
 | `$schema`     | no  | e.g. `"../schema/spell.schema.json"`, which gives you autocomplete in VS Code |
 | `data`        | yes | Type-specific fields, described below |
 

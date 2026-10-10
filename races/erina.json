@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "erina",
+  "name": "Erina",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Erina (Tome of Heroes, Kobold Press). Size. Erina average about 3 feet tall and weigh about 50 pounds. Your size is Small. Age. Erina reach maturity around 15 years and can live up to 60 years, though some erina burrow elders have memories of events which suggest erina can live much longer.",
+  "summary": "Spiny hedgehog folk: +2 Dex, poison resistance, spines and a 20 ft burrow speed.",
+  "tags": [
+    "tome-of-heroes",
+    "hedgehog",
+    "burrow"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/erina/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Erina",
+    "speed": 25,
+    "size": "Medium",
+    "bonuses": {
+      "dex": 2
+    },
+    "languages": [
+      "Erina",
+      "Common or Sylvan (choose one)"
+    ],
+    "proficiencies": {
+      "skills": [
+        "perception"
+      ]
+    },
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Accustomed to life in the dark burrows of your people, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Hardy",
+        "desc": "The erina diet of snakes and venomous insects has made them hardy. You have advantage on saving throws against poison, and you have resistance against poison damage."
+      },
+      {
+        "name": "Spines",
+        "desc": "Erina grow needle-sharp spines in small clusters atop their heads and along their backs. While you are grappling a creature or while a creature is grappling you, the creature takes 1d4 piercing damage at the start of your turn."
+      },
+      {
+        "name": "Keen Senses",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Digger",
+        "desc": "You have a burrowing speed of 20 feet, but you can use it to move through only earth and sand, not mud, ice, or rock."
+      }
+    ]
+  }
+}

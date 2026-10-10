@@ -1,0 +1,124 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "derro",
+  "name": "Derro",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Derro (Tome of Heroes, Kobold Press). Size. Derro stand between 3 and 4 feet tall with slender limbs and wide shoulders. Your size is Small. Age. Derro reach maturity by the age of 15 and live to be around 75.",
+  "summary": "Underground folk with superior darkvision and resilience to spells; three subraces.",
+  "tags": [
+    "tome-of-heroes",
+    "underground",
+    "small-folk"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/derro/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Derro",
+    "speed": 30,
+    "size": "Medium",
+    "bonuses": {
+      "dex": 2
+    },
+    "languages": [
+      "Dwarvish",
+      "Common or Undercommon (choose one)"
+    ],
+    "traits": [
+      {
+        "name": "Superior Darkvision",
+        "desc": "Accustomed to life underground, you can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Eldritch Resilience",
+        "desc": "You have advantage on Constitution saving throws against spells."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+      }
+    ],
+    "subraces": {
+      "far_touched": {
+        "name": "Far-Touched",
+        "traits": [
+          {
+            "name": "Insanity",
+            "desc": "You have advantage on saving throws against being charmed or frightened. In addition, you can read and understand Void Speech, but you can speak only a few words of the dangerous and maddening language—the words necessary for using the spells in your Mad Fervor trait."
+          },
+          {
+            "name": "Mad Fervor",
+            "desc": "The driving force behind your insanity has blessed you with a measure of its power. You know the vicious mockery cantrip. When you reach 3rd level, you can cast the enthrall spell with this trait, and starting at 5th level, you can cast the fear spell with it. Once you cast a non-cantrip spell with this trait, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells. If you are using Deep Magic for 5th Edition, these spells are instead crushing curse, maddening whispers, and alone, respectively."
+          }
+        ],
+        "bonuses": {
+          "cha": 1
+        },
+        "spellAbility": "cha",
+        "racialSpells": [
+          {
+            "spell": "Vicious Mockery",
+            "level": 0
+          },
+          {
+            "spell": "Enthrall",
+            "level": 2,
+            "atLevel": 3,
+            "freePerLongRest": 1
+          },
+          {
+            "spell": "Fear",
+            "level": 3,
+            "atLevel": 5,
+            "freePerLongRest": 1
+          }
+        ]
+      },
+      "mutated": {
+        "name": "Mutated",
+        "traits": [
+          {
+            "name": "Athletic Training",
+            "desc": "You have proficiency in the Athletics skill, and you are proficient with two martial weapons of your choice."
+          },
+          {
+            "name": "Otherworldly Influence",
+            "desc": "Your close connection to the strange powers that your people worship has mutated your form. Choose one of the following:\n* Alien Appendage. You have a tentacle-like growth on your body. This tentacle is a natural melee weapon, which you can use to make unarmed strikes. When you hit with it, your tentacle deals bludgeoning damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. This tentacle has a reach of 5 feet and can lift a number of pounds equal to double your Strength score. The tentacle can't wield weapons or shields or perform tasks that require manual precision, such as performing the somatic components of a spell, but it can perform simple tasks, such as opening an unlocked door or container, stowing or retrieving an object, or pouring the contents out of a vial.\n* Tainted Blood. Your blood is tainted by your connection with otherworldly entities. When you take piercing or slashing damage, you can use your reaction to force your blood to spray out of the wound. You and each creature within 5 feet of you take necrotic damage equal to your level. Once you use this trait, you can't use it again until you finish a short or long rest.\n* Tenebrous Flesh. Your skin is rubbery and tenebrous, granting you a +1 bonus to your Armor Class."
+          }
+        ],
+        "bonuses": {
+          "str": 1
+        },
+        "proficiencies": {
+          "skills": [
+            "athletics"
+          ]
+        }
+      },
+      "uncorrupted": {
+        "name": "Uncorrupted",
+        "traits": [
+          {
+            "name": "Psychic Barrier",
+            "desc": "Your time among your less sane brethren has inured you to their madness. You have resistance to psychic damage, and you have advantage on ability checks and saving throws made against effects that inflict insanity, such as spells like contact other plane and symbol, and effects that cause short-term, long-term, or indefinite madness."
+          },
+          {
+            "name": "Studied Insight",
+            "desc": "You are skilled at discerning other creature's motives and intentions. You have proficiency in the Insight skill, and, if you study a creature for at least 1 minute, you have advantage on any initiative checks in combat against that creature for the next hour."
+          }
+        ],
+        "bonuses": {
+          "wis": 1
+        },
+        "proficiencies": {
+          "skills": [
+            "insight"
+          ]
+        }
+      }
+    }
+  }
+}

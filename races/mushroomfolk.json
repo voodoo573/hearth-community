@@ -1,0 +1,140 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "mushroomfolk",
+  "name": "Mushroomfolk",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Mushroomfolk (Tome of Heroes, Kobold Press). Size. A mushroomfolk's size is determined by its subrace. Age. Mushroomfolk reach maturity by the age of 5 and rarely live longer than 50 years.",
+  "summary": "Fungal humanoids: +2 Wis, poison resistance, disease immunity; Acid Cap, Favored or Morel.",
+  "tags": [
+    "tome-of-heroes",
+    "fungus",
+    "underground"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/mushroomfolk/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Mushroomfolk",
+    "speed": 30,
+    "size": "Medium",
+    "bonuses": {
+      "wis": 2
+    },
+    "languages": [
+      "Mushroomfolk",
+      "Common or Undercommon (choose one)"
+    ],
+    "proficiencies": {
+      "skills": [
+        "survival"
+      ]
+    },
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Accustomed to life underground, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Fungoid Form",
+        "desc": "You are a humanoid, though the fungal nature of your body and your unique diet of decayed vegetable and animal matter marks you with some plant-like characteristics. You have advantage on saving throws against poison, and you have resistance to poison damage. In addition, you are immune to disease."
+      },
+      {
+        "name": "Hardy Survivor",
+        "desc": "Your upbringing in mushroomfolk society has taught you how to defend yourself and find food. You have proficiency in the Survival skill."
+      },
+      {
+        "name": "Subrace",
+        "desc": "Three subraces of mushroomfolk are known to wander the world: acid cap, favored, and morel. Choose one of these subraces."
+      }
+    ],
+    "subraces": {
+      "acid_cap": {
+        "name": "Acid Cap",
+        "traits": [
+          {
+            "name": "Acid Cap Resistance",
+            "desc": "You have resistance to acid damage."
+          },
+          {
+            "name": "Acid Spores",
+            "desc": "When you are hit by a melee weapon attack within 5 feet of you, you can use your reaction to emit acidic spores. If you do, the attacker takes acid damage equal to half your level (rounded up). You can use your acid spores a number of times equal to your Constitution modifier (a minimum of once). You regain any expended uses when you finish a long rest."
+          },
+          {
+            "name": "Clan Athlete",
+            "desc": "You have proficiency in the Athletics skill."
+          }
+        ],
+        "bonuses": {
+          "str": 1
+        },
+        "proficiencies": {
+          "skills": [
+            "athletics"
+          ]
+        }
+      },
+      "favored": {
+        "name": "Favored",
+        "traits": [
+          {
+            "name": "Blessed Help",
+            "desc": "Your intuition and connection to your allies allows you to assist and protect them. You know the spare the dying cantrip. When you reach 3rd level, you can cast the bless spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          },
+          {
+            "name": "Clan Leader",
+            "desc": "You have proficiency in the Persuasion skill."
+          },
+          {
+            "name": "Restful Spores",
+            "desc": "If you or any friendly creatures within 30 feet of you regain hit points at the end of a short rest by spending one or more Hit Dice, each of those creatures regains additional hit points equal to your proficiency bonus. Once a creature benefits from your restful spores, it can't do so again until it finishes a long rest."
+          }
+        ],
+        "bonuses": {
+          "cha": 1
+        },
+        "proficiencies": {
+          "skills": [
+            "persuasion"
+          ]
+        },
+        "spellAbility": "cha",
+        "racialSpells": [
+          {
+            "spell": "Spare the Dying",
+            "level": 0
+          },
+          {
+            "spell": "Bless",
+            "level": 1,
+            "atLevel": 3,
+            "freePerLongRest": 1
+          }
+        ]
+      },
+      "morel": {
+        "name": "Morel",
+        "traits": [
+          {
+            "name": "Adaptable Camouflage",
+            "desc": "If you spend at least 1 minute in an environment with ample naturally occurring plants or fungi, such as a grassland, a forest, or an underground fungal cavern, you can adjust your natural coloration to blend in with the local plant life. If you do so, you have advantage on Dexterity (Stealth) checks for the next 24 hours while in that environment."
+          },
+          {
+            "name": "Clan Scout",
+            "desc": "You have proficiency in the Stealth skill."
+          }
+        ],
+        "bonuses": {
+          "dex": 1
+        },
+        "proficiencies": {
+          "skills": [
+            "stealth"
+          ]
+        }
+      }
+    }
+  }
+}

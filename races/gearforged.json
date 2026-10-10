@@ -1,0 +1,122 @@
+{
+  "$schema": "../schema/race.schema.json",
+  "id": "gearforged",
+  "name": "Gearforged",
+  "type": "race",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "Gearforged (Tome of Heroes, Kobold Press). Size. Your size is determined by your Race Chassis. Age. The soul inhabiting a gearforged can be any age. As long as its new body is kept in good repair, there is no known limit to how long it can function. Gearforged gain +1 to two ability scores of your choice.",
+  "summary": "Living clockwork bodies holding a soul gem; choose a dwarf, gnome, human or kobold chassis.",
+  "tags": [
+    "tome-of-heroes",
+    "construct",
+    "clockwork"
+  ],
+  "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/gearforged/ (Open5e). Changes: converted to Hearth's race format.",
+  "data": {
+    "name": "Gearforged",
+    "speed": 30,
+    "size": "Medium",
+    "bonuses": {
+      "choose": {
+        "count": 2,
+        "value": 1
+      }
+    },
+    "languages": [
+      "Common",
+      "Machine Speech",
+      "one language of your chassis"
+    ],
+    "traits": [
+      {
+        "name": "Construct Resilience",
+        "desc": "Your body is constructed, which frees you from some of the limits of flesh-and-blood creatures. You have resistance to poison damage, you are immune to disease, and you have advantage on saving throws against being poisoned."
+      },
+      {
+        "name": "Construct Vitality",
+        "desc": "You don't need to eat, drink, or breathe, and you don't sleep the way most creatures do. Instead, you enter a dormant state where you resemble a statue and remain semiconscious for 6 hours a day. During this time, the magic in your soul gem and everwound springs slowly repairs the day's damage to your mechanical body. While in this dormant state, you have disadvantage on Wisdom (Perception) checks. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+      },
+      {
+        "name": "Living Construct",
+        "desc": "Your consciousness and soul reside within a soul gem to animate your mechanical body. As such, you are a living creature with some of the benefits and drawbacks of a construct. Though you can regain hit points from spells like cure wounds, you can also be affected by game effects that specifically target constructs, such as the shatter spell. As long as your soul gem remains intact, game effects that raise a creature from the dead work on you as normal, repairing the damaged pieces of your mechanical body (restoring lost sections only if the spell normally restores lost limbs) and returning you to life as a gearforged. Alternatively, if your body is destroyed but your soul gem and memory gears are intact, they can be installed into a new body with a ritual that takes one day and 10,000 gp worth of materials. If your soul gem is destroyed, only a wish spell can restore you to life, and you return as a fully living member of your original race."
+      },
+      {
+        "name": "Race Chassis",
+        "desc": "Four races are known to create unique gearforged, building mechanical bodies similar in size and shape to their people: dwarf, gnome, human, and kobold. Choose one of these forms."
+      }
+    ],
+    "subraces": {
+      "dwarf_chassis": {
+        "name": "Dwarf Chassis",
+        "traits": [
+          {
+            "name": "Always Armed",
+            "desc": "Every dwarf knows that it's better to leave home without pants than without your weapon. Choose a weapon with which you are proficient and that doesn't have the two-handed property. You can integrate this weapon into one of your arms. While the weapon is integrated, you can't be disarmed of it by any means, though you can use an action to remove the weapon. You can draw or sheathe the weapon as normal, the weapon folding into or springing from your arm instead of a sheath. While the integrated weapon is drawn in this way, it is considered held in that arm's hand, which can't be used for other actions such as casting spells. You can integrate a new weapon or replace an integrated weapon as part of a short or long rest. You can have up to two weapons integrated at a time, one per arm. You have advantage on Dexterity (Sleight of Hand) checks to conceal an integrated weapon."
+          },
+          {
+            "name": "Remembered Training",
+            "desc": "You remember some of your combat training from your previous life. You have proficiency with two martial weapons of your choice and with light and medium armor."
+          }
+        ],
+        "bonuses": {
+          "con": 1
+        }
+      },
+      "gnome_chassis": {
+        "name": "Gnome Chassis",
+        "traits": [
+          {
+            "name": "Mental Fortitude",
+            "desc": "When creating their first gearforged, gnome engineers put their efforts toward ensuring that the gnomish mind remained a mental fortress, though they were unable to fully replicate the gnomish mind's resilience once transferred to a soul gem. Choose Intelligence, Wisdom, or Charisma. You have advantage on saving throws made with that ability score against magic."
+          },
+          {
+            "name": "Quick Fix",
+            "desc": "When you are below half your hit point maximum, you can use a bonus action to apply a quick patch up to your damaged body. You gain temporary hit points equal to your proficiency bonus. You can't use this trait again until you finish a short or long rest."
+          }
+        ],
+        "bonuses": {
+          "int": 1
+        }
+      },
+      "human_chassis": {
+        "name": "Human Chassis",
+        "traits": [
+          {
+            "name": "Adaptable Acumen",
+            "desc": "You gain proficiency in two skills or tools of your choice. Choose one of those skills or tools or another skill or tool proficiency you have. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill or tool."
+          },
+          {
+            "name": "Inspired Ingenuity",
+            "desc": "When you roll a 9 or lower on the d20 for an ability check, you can use a reaction to change the roll to a 10. You can't use this trait again until you finish a short or long rest."
+          }
+        ],
+        "bonuses": {
+          "choose": {
+            "count": 1,
+            "value": 1
+          }
+        }
+      },
+      "kobold_chassis": {
+        "name": "Kobold Chassis",
+        "traits": [
+          {
+            "name": "Clutch Aide",
+            "desc": "Kobolds spend their lives alongside their clutchmates, both those hatched around the same time as them and those they choose later in life, and you retain much of this group-oriented intuition. You can take the Help action as a bonus action."
+          },
+          {
+            "name": "Resourceful",
+            "desc": "If you have at least one set of tools, you can cobble together one set of makeshift tools of a different type with 1 minute of work. For example, if you have cook's utensils, you can use them to create a temporary set of thieves' tools. The makeshift tools last for 10 minutes then collapse into their component parts, returning your tools to their normal forms. While the makeshift tools exist, you can't use the set of tools you used to create the makeshift tools. At the GM's discretion, you might not be able to replicate some tools, such as an alchemist's alembic or a disguise kit's cosmetics. A creature other than you that uses the makeshift tools has disadvantage on the check."
+          }
+        ],
+        "bonuses": {
+          "dex": 1
+        }
+      }
+    }
+  }
+}
