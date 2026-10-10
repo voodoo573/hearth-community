@@ -3,7 +3,7 @@
   "id": "drow-tome-of-heroes",
   "name": "Drow (Tome of Heroes)",
   "type": "race",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -18,7 +18,7 @@
   "credits": "Open Game Content from Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/races/drow/ (Open5e). Changes: converted to Hearth's race format.",
   "data": {
     "name": "Drow (Tome of Heroes)",
-    "speed": 25,
+    "speed": 30,
     "size": "Medium",
     "bonuses": {
       "int": 2

@@ -3,7 +3,7 @@
   "id": "derro",
   "name": "Derro",
   "type": "race",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -19,7 +19,7 @@
   "data": {
     "name": "Derro",
     "speed": 30,
-    "size": "Medium",
+    "size": "Small",
     "bonuses": {
       "dex": 2
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T01:04:23Z",
+  "updated": "2026-10-10T01:06:54Z",
   "items": [
     {
       "id": "alseid",
@@ -38,7 +38,7 @@
       "author": "voodoo573",
       "summary": "Underground folk with superior darkvision and resilience to spells; three subraces.",
       "path": "races/derro.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "tome-of-heroes",
         "underground",
@@ -52,7 +52,7 @@
       "author": "voodoo573",
       "summary": "Tome of Heroes drow: +2 Int, superior darkvision, minds of steel; Delver, Fever-Bit or Purified.",
       "path": "races/drow-tome-of-heroes.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "tome-of-heroes",
         "underground",
@@ -81,7 +81,7 @@
       "author": "voodoo573",
       "summary": "Spiny hedgehog folk: +2 Dex, poison resistance, spines and a 20 ft burrow speed.",
       "path": "races/erina.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "tome-of-heroes",
         "hedgehog",
@@ -95,7 +95,7 @@
       "author": "voodoo573",
       "summary": "Living clockwork bodies holding a soul gem; choose a dwarf, gnome, human or kobold chassis.",
       "path": "races/gearforged.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "tome-of-heroes",
         "construct",
@@ -123,7 +123,7 @@
       "author": "voodoo573",
       "summary": "Fungal humanoids: +2 Wis, poison resistance, disease immunity; Acid Cap, Favored or Morel.",
       "path": "races/mushroomfolk.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "tome-of-heroes",
         "fungus",

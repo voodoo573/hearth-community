@@ -3,7 +3,7 @@
   "id": "erina",
   "name": "Erina",
   "type": "race",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -19,7 +19,7 @@
   "data": {
     "name": "Erina",
     "speed": 25,
-    "size": "Medium",
+    "size": "Small",
     "bonuses": {
       "dex": 2
     },
