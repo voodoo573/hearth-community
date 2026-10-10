@@ -1,0 +1,80 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "child-of-the-briar",
+  "name": "Child of the Briar",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "CR 1 tiny plant from Tome of Beasts (Kobold Press). AC 13, 50 HP. Its eyes gleam like polished walnuts, and its sly smile seems oddly placed on the tiny body, covered in spikes and thorns. The creature’s waist is no thicker than a clenched fist, and its sinuous arms are no wider than a finger but twice the length of its body.\nBorn of Magic. Children of the briar are a frequent nuisance to fey and mortal alike. They grow in deep briar patches in forest clearings or along sunny hillsides and riverbanks. More rarely, they spawn when a sorcerer or magical creature’s blood is spilled on the forest floor, or when summoned into being by obscure druidic items of power.\nThe fey have long used the children of the briar as spies and informants, and the power of the Otherworld now courses through their veins, allowing them to work simple magical tricks and slip between the mortal and faerie realms with relative ease.\n(Lore abridged.)",
+  "summary": "Thorny little plant-fey that grapples with spiky limbs and spits thorns.",
+  "tags": [
+    "plant",
+    "fey",
+    "forest",
+    "tome-of-beasts"
+  ],
+  "credits": "Open Game Content from Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/monsters/child-of-the-briar/ (Open5e). Changes: converted to Hearth's monster format.",
+  "data": {
+    "name": "Child of the Briar",
+    "cr": 1.0,
+    "size": "Tiny",
+    "type": "plant",
+    "ac": 13,
+    "hp": 50,
+    "hpFormula": "20d4",
+    "speed": {
+      "walk": 20,
+      "climb": 10
+    },
+    "abilities": {
+      "str": 6,
+      "dex": 17,
+      "con": 11,
+      "int": 13,
+      "wis": 10,
+      "cha": 14
+    },
+    "skills": {
+      "perception": "+4",
+      "stealth": "+7"
+    },
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "damageVulnerabilities": "fire",
+    "legendary": false,
+    "traits": [
+      {
+        "name": "Languages",
+        "desc": "Briarclick, Common, Sylvan"
+      },
+      {
+        "name": "Fey Blood",
+        "desc": "Children of the briar count as both plant and fey for any effect related to type."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "A child of the briar makes two claw attacks. If both attacks hit the same target, the target is grappled (escape DC 13) and the child of the briar uses its Thorny Grapple on it."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+      },
+      {
+        "name": "Spitdart Tongue (Recharge 4-6)",
+        "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage. Every child of the briar can shoot thorns from its mouth."
+      },
+      {
+        "name": "Entangle",
+        "desc": "Two children of the briar working together can cast a version of the entangle spell with no components, at will. Both creatures must be within 10 feet of each other, and both must use their action to cast the spell. The entangled area must include at least one of the casters but doesn't need to be centered on either caster. Creatures in the area must make a DC 13 Strength saving throw or be restrained. All children of the briar are immune to the spell's effects."
+      },
+      {
+        "name": "Thorny Grapple",
+        "desc": "A child of the briar's long thorny limbs help it grapple creatures up to Medium size. A grappled creature takes 2 (1d4) piercing damage at the end of the child's turn for as long as it remains grappled."
+      }
+    ]
+  }
+}

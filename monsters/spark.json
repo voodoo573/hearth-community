@@ -1,0 +1,66 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "spark",
+  "name": "Spark",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "CR 7 tiny elemental from Tome of Beasts (Kobold Press). AC 16 (natural armor), 84 HP. It can hover. This mote of electrical energy floats menacingly, erupting in a shower of sparks and tendrils of lightning. When it disappears, it leaves only the whiff of ozone.\nBorn in Storms. When a great storm rips across a world in the Material Plane, it sometimes tears loose the fabric of reality, releasing sentient creatures composed entirely of elemental energy. Fueled by its frenetic thought patterns and erratic actions, a spark jolts through its new world to find a physical body, drawn by an urge to know form.\nSymbionts and Twins. Some spellcasters deliberately seek out sparks for symbiosis. Sorcerers or clerics devoted to deities of the elements may reach an agreement with these creatures, allowing them to ride within their bodies for their entire lifetime.\nOccasionally when a spark forms, an oppositely charged mate is created at the same time. When this happens, the two always stay within 300 feet of one another. Sparks rarely survive longer than a year, even within a symbiotic relationship with a mortal form. When they expire, they simply wink out and return to the elemental planes.\nSeek Strong Hosts. When a formless spark senses a potential body approaching, it dims its light or enters a metallic object. Sparks prefer to inhabit creatures with high Strength over other possible targets. Once in control of a body, the spark uses the new vessel to deliver shocking grasp attacks or to cast lightning bolt or call lightning against distant enemies. If ejected from a creature, a spark immediately tries to inhabit another.\nElemental Nature. A spark doesn’t require air, food, drink, or sleep.",
+  "summary": "Mote of storm lightning that can leap into and control a creature.",
+  "tags": [
+    "elemental",
+    "lightning",
+    "mid-cr",
+    "tome-of-beasts"
+  ],
+  "credits": "Open Game Content from Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/monsters/spark/ (Open5e). Changes: converted to Hearth's monster format.",
+  "data": {
+    "name": "Spark",
+    "cr": 7.0,
+    "size": "Tiny",
+    "type": "elemental",
+    "ac": 16,
+    "hp": 84,
+    "hpFormula": "13d4+52",
+    "speed": {
+      "walk": 10,
+      "fly": 60
+    },
+    "abilities": {
+      "str": 4,
+      "dex": 20,
+      "con": 18,
+      "int": 10,
+      "wis": 12,
+      "cha": 17
+    },
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "damageResistances": "acid, fire, force, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damageImmunities": "lightning",
+    "conditionImmunities": "exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious",
+    "legendary": false,
+    "traits": [
+      {
+        "name": "Saving Throws",
+        "desc": "Dex +8"
+      },
+      {
+        "name": "Languages",
+        "desc": "Common, Primordial"
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "the spark's innate casting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nat will: shocking grasp\n\n3/day: lightning bolt\n\n1/day: call lightning"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Inhabit",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: The target must succeed on a DC 14 Charisma saving throw or become dominated by the spark, as the dominate person spell. The spark instantly enters the target's space and merges into the target's physical form. While inhabiting a creature, a spark takes no damage from physical attacks. The target creature receives a +4 bonus to its Dexterity and Charisma scores while it's inhabited. The speech and actions of an inhabited creature are noticeably jerky and erratic to any creature with passive Perception 14 or higher. Each time the spark uses innate spellcasting, the host can attempt another DC 14 Charisma saving throw. A successful save expels the spark, which appears in an unoccupied space within 5 feet of the former host. The inhabiting spark slowly burns out its host's nervous system. The inhabited creature must make a successful DC 15 Constitution saving throw at the end of each 24 hour-period or take 2d6 lightning damage and have its maximum hit points reduced by the same amount. The creature dies if this damage reduces its hit point maximum to 0. The reduction lasts until the inhabited creature completes a long rest after the spark is expelled."
+      }
+    ]
+  }
+}

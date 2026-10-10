@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "lantern-dragonette",
+  "name": "Lantern Dragonette",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "CR 1/2 tiny dragon from Tome of Beasts (Kobold Press). AC 13 (natural armor), 28 HP. It can hover. This cat-sized drake with a waxy appearance and a glow emanating from its belly can hover in midair, filling a small area with a warm glow.\nThe lantern drake is named for its belly, which glows with a warm light. The beast's yellow, waxy scales darken with age, though lantern drakes rarely live more than 50 years or so. They weigh from 5 to 10 pounds and are 18 inches long. Most believe they are the result of an arcane fusion of a radiant spirit with a paper drake.\nEat Candle Wax. The drake devours four ounces of candle wax per day, plus four more ounces if it uses its belly lantern. A lantern dragonette’s unusual diet leads it to lair in libraries, abbeys, and other places of study. Even though the dragonettes eat candles essential for study during dark hours, they still provide light and protect their adopted homes. Residents and caretakers consider them good luck and enjoy conversing with them.\nTelepathic Chatterbox. This gregarious drake prefers to speak with its companions but uses telepathy if necessary, and the creature hisses when surprised or displeased. It loves nothing more than discussing magic and history with an intelligent and informed individual.\nAdventurous Companions. Occasionally, a dragonette wishing to learn more about the world finds a spellcaster or adventuring party to travel with, purely for the sake of learning or to acquire new sources of knowledge. Most parties enjoy the traveling light source and the abilities these companions bring to bear. A lantern dragonette avoids combat and uses its abilities only to escape or to defend its lair, family, and friends.\nA dragonette lives up to 30 years. A mated pair produces one clutch of two to five eggs every five years, and one parent raises the young dragonettes until they mature after a year and leave to search for their own lairs.",
+  "summary": "Cat-sized scholarly drake whose belly glows like a lantern.",
+  "tags": [
+    "dragon",
+    "light",
+    "low-cr",
+    "tome-of-beasts"
+  ],
+  "credits": "Open Game Content from Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/monsters/lantern-dragonette/ (Open5e). Changes: converted to Hearth's monster format.",
+  "data": {
+    "name": "Lantern Dragonette",
+    "cr": 0.5,
+    "size": "Tiny",
+    "type": "dragon",
+    "ac": 13,
+    "hp": 28,
+    "hpFormula": "8d4+8",
+    "speed": {
+      "walk": 15,
+      "fly": 40
+    },
+    "abilities": {
+      "str": 7,
+      "dex": 12,
+      "con": 13,
+      "int": 16,
+      "wis": 13,
+      "cha": 12
+    },
+    "skills": {
+      "arcana": "+5",
+      "history": "+5",
+      "nature": "+5",
+      "perception": "+3",
+      "religion": "+5"
+    },
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "conditionImmunities": "paralyzed, unconscious",
+    "legendary": false,
+    "traits": [
+      {
+        "name": "Saving Throws",
+        "desc": "Dex +3, Wis +3, Cha +3"
+      },
+      {
+        "name": "Languages",
+        "desc": "Common, Draconic, Elvish, Primordial; telepathy 60 ft."
+      },
+      {
+        "name": "Lantern Belly (1/Day)",
+        "desc": "If the dragonette has eaten 8 ounces of candle wax in the last 24 hours, it can emit a continual flame for 3d20 minutes. The continual flame can be dispelled, but the dragonette can resume it with a bonus action except in areas of magical darkness, if the time limit hasn't expired."
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "the lantern dragonette's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n1/day each: burning hands, color spray, scorching ray"
+      },
+      {
+        "name": "Vulnerable to Magical Darkness",
+        "desc": "A lantern dragonette in an area of magical darkness loses its lantern belly ability and its ability to fly. It also suffers 1d6 radiant damage for every minute of exposure."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+      }
+    ]
+  }
+}

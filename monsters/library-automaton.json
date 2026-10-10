@@ -1,0 +1,68 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "library-automaton",
+  "name": "Library Automaton",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "CR 1/2 small construct from Tome of Beasts (Kobold Press). AC 13 (natural armor), 7 HP. The humming of servos, ticking of gears, and petite discharges of steam alert you to the presence of this library’s diminutive custodian.\nThese small constructs were created to fulfill organizational responsibilities of huge libraries with staffing problems, but some invariably learn enough about the wider world to seek out adventure and new knowledge, rather than tending the items in their care.\nEyes of the Past. While largely constructed with mechanical components, the automatons include a single human eyeball that is mounted at the end of an articulated appendage. The eye is usually donated by one of the institution’s scholars (prescribed in their will) so that they can continue serving the repositories of knowledge that were their life’s work.\nTelekinetic. While the automatons have no arms, they can move and manipulate written materials telekinetically. Powered by keen analytical engines, the library automaton tirelessly pores through tomes, translates ancient texts, catalogs the institution’s volumes, fetches texts for visitors, and occasionally rids the vast halls of uninvited pests.\nSought by Wizards. Wizards have discovered that these clockwork bureaucrats make particularly effective caretakers for their spellbooks and scrolls while on adventure.\nConstructed Nature. A library automaton doesn’t require air, food, drink, or sleep.",
+  "summary": "Tiny clockwork librarian that befuddles book thieves with a confusing gaze.",
+  "tags": [
+    "construct",
+    "clockwork",
+    "low-cr",
+    "tome-of-beasts"
+  ],
+  "credits": "Open Game Content from Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/monsters/library-automaton/ (Open5e). Changes: converted to Hearth's monster format.",
+  "data": {
+    "name": "Library Automaton",
+    "cr": 0.5,
+    "size": "Small",
+    "type": "construct",
+    "ac": 13,
+    "hp": 7,
+    "hpFormula": "2d6",
+    "speed": {
+      "walk": 30
+    },
+    "abilities": {
+      "str": 8,
+      "dex": 13,
+      "con": 10,
+      "int": 14,
+      "wis": 12,
+      "cha": 8
+    },
+    "skills": {
+      "history": "+4",
+      "investigation": "+4"
+    },
+    "senses": "blindsight 60 ft., truesight 10 ft., passive Perception 11",
+    "damageImmunities": "poison",
+    "conditionImmunities": "charmed, poisoned",
+    "legendary": false,
+    "traits": [
+      {
+        "name": "Languages",
+        "desc": "Common, Machine Speech"
+      },
+      {
+        "name": "Extra-Dimensional Book Repository",
+        "desc": "A small door on the chest of the library automaton opens into an extra-dimensional bookcase. This bookcase functions exactly as a bag of holding except that it can store only written materials such as books, scrolls, tomes, parchment, folders, notebooks, spellbooks, and the like."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Gaze of Confusion",
+        "desc": "The library automaton chooses one creature it can see within 40 feet. The target must succeed on a DC 12 Intelligence saving throw or take 9 (3d4 + 2) psychic damage and have disadvantage on Intelligence-based checks, saving throws, and attacks until the end of its next turn. If the saving throw succeeds, then the target takes half damage and suffers no other effect."
+      },
+      {
+        "name": "Bibliotelekinesis",
+        "desc": "This ability functions as the cantrip mage hand but can be used only on books, scrolls, maps, and other printed or written materials."
+      }
+    ]
+  }
+}

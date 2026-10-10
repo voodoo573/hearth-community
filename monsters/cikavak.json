@@ -1,0 +1,64 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "cikavak",
+  "name": "Cikavak",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "CR 1/8 tiny fey from Tome of Beasts (Kobold Press). AC 12, 17 HP. The cikavak is a remarkably ugly magical bird—a supernatural creature conjured through a lengthy ritual. A dark gray comb flops atop their heads and shapeless wattles dangle from their throats. They seem unimposing.\nDagger Beaks. Cikavaks use their elongated, dull-gray beaks to draw up nectar and other fluids—or to stab with the force of a dagger. Although it requires great effort to call up these homely birds, the magic is surprisingly common, known among peasants and townsfolk as well as mages. Once summoned, they remain faithful to their masters until death. While cikavaks don’t speak, they comprehend the Common tongue and can speak with animals to help their master. They often magically silence the cries of more melodious birds.\nPotion Pouches. Cikavaks possess another odd ability: when fully distended, their ventral pouches hold up to half a gallon of almost any liquid. These resilient pouches take little or no damage from their contents, holding potions without ingesting them or even carrying acid without injury.\nThieves make use of this ability, directing the birds to siphon up liquids and thus steal honey from neighbors’ beehives, as well as milk, beer, and wine. The most audacious thieves send their birds into magicians’ towers, alchemists’ shops, or the local apothecary to seize mercury, phlogiston, and more exotic substances. They carry these stolen fluids back to their owner in their pouches. While normally strong flyers, when laden with liquids, their flight is clumsy at best.\nFolk Conjuration. To call a cikavak with folk magic rituals, a character must gather an egg from a black hen as well as 30 gp worth of herbs and colored chalks. Cast at sunset, the folk ritual requires half an hour and requires a successful DC 15 Intelligence (Arcana) check to succeed. (The material components can be used multiple times, until the ritual succeeds).",
+  "summary": "A small, ugly magical bird conjured by ritual that sips nectar and spies for its master.",
+  "tags": [
+    "fey",
+    "bird",
+    "low-cr",
+    "tome-of-beasts"
+  ],
+  "credits": "Open Game Content from Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/monsters/cikavak/ (Open5e). Changes: converted to Hearth's monster format.",
+  "data": {
+    "name": "Cikavak",
+    "cr": 0.125,
+    "size": "Tiny",
+    "type": "fey",
+    "ac": 12,
+    "hp": 17,
+    "hpFormula": "7d4",
+    "speed": {
+      "walk": 10,
+      "fly": 40
+    },
+    "abilities": {
+      "str": 4,
+      "dex": 15,
+      "con": 10,
+      "int": 12,
+      "wis": 12,
+      "cha": 4
+    },
+    "skills": {
+      "perception": "+5",
+      "stealth": "+9"
+    },
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "damageResistances": "acid, fire, poison",
+    "legendary": false,
+    "traits": [
+      {
+        "name": "Languages",
+        "desc": "understands Common; telepathy (touch)"
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "the cikavak's innate spellcasting ability is Wisdom (spell save DC 11). It can innately cast the following spells, requiring no material components:\n\nat will: speak with animals\n\n1/day: silence"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +4 to hit, range 5 ft., one target. Hit: 7 (1d4 + 2) piercing damage."
+      }
+    ]
+  }
+}

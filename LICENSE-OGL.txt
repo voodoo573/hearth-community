@@ -6,7 +6,7 @@ used and redistributed under the Open Game License Version 1.0a below. For those
 everything in the item's "data" object and its rules text in "description" is Open Game
 Content. The following are designated Product Identity and are not Open Game Content:
 the names "Hearth" and "hearthdnd.org", the repository's logos and artwork, and the
-names "Kobold Press", "Open Design" and "Tome of Heroes" (used here only to give credit
+names "Kobold Press", "Open Design", "Tome of Heroes" and "Tome of Beasts" (used here only to give credit
 as required by Section 6, not to indicate compatibility or endorsement).
 
 All other items in this repository are licensed under CC BY 4.0 (see LICENSE-CONTENT.txt).
@@ -54,7 +54,7 @@ System Reference Document 5.1 Copyright 2016, Wizards of the Coast, Inc.; Author
 Open5e.com Copyright 2019, Open5e.
 
 Tome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind.
-
+Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur.
 Hearth Community Content. Copyright 2026, voodoo573 and contributors.
 
 END OF LICENSE

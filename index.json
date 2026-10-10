@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:39:37Z",
+  "updated": "2026-10-10T00:42:04Z",
   "items": [
     {
       "id": "alseid",
@@ -800,6 +800,126 @@
       ]
     },
     {
+      "id": "bearfolk",
+      "type": "monster",
+      "name": "Bearfolk",
+      "author": "voodoo573",
+      "summary": "Hulking bear-headed warriors who fight with axe, hammer and bite.",
+      "path": "monsters/bearfolk.json",
+      "version": "1.0.0",
+      "tags": [
+        "humanoid",
+        "warrior",
+        "mid-cr",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "child-of-the-briar",
+      "type": "monster",
+      "name": "Child of the Briar",
+      "author": "voodoo573",
+      "summary": "Thorny little plant-fey that grapples with spiky limbs and spits thorns.",
+      "path": "monsters/child-of-the-briar.json",
+      "version": "1.0.0",
+      "tags": [
+        "plant",
+        "fey",
+        "forest",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "cikavak",
+      "type": "monster",
+      "name": "Cikavak",
+      "author": "voodoo573",
+      "summary": "A small, ugly magical bird conjured by ritual that sips nectar and spies for its master.",
+      "path": "monsters/cikavak.json",
+      "version": "1.0.0",
+      "tags": [
+        "fey",
+        "bird",
+        "low-cr",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "cobbleswarm",
+      "type": "monster",
+      "name": "Cobbleswarm",
+      "author": "voodoo573",
+      "summary": "Swarm of stony crab-like creatures that pose as paving stones.",
+      "path": "monsters/cobbleswarm.json",
+      "version": "1.0.0",
+      "tags": [
+        "swarm",
+        "urban",
+        "ambush",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "dogmole",
+      "type": "monster",
+      "name": "Dogmole",
+      "author": "voodoo573",
+      "summary": "Dog-sized burrowing mole beast, famed for battling worms in the deep caverns.",
+      "path": "monsters/dogmole.json",
+      "version": "1.0.0",
+      "tags": [
+        "beast",
+        "underground",
+        "burrow",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "firebird",
+      "type": "monster",
+      "name": "Firebird",
+      "author": "voodoo573",
+      "summary": "Radiant celestial bird of flame that guides and helps travellers in need.",
+      "path": "monsters/firebird.json",
+      "version": "1.0.0",
+      "tags": [
+        "celestial",
+        "fire",
+        "mid-cr",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "lantern-dragonette",
+      "type": "monster",
+      "name": "Lantern Dragonette",
+      "author": "voodoo573",
+      "summary": "Cat-sized scholarly drake whose belly glows like a lantern.",
+      "path": "monsters/lantern-dragonette.json",
+      "version": "1.0.0",
+      "tags": [
+        "dragon",
+        "light",
+        "low-cr",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "library-automaton",
+      "type": "monster",
+      "name": "Library Automaton",
+      "author": "voodoo573",
+      "summary": "Tiny clockwork librarian that befuddles book thieves with a confusing gaze.",
+      "path": "monsters/library-automaton.json",
+      "version": "1.0.0",
+      "tags": [
+        "construct",
+        "clockwork",
+        "low-cr",
+        "tome-of-beasts"
+      ]
+    },
+    {
       "id": "example-soot-sprite",
       "type": "monster",
       "name": "Soot Sprite (Example)",
@@ -813,6 +933,36 @@
         "low-cr"
       ],
       "example": true
+    },
+    {
+      "id": "spark",
+      "type": "monster",
+      "name": "Spark",
+      "author": "voodoo573",
+      "summary": "Mote of storm lightning that can leap into and control a creature.",
+      "path": "monsters/spark.json",
+      "version": "1.0.0",
+      "tags": [
+        "elemental",
+        "lightning",
+        "mid-cr",
+        "tome-of-beasts"
+      ]
+    },
+    {
+      "id": "vapor-lynx",
+      "type": "monster",
+      "name": "Vapor Lynx",
+      "author": "voodoo573",
+      "summary": "Large smoky cat that slips into fog and exhales poison mist.",
+      "path": "monsters/vapor-lynx.json",
+      "version": "1.0.0",
+      "tags": [
+        "monstrosity",
+        "cat",
+        "mid-cr",
+        "tome-of-beasts"
+      ]
     },
     {
       "id": "example-grid-dungeon-room",

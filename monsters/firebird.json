@@ -1,0 +1,95 @@
+{
+  "$schema": "../schema/monster.schema.json",
+  "id": "firebird",
+  "name": "Firebird",
+  "type": "monster",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "OGL-1.0a",
+  "description": "CR 4 small celestial from Tome of Beasts (Kobold Press). AC 16 (natural armor), 99 HP. This proud bird struts like a peacock, made all the more majestic by its flaming fan of feathers, which shift through the color spectrum.\nGuides and Helpers. Firebirds are welcome sights to those in need of warmth and safety. They primarily work at night or in underground areas, where their abilities are most needed. Friendly to all creatures, they become aggressive only upon witnessing obviously evil acts.\nFirebirds enjoy working with good adventuring parties, providing light and healing, though their wanderlust prevents them from staying for long. Well-traveled parties may encounter the same firebird more than once, however.\nRedeemers. Firebirds enjoy acting as reformers. They find mercenary creatures they perceive as potential “light bringers” to whom they grant boons in exchange for a geas to perform a specific good deed, in the hope such acts will redeem them.\nMagical Feathers. Firebird feathers are prized throughout the mortal world; occasionally, the creatures bestow feathers upon those they favor. Firebirds also seed hidden locations with specialized feathers, which burst into full-grown firebirds after a year. As the creatures age, their feathers’ light dims, but this occurs gradually, as the creatures live over 100 years. Firebirds stand three feet tall and weigh 20 lb.",
+  "summary": "Radiant celestial bird of flame that guides and helps travellers in need.",
+  "tags": [
+    "celestial",
+    "fire",
+    "mid-cr",
+    "tome-of-beasts"
+  ],
+  "credits": "Open Game Content from Tome of Beasts. Copyright 2016, Open Design; Authors Chris Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang Baur. Published by Kobold Press (https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/). Used under the Open Game License v1.0a (full licence and Section 15 in LICENSE-OGL.txt). Source data: https://api.open5e.com/v1/monsters/firebird/ (Open5e). Changes: converted to Hearth's monster format.",
+  "data": {
+    "name": "Firebird",
+    "cr": 4.0,
+    "size": "Small",
+    "type": "celestial",
+    "ac": 16,
+    "hp": 99,
+    "hpFormula": "18d6+36",
+    "speed": {
+      "walk": 20,
+      "fly": 100
+    },
+    "abilities": {
+      "str": 12,
+      "dex": 19,
+      "con": 14,
+      "int": 16,
+      "wis": 15,
+      "cha": 21
+    },
+    "skills": {
+      "acrobatics": "+6",
+      "arcana": "+5",
+      "insight": "+4",
+      "medicine": "+4",
+      "nature": "+5",
+      "perception": "+7",
+      "religion": "+5"
+    },
+    "senses": "truesight 60 ft., passive Perception 17",
+    "damageResistances": "lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damageImmunities": "fire",
+    "conditionImmunities": "charmed, frightened, invisible",
+    "legendary": false,
+    "traits": [
+      {
+        "name": "Saving Throws",
+        "desc": "Dex +6, Con +4, Int +5, Wis +4, Cha +7"
+      },
+      {
+        "name": "Languages",
+        "desc": "Celestial, Common, Elvish, Primordial, Sylvan"
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "the firebird's innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components:\n\nat will: guidance, purify food and drink, speak with animals\n\n3/day each: charm person, cure wounds (2d8 + 5), daylight, faerie fire, heat metal, hypnotic pattern, tongues\n\n1/day each: geas, heal, reincarnate"
+      },
+      {
+        "name": "Light of the World",
+        "desc": "The firebird's feathers glow with a warm light. The creature sheds light as dim as a candle or as bright as a lantern. It always sheds light, and any feathers plucked from the creature continue to shed light as a torch."
+      },
+      {
+        "name": "Warming Presence",
+        "desc": "The firebird and any creatures within a 5-foot radius are immune to the effects of natural, environmental cold. Invited into a home or building, a firebird can expand this warming presence to its inhabitants no matter how close they are to the creature."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The firebird makes one bite attack and two claw attacks."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 4) piercing damage."
+      },
+      {
+        "name": "Claw",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 4) slashing damage."
+      },
+      {
+        "name": "Blinding Ray (Recharge 5-6)",
+        "desc": "The firebird can fire a burning ray of light from its tail feathers in a line 5 feet wide and up to 50 feet long. Targets in the line must succeed on a DC 15 Dexterity saving throw or take 24 (7d6) fire damage and become blinded for 1d4 rounds. A successful saving throw negates the blindness and reduces the damage by half."
+      }
+    ]
+  }
+}

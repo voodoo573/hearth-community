@@ -8,7 +8,7 @@
   "source": "homebrew",
   "edition": "5e",
   "license": "OGL-1.0a",
-  "description": "Wind Domain: a cleric subclass from Tome of Heroes (Kobold Press). You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells |\n|--------------|---------------------------------------------------------------|\n| 1st | feather fall, thunderwave |\n| 3rd | gust of wind, misty step |\n| 5th | fly, wind wall |\n| 7th | conjure minor elementals (air only), freedom of movement |\n| 9th | cloudkill, conjure elemental (air only) |",
+  "description": "Wind Domain: a cleric subclass from Tome of Heroes (Kobold Press). You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.",
   "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
   "tags": [
     "cleric",
@@ -21,9 +21,13 @@
     "klass": "cleric",
     "id": "wind_domain",
     "name": "Wind Domain",
-    "desc": "You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.\n\nWind Domain Spells\n| Cleric Level | Spells |\n|--------------|---------------------------------------------------------------|\n| 1st | feather fall, thunderwave |\n| 3rd | gust of wind, misty step |\n| 5th | fly, wind wall |\n| 7th | conjure minor elementals (air only), freedom of movement |\n| 9th | cloudkill, conjure elemental (air only) |",
+    "desc": "You have dedicated yourself to the service of the primordial winds. In their service, you are the gentle zephyr brushing away adversity or the vengeful storm scouring the stones from the mountainside.",
     "levelFeatures": {
       "1": [
+        {
+          "name": "Wind Domain Spells",
+          "desc": "Wind Domain Spells\nCleric Level | Spells\n1st: feather fall, thunderwave\n3rd: gust of wind, misty step\n5th: fly, wind wall\n7th: conjure minor elementals (air only), freedom of movement\n9th: cloudkill, conjure elemental (air only)"
+        },
         {
           "name": "Wind's Chosen",
           "desc": "When you choose this domain at 1st level, you learn the mage hand cantrip and gain proficiency in the Nature skill. When you cast mage hand, you can make the hand invisible, and you can control the hand as a bonus action."
