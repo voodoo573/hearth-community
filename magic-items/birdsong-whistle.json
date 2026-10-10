@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "birdsong-whistle",
+  "name": "Birdsong Whistle",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Common wondrous item from Level Up: Advanced 5th Edition. This carving of reddish soapstone resembles a miniature cardinal. When air is blown through the lower back high-pitched sounds are emitted through the bird’s open beak. When the whistle is blown the sounds of songbirds are heard by all creatures in a 100-foot radius. These calls are indistinguishable from actual birds singing.\n\nAlternatively, you can use an action to break the whistle to summon a large flock of birds that appear at the start of your next turn and surround you in a 10-foot radius. The flock moves with you and makes you heavily obscured from creatures more than 10 feet away for 1 minute, or until the flock takes 10 or more damage from area effects.",
+  "summary": "Common soapstone whistle that mimics birdsong, or breaks to summon a concealing flock.",
+  "tags": [
+    "wondrous",
+    "common",
+    "birds",
+    "a5e"
+  ],
+  "credits": "Birdsong Whistle is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/birdsong-whistle-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "birdsong_whistle",
+    "name": "Birdsong Whistle",
+    "type": "wondrous",
+    "rarity": "common",
+    "attune": false,
+    "desc": "This carving of reddish soapstone resembles a miniature cardinal. When air is blown through the lower back high-pitched sounds are emitted through the bird’s open beak. When the whistle is blown the sounds of songbirds are heard by all creatures in a 100-foot radius. These calls are indistinguishable from actual birds singing.\n\nAlternatively, you can use an action to break the whistle to summon a large flock of birds that appear at the start of your next turn and surround you in a 10-foot radius. The flock moves with you and makes you heavily obscured from creatures more than 10 feet away for 1 minute, or until the flock takes 10 or more damage from area effects.",
+    "mech": null,
+    "theme": "nature",
+    "templateId": null
+  }
+}

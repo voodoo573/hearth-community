@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "phoenix-feather-cap",
+  "name": "Phoenix-Feather Cap",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Legendary wondrous item (requires attunement) from Level Up: Advanced 5th Edition. While attuned to this stylish cap, you can cast fly on yourself at will without the need for components. In addition, the cap has 2 charges. You can use an action to expend a charge to use Wild Shape as if you were a druid of 10th level. While using Wild Shape, you always retain one distinctive visual characteristic no matter what beast you are transformed into. The cap regains all of its expended charges whenever you finish a short or long rest .",
+  "summary": "Legendary cap: cast fly at will and Wild Shape like a 10th-level druid.",
+  "tags": [
+    "wondrous",
+    "legendary",
+    "flying",
+    "a5e"
+  ],
+  "credits": "Phoenix-Feather Cap is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/phoenix-feather-cap-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "phoenix_feather_cap",
+    "name": "Phoenix-Feather Cap",
+    "type": "wondrous",
+    "rarity": "legendary",
+    "attune": true,
+    "desc": "While attuned to this stylish cap, you can cast fly on yourself at will without the need for components. In addition, the cap has 2 charges. You can use an action to expend a charge to use Wild Shape as if you were a druid of 10th level. While using Wild Shape, you always retain one distinctive visual characteristic no matter what beast you are transformed into. The cap regains all of its expended charges whenever you finish a short or long rest .",
+    "mech": null,
+    "theme": "fire",
+    "templateId": null
+  }
+}

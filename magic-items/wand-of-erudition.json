@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "wand-of-erudition",
+  "name": "Wand of Erudition",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Uncommon wand (requires attunement) from Level Up: Advanced 5th Edition. While holding this wand, you can use an action to expend 1 charge and target one willing humanoid you can see within 30 feet. For the next hour, the target gains one of the following benefits:\n\n* The ability to read, speak, and understand one language you are proficient with.\n* Proficiency with one skill or tool with which you are proficient.\n* Knowledge of some piece of information you know that you could communicate in less than 1 minute, such as the contents of a book you have read or directions to a location familiar to you. The target gains this knowledge even if you do not share a language. When the effect ends, the target forgets the information you imparted.\n\nThis wand has 5 charges and regains 1d4+1 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the wand fades from existence and you forget you ever owned it.",
+  "summary": "Uncommon wand that lends an ally one of your languages, skills or memories for an hour.",
+  "tags": [
+    "wand",
+    "uncommon",
+    "knowledge",
+    "a5e"
+  ],
+  "credits": "Wand of Erudition is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/wand-of-erudition-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "wand_of_erudition",
+    "name": "Wand of Erudition",
+    "type": "wand",
+    "rarity": "uncommon",
+    "attune": true,
+    "desc": "While holding this wand, you can use an action to expend 1 charge and target one willing humanoid you can see within 30 feet. For the next hour, the target gains one of the following benefits:\n\n* The ability to read, speak, and understand one language you are proficient with.\n* Proficiency with one skill or tool with which you are proficient.\n* Knowledge of some piece of information you know that you could communicate in less than 1 minute, such as the contents of a book you have read or directions to a location familiar to you. The target gains this knowledge even if you do not share a language. When the effect ends, the target forgets the information you imparted.\n\nThis wand has 5 charges and regains 1d4+1 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the wand fades from existence and you forget you ever owned it.",
+    "mech": null,
+    "theme": "arcane",
+    "templateId": null
+  }
+}

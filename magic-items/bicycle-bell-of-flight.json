@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "bicycle-bell-of-flight",
+  "name": "Bicycle Bell of Flight",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Rare wondrous item from Level Up: Advanced 5th Edition. This beautifully-filigreed bell can turn into a mundane bicycle of Small or Medium size (chosen at the time of creation) when you activate it as an action. Returning the bicycle to bell form also requires an action.\n\nWhile riding this bicycle, you can ring its bell to gain a flying speed of 50 feet and the ability to hover. You can use the bike to fly for 2 hours, expending at least 10 minutes worth of time with each use. If you are flying when the time runs out, you fall at a rate of 60 feet and take no damage from landing. The bell regains 1 hour of flying time for every 12 hours it is not in use, regardless of which form it is in.\n\nCurse. While far from malicious, the magic of the bell is exuberant to a fault. While you are using its flying speed it frequently rings of its own accord, giving you disadvantage on Stealth checks.",
+  "summary": "Rare bell that becomes a flying bicycle for up to 2 hours of flight.",
+  "tags": [
+    "wondrous",
+    "rare",
+    "flying",
+    "a5e"
+  ],
+  "credits": "Bicycle Bell of Flight is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/bicycle-bell-of-flight-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "bicycle_bell_of_flight",
+    "name": "Bicycle Bell of Flight",
+    "type": "wondrous",
+    "rarity": "rare",
+    "attune": false,
+    "desc": "This beautifully-filigreed bell can turn into a mundane bicycle of Small or Medium size (chosen at the time of creation) when you activate it as an action. Returning the bicycle to bell form also requires an action.\n\nWhile riding this bicycle, you can ring its bell to gain a flying speed of 50 feet and the ability to hover. You can use the bike to fly for 2 hours, expending at least 10 minutes worth of time with each use. If you are flying when the time runs out, you fall at a rate of 60 feet and take no damage from landing. The bell regains 1 hour of flying time for every 12 hours it is not in use, regardless of which form it is in.\n\nCurse. While far from malicious, the magic of the bell is exuberant to a fault. While you are using its flying speed it frequently rings of its own accord, giving you disadvantage on Stealth checks.",
+    "mech": null,
+    "theme": "storm",
+    "templateId": null
+  }
+}

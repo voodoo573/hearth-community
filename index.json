@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:38:51Z",
+  "updated": "2026-10-10T00:39:37Z",
   "items": [
     {
       "id": "alseid",
@@ -996,6 +996,96 @@
       ]
     },
     {
+      "id": "bicycle-bell-of-flight",
+      "type": "magic-item",
+      "name": "Bicycle Bell of Flight",
+      "author": "voodoo573",
+      "summary": "Rare bell that becomes a flying bicycle for up to 2 hours of flight.",
+      "path": "magic-items/bicycle-bell-of-flight.json",
+      "version": "1.0.0",
+      "tags": [
+        "wondrous",
+        "rare",
+        "flying",
+        "a5e"
+      ]
+    },
+    {
+      "id": "birdsong-whistle",
+      "type": "magic-item",
+      "name": "Birdsong Whistle",
+      "author": "voodoo573",
+      "summary": "Common soapstone whistle that mimics birdsong, or breaks to summon a concealing flock.",
+      "path": "magic-items/birdsong-whistle.json",
+      "version": "1.0.0",
+      "tags": [
+        "wondrous",
+        "common",
+        "birds",
+        "a5e"
+      ]
+    },
+    {
+      "id": "bubble-wand",
+      "type": "magic-item",
+      "name": "Bubble Wand",
+      "author": "voodoo573",
+      "summary": "Uncommon wand of colourful bubbles; snap it to wrap yourself in a protective bubble.",
+      "path": "magic-items/bubble-wand.json",
+      "version": "1.0.0",
+      "tags": [
+        "wand",
+        "uncommon",
+        "bubbles",
+        "a5e"
+      ]
+    },
+    {
+      "id": "explorers-chalk",
+      "type": "magic-item",
+      "name": "Explorer's Chalk",
+      "author": "voodoo573",
+      "summary": "Common never-ending chalk that leaves lasting marks and points you back to them.",
+      "path": "magic-items/explorers-chalk.json",
+      "version": "1.0.0",
+      "tags": [
+        "wondrous",
+        "common",
+        "exploration",
+        "a5e"
+      ]
+    },
+    {
+      "id": "fathomers-ring",
+      "type": "magic-item",
+      "name": "Fathomer's Ring",
+      "author": "voodoo573",
+      "summary": "Common ring that knows water depths and can raise one sunken object, once.",
+      "path": "magic-items/fathomers-ring.json",
+      "version": "1.0.0",
+      "tags": [
+        "ring",
+        "common",
+        "water",
+        "a5e"
+      ]
+    },
+    {
+      "id": "green-scale-shield",
+      "type": "magic-item",
+      "name": "Green Scale Shield",
+      "author": "voodoo573",
+      "summary": "Uncommon shield that grants resistance to poison damage while held.",
+      "path": "magic-items/green-scale-shield.json",
+      "version": "1.0.0",
+      "tags": [
+        "shield",
+        "uncommon",
+        "poison",
+        "a5e"
+      ]
+    },
+    {
       "id": "example-lantern-of-warding",
       "type": "magic-item",
       "name": "Lantern of Warding (Example)",
@@ -1009,6 +1099,66 @@
         "defence"
       ],
       "example": true
+    },
+    {
+      "id": "mirror-shield",
+      "type": "magic-item",
+      "name": "Mirror Shield",
+      "author": "voodoo573",
+      "summary": "Very rare shield: radiant resistance and a reaction that reflects spells back at the caster.",
+      "path": "magic-items/mirror-shield.json",
+      "version": "1.0.0",
+      "tags": [
+        "shield",
+        "very-rare",
+        "counterspell",
+        "a5e"
+      ]
+    },
+    {
+      "id": "phoenix-feather-cap",
+      "type": "magic-item",
+      "name": "Phoenix-Feather Cap",
+      "author": "voodoo573",
+      "summary": "Legendary cap: cast fly at will and Wild Shape like a 10th-level druid.",
+      "path": "magic-items/phoenix-feather-cap.json",
+      "version": "1.0.0",
+      "tags": [
+        "wondrous",
+        "legendary",
+        "flying",
+        "a5e"
+      ]
+    },
+    {
+      "id": "staff-of-gravity-bending",
+      "type": "magic-item",
+      "name": "Staff of Gravity Bending",
+      "author": "voodoo573",
+      "summary": "Rare +2 quarterstaff that adds +2 to spell attacks and casts gravity-bending spells.",
+      "path": "magic-items/staff-of-gravity-bending.json",
+      "version": "1.0.0",
+      "tags": [
+        "staff",
+        "rare",
+        "gravity",
+        "a5e"
+      ]
+    },
+    {
+      "id": "wand-of-erudition",
+      "type": "magic-item",
+      "name": "Wand of Erudition",
+      "author": "voodoo573",
+      "summary": "Uncommon wand that lends an ally one of your languages, skills or memories for an hour.",
+      "path": "magic-items/wand-of-erudition.json",
+      "version": "1.0.0",
+      "tags": [
+        "wand",
+        "uncommon",
+        "knowledge",
+        "a5e"
+      ]
     }
   ]
 }

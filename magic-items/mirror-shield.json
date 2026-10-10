@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "mirror-shield",
+  "name": "Mirror Shield",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Very Rare armor (requires attunement) from Level Up: Advanced 5th Edition. While you are attuned to this reflective shield and have it donned, you gain resistance to radiant damage. When you are the only target of a spell being cast by a creature you can see within 60 feet, you can use your reaction to cast counterspell at a level equal to your proficiency bonus (minimum 3rd-level). On a success, instead of causing the spell to fail you can redirect it back at the caster at its original spell level, using the same spell attack bonus or spell save DC. The shield has 3 charges and regains 1d3 charges each dawn.\n\nHearth applies radiant resistance; the counterspell reflection and charges are tracked by hand.",
+  "summary": "Very rare shield: radiant resistance and a reaction that reflects spells back at the caster.",
+  "tags": [
+    "shield",
+    "very-rare",
+    "counterspell",
+    "a5e"
+  ],
+  "credits": "Mirror Shield is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/mirror-shield-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "mirror_shield",
+    "name": "Mirror Shield",
+    "type": "shield",
+    "rarity": "very_rare",
+    "attune": true,
+    "desc": "While you are attuned to this reflective shield and have it donned, you gain resistance to radiant damage. When you are the only target of a spell being cast by a creature you can see within 60 feet, you can use your reaction to cast counterspell at a level equal to your proficiency bonus (minimum 3rd-level). On a success, instead of causing the spell to fail you can redirect it back at the caster at its original spell level, using the same spell attack bonus or spell save DC. The shield has 3 charges and regains 1d3 charges each dawn.\n\nHearth applies radiant resistance; the counterspell reflection and charges are tracked by hand.",
+    "mech": {
+      "resistType": "radiant"
+    },
+    "theme": "holy",
+    "templateId": null
+  }
+}

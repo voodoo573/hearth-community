@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "green-scale-shield",
+  "name": "Green Scale Shield",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Uncommon armor from Level Up: Advanced 5th Edition. While you hold this shield, you have resistance to poison damage.\n\nHearth applies poison resistance while the item is equipped.",
+  "summary": "Uncommon shield that grants resistance to poison damage while held.",
+  "tags": [
+    "shield",
+    "uncommon",
+    "poison",
+    "a5e"
+  ],
+  "credits": "Green Scale Shield is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/green-scale-shield-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "green_scale_shield",
+    "name": "Green Scale Shield",
+    "type": "shield",
+    "rarity": "uncommon",
+    "attune": false,
+    "desc": "While you hold this shield, you have resistance to poison damage.\n\nHearth applies poison resistance while the item is equipped.",
+    "mech": {
+      "resistType": "poison"
+    },
+    "theme": "nature",
+    "templateId": null
+  }
+}

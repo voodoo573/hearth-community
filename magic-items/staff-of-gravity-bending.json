@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "staff-of-gravity-bending",
+  "name": "Staff of Gravity Bending",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Rare staff (requires attunement) from Level Up: Advanced 5th Edition. You gain a +2 bonus to attack and damage rolls with this magic quarterstaff. In addition, while holding it you gain a +2 bonus to spell attack rolls.\n\nWhile holding this staff, you can use an action to sense the direction of magnetic north (nothing happens if the staff is used in a location that has no magnetic north.) Alternatively, you can use an action to expend charges to cast one of the following spells (spell save DC 15): feather fall (1 charge), jump (1 charge), levitate (2 charges), telekinesis (5 charges), reverse gravity (7 charges).\n\nThe staff has 10 charges and regains 1d6+4 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the staff loses its magical properties.\n\nHearth applies the +2 to spell attack rolls. Hearth item bonuses to attack and damage apply to every weapon, so the staff's own +2 is left out; add the staff as a +2 quarterstaff in your weapons to use it. The spell charges are tracked by hand.",
+  "summary": "Rare +2 quarterstaff that adds +2 to spell attacks and casts gravity-bending spells.",
+  "tags": [
+    "staff",
+    "rare",
+    "gravity",
+    "a5e"
+  ],
+  "credits": "Staff of Gravity Bending is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/staff-of-gravity-bending-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "staff_of_gravity_bending",
+    "name": "Staff of Gravity Bending",
+    "type": "staff",
+    "rarity": "rare",
+    "attune": true,
+    "desc": "You gain a +2 bonus to attack and damage rolls with this magic quarterstaff. In addition, while holding it you gain a +2 bonus to spell attack rolls.\n\nWhile holding this staff, you can use an action to sense the direction of magnetic north (nothing happens if the staff is used in a location that has no magnetic north.) Alternatively, you can use an action to expend charges to cast one of the following spells (spell save DC 15): feather fall (1 charge), jump (1 charge), levitate (2 charges), telekinesis (5 charges), reverse gravity (7 charges).\n\nThe staff has 10 charges and regains 1d6+4 expended charges each dawn. When the last charge is expended, roll a d20. On a 1, the staff loses its magical properties.\n\nHearth applies the +2 to spell attack rolls. Hearth item bonuses to attack and damage apply to every weapon, so the staff's own +2 is left out; add the staff as a +2 quarterstaff in your weapons to use it. The spell charges are tracked by hand.",
+    "mech": {
+      "spellAttackBonus": 2
+    },
+    "theme": "arcane",
+    "templateId": null
+  }
+}

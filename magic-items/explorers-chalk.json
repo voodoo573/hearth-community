@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "explorers-chalk",
+  "name": "Explorer's Chalk",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Common wondrous item from Level Up: Advanced 5th Edition. This unassuming piece of white chalk appears well-used but does not wear down no matter how many times it marks a surface. The explorer’s chalk has 6 charges and regains 1d6 expended charges each dawn. When you touch it to a surface, you can expend 1 of its charges to create a mark that cannot be wiped away or obscured for 24 hours. While holding the chalk, you can use an action to become aware of the direction of the closest mark made with it as long as that mark is within 1 mile.\n\nIf you expend the explorer’s chalk’s last charge, roll a d20. On a result of 5 or less, the chalk crumbles to dust. On a 20, the chalk regains its expended charges and its number of charges increases by 1.",
+  "summary": "Common never-ending chalk that leaves lasting marks and points you back to them.",
+  "tags": [
+    "wondrous",
+    "common",
+    "exploration",
+    "a5e"
+  ],
+  "credits": "Explorer's Chalk is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/explorers-chalk-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "explorers_chalk",
+    "name": "Explorer's Chalk",
+    "type": "wondrous",
+    "rarity": "common",
+    "attune": false,
+    "desc": "This unassuming piece of white chalk appears well-used but does not wear down no matter how many times it marks a surface. The explorer’s chalk has 6 charges and regains 1d6 expended charges each dawn. When you touch it to a surface, you can expend 1 of its charges to create a mark that cannot be wiped away or obscured for 24 hours. While holding the chalk, you can use an action to become aware of the direction of the closest mark made with it as long as that mark is within 1 mile.\n\nIf you expend the explorer’s chalk’s last charge, roll a d20. On a result of 5 or less, the chalk crumbles to dust. On a 20, the chalk regains its expended charges and its number of charges increases by 1.",
+    "mech": null,
+    "theme": "arcane",
+    "templateId": null
+  }
+}

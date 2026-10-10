@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/magic-item.schema.json",
+  "id": "fathomers-ring",
+  "name": "Fathomer's Ring",
+  "type": "magic-item",
+  "version": "1.0.0",
+  "author": "voodoo573",
+  "source": "homebrew",
+  "edition": "5e",
+  "license": "CC-BY-4.0",
+  "description": "Common ring from Level Up: Advanced 5th Edition. This ring reeks of muck dredged from the ocean floor. While you wear it, you automatically know the depth of any body of water you can see.\n\nAs an action, you can cause one submerged, unattended object up to Huge size to rise to the surface of the water at a rate of 500 feet per round. You don’t need to be able to see the object you affect, but you must be familiar with it or at least possess a general description of it. Once the object reaches the water’s surface, it floats there for 1 hour or until you use another action to return it to its resting place. Once you’ve used the ring in this way, it loses its magic and becomes a mundane item.",
+  "summary": "Common ring that knows water depths and can raise one sunken object, once.",
+  "tags": [
+    "ring",
+    "common",
+    "water",
+    "a5e"
+  ],
+  "credits": "Fathomer's Ring is taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode. Source: https://api.open5e.com/v1/magicitems/fathomers-ring-a5e/ (Open5e). Changes: converted to Hearth's magic item format.",
+  "data": {
+    "id": "fathomers_ring",
+    "name": "Fathomer's Ring",
+    "type": "ring",
+    "rarity": "common",
+    "attune": false,
+    "desc": "This ring reeks of muck dredged from the ocean floor. While you wear it, you automatically know the depth of any body of water you can see.\n\nAs an action, you can cause one submerged, unattended object up to Huge size to rise to the surface of the water at a rate of 500 feet per round. You don’t need to be able to see the object you affect, but you must be familiar with it or at least possess a general description of it. Once the object reaches the water’s surface, it floats there for 1 hour or until you use another action to return it to its resting place. Once you’ve used the ring in this way, it loses its magic and becomes a mundane item.",
+    "mech": null,
+    "theme": "frost",
+    "templateId": null
+  }
+}
