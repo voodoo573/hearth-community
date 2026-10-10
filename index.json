@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T00:57:30Z",
+  "updated": "2026-10-10T01:04:23Z",
   "items": [
     {
       "id": "alseid",
@@ -165,7 +165,7 @@
       "author": "voodoo573",
       "summary": "Rogue archetype: a climbing, dodging thief who slips over walls and through locked doors.",
       "path": "subclasses/cat-burglar.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "rogue",
         "tome-of-heroes",
@@ -180,7 +180,7 @@
       "author": "voodoo573",
       "summary": "Druid circle of bees: a Wild Shape stinger, bee bond, a hive-mind link and a mantle of bees.",
       "path": "subclasses/circle-of-bees.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "druid",
         "tome-of-heroes",
@@ -195,7 +195,7 @@
       "author": "voodoo573",
       "summary": "Bard college: nimble cat-like performers who pounce with Bardic Inspiration and land on their feet.",
       "path": "subclasses/college-of-the-cat.json",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "tags": [
         "bard",
         "tome-of-heroes",
@@ -210,7 +210,7 @@
       "author": "voodoo573",
       "summary": "Wizard tradition: mages who bond with a greater familiar and channel spells through it.",
       "path": "subclasses/familiar-master.json",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "tags": [
         "wizard",
         "tome-of-heroes",
@@ -225,7 +225,7 @@
       "author": "voodoo573",
       "summary": "Ranger archetype: guardians of sacred groves who wield the forest's will against intruders.",
       "path": "subclasses/grove-warden.json",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "tags": [
         "ranger",
         "tome-of-heroes",
@@ -255,7 +255,7 @@
       "author": "voodoo573",
       "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
       "path": "subclasses/oath-of-the-hearth.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "paladin",
         "tome-of-heroes",
@@ -270,7 +270,7 @@
       "author": "voodoo573",
       "summary": "Barbarian path: grow thorns while raging for piercing unarmed strikes, thorny grapples and toxic barrages.",
       "path": "subclasses/path-of-thorns.json",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "barbarian",
         "tome-of-heroes",
@@ -315,7 +315,7 @@
       "author": "voodoo573",
       "summary": "Cleric domain of the wind: gusts that push foes, a storm shield and a dire tempest at 17th level.",
       "path": "subclasses/wind-domain.json",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "tags": [
         "cleric",
         "tome-of-heroes",

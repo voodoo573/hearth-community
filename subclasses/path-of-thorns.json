@@ -3,7 +3,7 @@
   "id": "path-of-thorns",
   "name": "Path of Thorns",
   "type": "subclass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -42,13 +42,29 @@
       "10": [
         {
           "name": "Toxic Infusion",
-          "desc": "Starting at 10th level, when you enter your rage or as a bonus action while raging, you can infuse your thorns with toxins for 1 minute. While your thorns are infused with toxins, the first creature you hit on each of your turns with an unarmed strike must succeed on a Constitution saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or be poisoned until the end of its next turn.\nYou can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+          "desc": "Starting at 10th level, when you enter your rage or as a bonus action while raging, you can infuse your thorns with toxins for 1 minute. While your thorns are infused with toxins, the first creature you hit on each of your turns with an unarmed strike must succeed on a Constitution saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or be poisoned until the end of its next turn.\nYou can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": "pb",
+              "reset": "long"
+            }
+          ]
         }
       ],
       "14": [
         {
           "name": "Thorn Barrage",
-          "desc": "At 14th level, you can use an action to shoot the thorns from your body while raging. Each creature within 10 feet of you must make a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus), taking 4d6 piercing damage on a failed save, or half as much damage on a successful one.\nYou can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+          "desc": "At 14th level, you can use an action to shoot the thorns from your body while raging. Each creature within 10 feet of you must make a Dexterity saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus), taking 4d6 piercing damage on a failed save, or half as much damage on a successful one.\nYou can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "action",
+              "uses": "pb",
+              "reset": "long"
+            }
+          ]
         }
       ]
     }

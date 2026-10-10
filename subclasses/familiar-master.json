@@ -3,7 +3,7 @@
   "id": "familiar-master",
   "name": "Familiar Master",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,7 +26,22 @@
       "2": [
         {
           "name": "Familiar Savant",
-          "desc": "Beginning when you select this arcane tradition at 2nd level, you learn the find familiar spell if you don't know it already. You innately know this spell and don't need to have it scribed in your spellbook or prepared in order to cast it. When you cast find familiar, the casting time is 1 action, and it requires no material components.\nYou can cast find familiar without expending a spell slot. You can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.\nIn addition, when you cast the find familiar spell, you can choose for your familiar to take the form of any Small or smaller beast that is CR 1/4 or lower, such as a flying snake, giant moth (see Creature Codex), or giant armadillo (see Tome of Beasts 2). The familiar has the statistics of the chosen beast form, but it is a celestial, fey, or fiend (your choice) instead of a beast.\nWhen you reach 6th level in this class, your familiar can take the form of any Small or smaller beast that is CR 1 or lower. Alternatively, at the GM's discretion, your familiar can be any Tiny celestial, dragon, fey, or fiend that is CR 1 or lower."
+          "desc": "Beginning when you select this arcane tradition at 2nd level, you learn the find familiar spell if you don't know it already. You innately know this spell and don't need to have it scribed in your spellbook or prepared in order to cast it. When you cast find familiar, the casting time is 1 action, and it requires no material components.\nYou can cast find familiar without expending a spell slot. You can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.\nIn addition, when you cast the find familiar spell, you can choose for your familiar to take the form of any Small or smaller beast that is CR 1/4 or lower, such as a flying snake, giant moth (see Creature Codex), or giant armadillo (see Tome of Beasts 2). The familiar has the statistics of the chosen beast form, but it is a celestial, fey, or fiend (your choice) instead of a beast.\nWhen you reach 6th level in this class, your familiar can take the form of any Small or smaller beast that is CR 1 or lower. Alternatively, at the GM's discretion, your familiar can be any Tiny celestial, dragon, fey, or fiend that is CR 1 or lower.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Find Familiar"
+              ],
+              "ability": "int"
+            },
+            {
+              "kind": "active",
+              "cost": "action",
+              "uses": "pb",
+              "reset": "long"
+            }
+          ]
         },
         {
           "name": "Greater Familiar",
@@ -48,7 +63,15 @@
       "14": [
         {
           "name": "Companion Concentration",
-          "desc": "Starting at 14th level, when you are concentrating on a spell of 3rd level or lower, you can use an action to draw on your connection with your familiar to pass the burden of concentration onto it, freeing you up to concentrate on a different spell. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+          "desc": "Starting at 14th level, when you are concentrating on a spell of 3rd level or lower, you can use an action to draw on your connection with your familiar to pass the burden of concentration onto it, freeing you up to concentrate on a different spell. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "action",
+              "uses": "pb",
+              "reset": "long"
+            }
+          ]
         }
       ]
     }

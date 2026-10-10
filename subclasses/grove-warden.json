@@ -3,7 +3,7 @@
   "id": "grove-warden",
   "name": "Grove Warden",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,7 +26,16 @@
       "3": [
         {
           "name": "Grove Warden Magic",
-          "desc": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Grove Warden Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\nGrove Warden Spells\nRanger Level | Spells\n3rd: entangle\n5th: branding smite\n9th: speak with plants\n13th: hallucinatory terrain\n17th: animate objects"
+          "desc": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Grove Warden Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\nGrove Warden Spells\nRanger Level | Spells\n3rd: entangle\n5th: branding smite\n9th: speak with plants\n13th: hallucinatory terrain\n17th: animate objects",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Entangle"
+              ],
+              "ability": "wis"
+            }
+          ]
         },
         {
           "name": "Whispers of the Forest",
@@ -37,10 +46,48 @@
           "desc": "At 3rd level, you can magically draw on the living essence of the land to hamper your foes. As a bonus action, choose one creature you can see within 60 feet of you. Your next weapon attack against that creature has advantage. If that attack hits, the creature's speed is reduced by 10 feet until the start of your next turn. When you reach 11th level in this class, if that attack hits, the creature's speed is instead halved until the start of your next turn."
         }
       ],
+      "5": [
+        {
+          "name": "Grove Warden Spells (5th level)",
+          "desc": "You gain the grove warden spells for 5th level from the table in Grove Warden Magic: branding smite.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Branding Smite"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
       "7": [
         {
           "name": "Intruder's Bane",
-          "desc": "At 7th level, you can command the land around you to come to your aid. As a bonus action, choose a point you can see on the ground within 60 feet. You cause the area within 15 feet of that point to undulate and warp. Each creature in the area must make a Dexterity saving throw against your spell save DC. On a failure, a creature is pushed up to 15 feet in a direction of your choice and knocked prone. Once you use this feature, you can't use it again until you finish a short or long rest."
+          "desc": "At 7th level, you can command the land around you to come to your aid. As a bonus action, choose a point you can see on the ground within 60 feet. You cause the area within 15 feet of that point to undulate and warp. Each creature in the area must make a Dexterity saving throw against your spell save DC. On a failure, a creature is pushed up to 15 feet in a direction of your choice and knocked prone. Once you use this feature, you can't use it again until you finish a short or long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": 1,
+              "reset": "short"
+            }
+          ]
+        }
+      ],
+      "9": [
+        {
+          "name": "Grove Warden Spells (9th level)",
+          "desc": "You gain the grove warden spells for 9th level from the table in Grove Warden Magic: speak with plants.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Speak with Plants"
+              ],
+              "ability": "wis"
+            }
+          ]
         }
       ],
       "11": [
@@ -49,10 +96,40 @@
           "desc": "At 11th level, you can call on the land in your vicinity to strike at your enemies. When you take the Attack action, you can use a bonus action to make a rock, branch, root, or other small natural object attack a creature within 30 feet of you. You are proficient with the attack, it counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and you add your Dexterity modifier to the attack and damage rolls. The damage is of a type appropriate to the object, such as piercing for a thorny branch or bludgeoning for a rock, and the damage die is a d8."
         }
       ],
+      "13": [
+        {
+          "name": "Grove Warden Spells (13th level)",
+          "desc": "You gain the grove warden spells for 13th level from the table in Grove Warden Magic: hallucinatory terrain.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Hallucinatory Terrain"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
       "15": [
         {
           "name": "Living Bulwark",
           "desc": "Starting at 15th level, the land around you comes to your aid when you are in danger, interposing rocks, branches, vines, roots, or even the ground itself between you and your foes. When a creature you can see targets you with an attack, you can use your reaction to roll a d8 and add it to your AC against the attack."
+        }
+      ],
+      "17": [
+        {
+          "name": "Grove Warden Spells (17th level)",
+          "desc": "You gain the grove warden spells for 17th level from the table in Grove Warden Magic: animate objects.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Animate Objects"
+              ],
+              "ability": "wis"
+            }
+          ]
         }
       ]
     }

@@ -3,7 +3,7 @@
   "id": "cat-burglar",
   "name": "Cat Burglar",
   "type": "subclass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -48,7 +48,15 @@
       "17": [
         {
           "name": "Master Burglar",
-          "desc": "At 17th level, you can slip past a fire-breathing statue unscathed or tread lightly enough to not set off a pressure plate. The first time on each of your turns that you would trigger a trap or magic effect with a trigger, such as the glyph of warding spell, you can choose to not trigger it.\nAs a bonus action, you can choose a number of creatures equal to your proficiency bonus that you can see within 30 feet of you and grant them the effects of this feature for 1 hour. Once you grant this feature to others, you can't do so again until you finish a long rest."
+          "desc": "At 17th level, you can slip past a fire-breathing statue unscathed or tread lightly enough to not set off a pressure plate. The first time on each of your turns that you would trigger a trap or magic effect with a trigger, such as the glyph of warding spell, you can choose to not trigger it.\nAs a bonus action, you can choose a number of creatures equal to your proficiency bonus that you can see within 30 feet of you and grant them the effects of this feature for 1 hour. Once you grant this feature to others, you can't do so again until you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": 1,
+              "reset": "long"
+            }
+          ]
         }
       ]
     }

@@ -3,7 +3,7 @@
   "id": "college-of-the-cat",
   "name": "College of the Cat",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,7 +26,19 @@
       "3": [
         {
           "name": "Bonus Proficiencies",
-          "desc": "When you join the College of the Cat at 3rd level, you gain proficiency with the Acrobatics and Stealth skills and with thieves' tools if you don't already have them. In addition, if you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
+          "desc": "When you join the College of the Cat at 3rd level, you gain proficiency with the Acrobatics and Stealth skills and with thieves' tools if you don't already have them. In addition, if you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells.",
+          "effects": [
+            {
+              "kind": "skill",
+              "skill": "acrobatics",
+              "level": "prof"
+            },
+            {
+              "kind": "skill",
+              "skill": "stealth",
+              "level": "prof"
+            }
+          ]
         },
         {
           "name": "Inspired Pounce",
@@ -36,7 +48,12 @@
       "6": [
         {
           "name": "My Claws Are Sharp",
-          "desc": "Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, when you use two-weapon fighting to make an attack as a bonus action, you can give a Bardic Inspiration die to a friendly creature within 60 feet of you as part of that same bonus action."
+          "desc": "Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, when you use two-weapon fighting to make an attack as a bonus action, you can give a Bardic Inspiration die to a friendly creature within 60 feet of you as part of that same bonus action.",
+          "effects": [
+            {
+              "kind": "extra_attack"
+            }
+          ]
         }
       ],
       "14": [

@@ -3,7 +3,7 @@
   "id": "oath-of-the-hearth",
   "name": "Oath of the Hearth",
   "type": "subclass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -38,11 +38,37 @@
         },
         {
           "name": "Oath Spells",
-          "desc": "You gain oath spells at the paladin levels listed in the Oath of the Hearth Spells table. See the Sacred Oath class feature for how oath spells work.\n\nOath of the Hearth Spells (table)\nPaladin Level | Spells\n3rd: burning hands, sanctuary\n5th: calm emotions, flame blade\n9th: protection from energy, tiny hut\n13th: guardian of faith, wall of fire\n17th: flame strike, hallow"
+          "desc": "You gain oath spells at the paladin levels listed in the Oath of the Hearth Spells table. See the Sacred Oath class feature for how oath spells work.\n\nOath of the Hearth Spells (table)\nPaladin Level | Spells\n3rd: burning hands, sanctuary\n5th: calm emotions, flame blade\n9th: protection from energy, tiny hut\n13th: guardian of faith, wall of fire\n17th: flame strike, hallow",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Burning Hands",
+                "Sanctuary"
+              ],
+              "ability": "cha"
+            }
+          ]
         },
         {
           "name": "Channel Divinity",
           "desc": "When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\nCease Hostility. As an action, you can use your Channel Divinity and speak soothing words. For 1 minute, each creature within 60 feet of you that can see or hear you must succeed on a Charisma saving throw to attack another creature. A creature hostile to you has disadvantage on the saving throw. This effect ends on a creature if it is attacked or harmed by a spell.\n\nTurn Boreal Creatures. As an action, you can use your Channel Divinity and speak a prayer against unnatural cold. Each cold creature within 30 feet of you and that can see or hear you must succeed on a Wisdom saving throw or be turned for 1 minute or until it takes damage.\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+        }
+      ],
+      "5": [
+        {
+          "name": "Oath Spells (5th level)",
+          "desc": "You gain the oath spells for 5th level from the table in Oath Spells: calm emotions, flame blade.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Calm Emotions",
+                "Flame Blade"
+              ],
+              "ability": "cha"
+            }
+          ]
         }
       ],
       "7": [
@@ -51,10 +77,64 @@
           "desc": "Beginning at 7th level, you and friendly creatures within 10 feet of you have advantage on saving throws against spells and effects that deal cold damage. If such a creature succeeds on a saving throw against a spell or effect that allows the creature to take only half the cold damage on a successful save, the creature instead takes no damage. In addition, you and friendly creatures within 10 feet of you have advantage on saving throws against the long-term effects of exposure to cold weather. When you reach 18th level in this class, the range of this aura increases to 30 feet."
         }
       ],
+      "9": [
+        {
+          "name": "Oath Spells (9th level)",
+          "desc": "You gain the oath spells for 9th level from the table in Oath Spells: protection from energy, tiny hut.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Protection from Energy",
+                "Leomund's Tiny Hut"
+              ],
+              "ability": "cha"
+            }
+          ]
+        }
+      ],
+      "13": [
+        {
+          "name": "Oath Spells (13th level)",
+          "desc": "You gain the oath spells for 13th level from the table in Oath Spells: guardian of faith, wall of fire.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Guardian of Faith",
+                "Wall of Fire"
+              ],
+              "ability": "cha"
+            }
+          ]
+        }
+      ],
       "15": [
         {
           "name": "Icewalker",
-          "desc": "Starting at 15th level, you have resistance to cold damage, and you can't be restrained or petrified by cold or ice. In addition, you can move across and climb icy surfaces without needing to make an ability check, and difficult terrain composed of ice or snow doesn't cost you extra movement."
+          "desc": "Starting at 15th level, you have resistance to cold damage, and you can't be restrained or petrified by cold or ice. In addition, you can move across and climb icy surfaces without needing to make an ability check, and difficult terrain composed of ice or snow doesn't cost you extra movement.",
+          "effects": [
+            {
+              "kind": "resist",
+              "dtype": "cold"
+            }
+          ]
+        }
+      ],
+      "17": [
+        {
+          "name": "Oath Spells (17th level)",
+          "desc": "You gain the oath spells for 17th level from the table in Oath Spells: flame strike, hallow.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Flame Strike",
+                "Hallow"
+              ],
+              "ability": "cha"
+            }
+          ]
         }
       ],
       "20": [

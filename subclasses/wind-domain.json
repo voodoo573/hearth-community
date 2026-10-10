@@ -3,7 +3,7 @@
   "id": "wind-domain",
   "name": "Wind Domain",
   "type": "subclass",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,11 +26,35 @@
       "1": [
         {
           "name": "Wind Domain Spells",
-          "desc": "Wind Domain Spells\nCleric Level | Spells\n1st: feather fall, thunderwave\n3rd: gust of wind, misty step\n5th: fly, wind wall\n7th: conjure minor elementals (air only), freedom of movement\n9th: cloudkill, conjure elemental (air only)"
+          "desc": "Wind Domain Spells\nCleric Level | Spells\n1st: feather fall, thunderwave\n3rd: gust of wind, misty step\n5th: fly, wind wall\n7th: conjure minor elementals (air only), freedom of movement\n9th: cloudkill, conjure elemental (air only)",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Feather Fall",
+                "Thunderwave"
+              ],
+              "ability": "wis"
+            }
+          ]
         },
         {
           "name": "Wind's Chosen",
-          "desc": "When you choose this domain at 1st level, you learn the mage hand cantrip and gain proficiency in the Nature skill. When you cast mage hand, you can make the hand invisible, and you can control the hand as a bonus action."
+          "desc": "When you choose this domain at 1st level, you learn the mage hand cantrip and gain proficiency in the Nature skill. When you cast mage hand, you can make the hand invisible, and you can control the hand as a bonus action.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Mage Hand"
+              ],
+              "ability": "wis"
+            },
+            {
+              "kind": "skill",
+              "skill": "nature",
+              "level": "prof"
+            }
+          ]
         }
       ],
       "2": [
@@ -39,10 +63,58 @@
           "desc": "At 2nd level, you can use your Channel Divinity to end the grappled condition on yourself and gain a flying speed equal to your walking speed until the end of your turn. You don't provoke opportunity attacks while flying in this way."
         }
       ],
+      "3": [
+        {
+          "name": "Domain Spells (3rd level)",
+          "desc": "You gain the domain spells for 3rd level from the table in Wind Domain Spells: gust of wind, misty step.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Gust of Wind",
+                "Misty Step"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
+      "5": [
+        {
+          "name": "Domain Spells (5th level)",
+          "desc": "You gain the domain spells for 5th level from the table in Wind Domain Spells: fly, wind wall.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Fly",
+                "Wind Wall"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
       "6": [
         {
           "name": "Stormshield",
           "desc": "At 6th level, when you take lightning or thunder damage, you can use your reaction to gain resistance to lightning and thunder damage, including against the triggering attack, until the start of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+        }
+      ],
+      "7": [
+        {
+          "name": "Domain Spells (7th level)",
+          "desc": "You gain the domain spells for 7th level from the table in Wind Domain Spells: conjure minor elementals, freedom of movement.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Conjure Minor Elementals",
+                "Freedom of Movement"
+              ],
+              "ability": "wis"
+            }
+          ]
         }
       ],
       "8": [
@@ -51,10 +123,34 @@
           "desc": "At 8th level, you infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8."
         }
       ],
+      "9": [
+        {
+          "name": "Domain Spells (9th level)",
+          "desc": "You gain the domain spells for 9th level from the table in Wind Domain Spells: cloudkill, conjure elemental.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Cloudkill",
+                "Conjure Elemental"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
       "17": [
         {
           "name": "Dire Tempest",
-          "desc": "At 17th level, you can create a 20-foot-radius tornado of swirling wind and debris at a point you can see within 120 feet. The storm lasts until the start of your next turn. All Huge or smaller creatures within the area must make a Strength saving throw against your spell save DC. On a failure, a creature takes 8d6 bludgeoning damage and is thrown 1d4 x 10 feet into the air. On a success, a creature takes half the damage and isn't thrown into the air. Creatures thrown into the air take falling damage as normal and land prone.\nIn addition, each creature that starts its turn within 15 feet of the tornado must succeed on a Strength saving throw against your spell save DC or be dragged into the tornado's area. A creature that enters the tornado's area is thrown 1d4 x 10 feet into the air, taking falling damage as normal and landing prone.\nOnce you use this feature, you can't use it again until you finish a long rest."
+          "desc": "At 17th level, you can create a 20-foot-radius tornado of swirling wind and debris at a point you can see within 120 feet. The storm lasts until the start of your next turn. All Huge or smaller creatures within the area must make a Strength saving throw against your spell save DC. On a failure, a creature takes 8d6 bludgeoning damage and is thrown 1d4 x 10 feet into the air. On a success, a creature takes half the damage and isn't thrown into the air. Creatures thrown into the air take falling damage as normal and land prone.\nIn addition, each creature that starts its turn within 15 feet of the tornado must succeed on a Strength saving throw against your spell save DC or be dragged into the tornado's area. A creature that enters the tornado's area is thrown 1d4 x 10 feet into the air, taking falling damage as normal and landing prone.\nOnce you use this feature, you can't use it again until you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "action",
+              "uses": 1,
+              "reset": "long"
+            }
+          ]
         }
       ]
     }

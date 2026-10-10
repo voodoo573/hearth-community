@@ -3,7 +3,7 @@
   "id": "circle-of-bees",
   "name": "Circle of Bees",
   "type": "subclass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -26,7 +26,16 @@
       "2": [
         {
           "name": "Circle Spells",
-          "desc": "Your bond with bees and other stinging beasts grants you knowledge of certain spells. At 2nd level, you learn the true strike cantrip. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Bees Spells table.\nOnce you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.\n\nCircle of Bees Spells\nDruid Level | Spells\n3rd: blur, bombardment of stings\n5th: fly, haste\n7th: giant insect, locate creature\n9th: insect plague, telepathic bond"
+          "desc": "Your bond with bees and other stinging beasts grants you knowledge of certain spells. At 2nd level, you learn the true strike cantrip. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Bees Spells table.\nOnce you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.\n\nCircle of Bees Spells\nDruid Level | Spells\n3rd: blur, bombardment of stings\n5th: fly, haste\n7th: giant insect, locate creature\n9th: insect plague, telepathic bond",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "True Strike"
+              ],
+              "ability": "wis"
+            }
+          ]
         },
         {
           "name": "Bee Bond",
@@ -37,10 +46,82 @@
           "desc": "Also at 2nd level, you can use an action and expend one use of your Wild Shape to grow a bee's stinger, typically growing from your wrist, which you can use to make unarmed strikes. When you hit with an unarmed strike while this stinger is active, you use Wisdom instead of Strength for the attack, and your unarmed strike deals piercing damage equal to 1d4 + your Wisdom modifier + poison damage equal to half your proficiency bonus, instead of the bludgeoning damage normal for an unarmed strike.\nThe stinger lasts for a number of hours equal to half your druid level (rounded down) or until you use your Wild Shape again.\nWhen you reach 6th level in this class, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, and the poison damage dealt by your stinger equals your proficiency bonus. In addition, the unarmed strike damage you deal while the stinger is active increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level."
         }
       ],
+      "3": [
+        {
+          "name": "Circle Spells (3rd level)",
+          "desc": "You gain the circle spells for 3rd level from the table in Circle Spells: blur, bombardment of stings.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Blur",
+                "Bombardment of Stings"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
+      "5": [
+        {
+          "name": "Circle Spells (5th level)",
+          "desc": "You gain the circle spells for 5th level from the table in Circle Spells: fly, haste.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Fly",
+                "Haste"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
       "6": [
         {
           "name": "Bumblebee Rush",
-          "desc": "At 6th level, you can take the Dash action as a bonus action. When you do so, creatures have disadvantage on attack rolls against you until the start of your next turn. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+          "desc": "At 6th level, you can take the Dash action as a bonus action. When you do so, creatures have disadvantage on attack rolls against you until the start of your next turn. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "bonus",
+              "uses": "pb",
+              "reset": "long"
+            }
+          ]
+        }
+      ],
+      "7": [
+        {
+          "name": "Circle Spells (7th level)",
+          "desc": "You gain the circle spells for 7th level from the table in Circle Spells: giant insect, locate creature.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Giant Insect",
+                "Locate Creature"
+              ],
+              "ability": "wis"
+            }
+          ]
+        }
+      ],
+      "9": [
+        {
+          "name": "Circle Spells (9th level)",
+          "desc": "You gain the circle spells for 9th level from the table in Circle Spells: insect plague, telepathic bond.",
+          "effects": [
+            {
+              "kind": "grant_spells",
+              "spells": [
+                "Insect Plague",
+                "Telepathic Bond"
+              ],
+              "ability": "wis"
+            }
+          ]
         }
       ],
       "10": [
@@ -52,7 +133,15 @@
       "14": [
         {
           "name": "Mantle of Bees",
-          "desc": "At 14th level, you can use an action to cover yourself in bees for 1 hour or until you dismiss them (no action required). While you are covered in a mantle of bees, you gain a +2 bonus to AC, and you have advantage on Charisma (Intimidation) checks. In addition, when a creature within 5 feet of you hits you with a melee weapon, it must make a Constitution saving throw against your spell save DC. On a failure, the attacker takes 1d8 piercing damage and 1d8 poison damage and is poisoned until the end of its next turn. On a successful save, the attacker takes half the damage and isn't poisoned.\nWhile the mantle is active, you can use an action to direct the bees to swarm a 10-foot-radius sphere within 60 feet of you. Each creature in the area must make a Constitution saving throw against your spell save DC. On a failure, a creature takes 4d6 piercing damage and 4d6 poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn't poisoned. The bees then disperse, and your mantle ends.\nOnce you use this feature, you can't use it again until you finish a short or long rest, unless you expend a spell slot of 5th level or higher to create the mantle again."
+          "desc": "At 14th level, you can use an action to cover yourself in bees for 1 hour or until you dismiss them (no action required). While you are covered in a mantle of bees, you gain a +2 bonus to AC, and you have advantage on Charisma (Intimidation) checks. In addition, when a creature within 5 feet of you hits you with a melee weapon, it must make a Constitution saving throw against your spell save DC. On a failure, the attacker takes 1d8 piercing damage and 1d8 poison damage and is poisoned until the end of its next turn. On a successful save, the attacker takes half the damage and isn't poisoned.\nWhile the mantle is active, you can use an action to direct the bees to swarm a 10-foot-radius sphere within 60 feet of you. Each creature in the area must make a Constitution saving throw against your spell save DC. On a failure, a creature takes 4d6 piercing damage and 4d6 poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn't poisoned. The bees then disperse, and your mantle ends.\nOnce you use this feature, you can't use it again until you finish a short or long rest, unless you expend a spell slot of 5th level or higher to create the mantle again.",
+          "effects": [
+            {
+              "kind": "active",
+              "cost": "action",
+              "uses": 1,
+              "reset": "short"
+            }
+          ]
         }
       ]
     }
