@@ -3,7 +3,7 @@
   "id": "oath-of-the-hearth",
   "name": "Oath of the Hearth",
   "type": "subclass",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "voodoo573",
   "source": "homebrew",
   "edition": "5e",
@@ -114,7 +114,7 @@
               "kind": "grant_spells",
               "spells": [
                 "Protection from Energy",
-                "Leomund's Tiny Hut"
+                "Tiny Hut"
               ],
               "ability": "cha"
             }

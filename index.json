@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10T04:22:34Z",
+  "updated": "2026-10-16T19:55:33Z",
   "items": [
     {
       "id": "alseid",
@@ -272,7 +272,7 @@
       "author": "voodoo573",
       "summary": "Paladin oath: bring the warmth of home to others, smite with fire and stand against unnatural cold.",
       "path": "subclasses/oath-of-the-hearth.json",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "tags": [
         "paladin",
         "tome-of-heroes",

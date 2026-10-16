@@ -1,7 +1,9 @@
 # Hearth Community Content
 
 Homebrew races, subclasses, spells, feats, backgrounds, monsters, weapons, magic items and battle maps for
-**[Hearth](https://hearthdnd.org)**, the D&D 5e companion app.
+**[Hearth](https://hearthdnd.org)**, a companion app for fifth edition tabletop roleplaying games.
+
+Hearth and this repository are unofficial and are not affiliated with, endorsed or sponsored by Wizards of the Coast.
 
 Everything here is made and shared by the community. Approved items appear in the
 **Content Library** inside Hearth, where anyone can preview them and add them to their app
